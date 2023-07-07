@@ -1,0 +1,28 @@
+.button {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    padding: 11px 14px;
+    background-color: var(--color_action_primary);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--color_action_secondary);
+    color: #EEEEEE;
+}
+
+
+.button_size_larger {
+    padding: 18px 24px;
+    font-size: 16px;
+    line-height: 24px;
+}

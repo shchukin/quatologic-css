@@ -1,0 +1,9 @@
+body {
+    min-width: 320px;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font_family_default);
+    font-size: 20px;
+    line-height: 28px;
+}
