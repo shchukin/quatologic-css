@@ -3,7 +3,7 @@ body {
     margin: 0;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: var(--font_family_default);
+    font-family: var(--font-text);
     font-size: 20px;
     line-height: 28px;
 }

@@ -1,0 +1,6 @@
+.title {
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 32px;
+}
