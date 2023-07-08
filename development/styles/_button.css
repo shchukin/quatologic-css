@@ -3,7 +3,7 @@
     vertical-align: top;
     border: none;
     padding: 11px 14px;
-    background-color: var(--color_action_primary);
+    background-color: red;
     border-radius: 4px;
     font-family: inherit;
     font-size: 12px;
@@ -16,7 +16,7 @@
 }
 
 .button:hover {
-    background: var(--color_action_secondary);
+    background: blue;
     color: #EEEEEE;
 }
 

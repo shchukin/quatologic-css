@@ -243,7 +243,10 @@ gulp.task('styles', function() {
 
   var processors = [
     cssnext({
-        'browsers': 'last 5 versions' // for autoprefixer and features list
+        'browsers': 'last 2 versions', // for autoprefixer and features list
+        'features': {
+            'customProperties': false
+        }
     })
   ];
 
