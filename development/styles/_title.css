@@ -2,5 +2,12 @@
     font-family: var(--font-headings);
     font-weight: bold;
     font-size: 48px;
-    line-height: 32px;
+    line-height: 76px;
+}
+
+@media (max-width: 599px) {
+    .title {
+        font-size: 32px;
+        line-height: 43px;
+    }
 }
