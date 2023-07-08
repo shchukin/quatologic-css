@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Jost";
+	src: url("jost-regular.woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("jost-medium.woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("jost-bold.woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Evolventa";
+	src: url("evolventa-bold.woff");
+	font-weight: bold;
+	font-style: normal;
+}
