@@ -2,7 +2,6 @@
 
 }
 
-/* stylelint-disable function-parentheses-space-inside */
 .wysiwyg p,
 .wysiwyg ul,
 .wysiwyg ol,
@@ -12,7 +11,16 @@
     margin-top: var(--base-line-height);
     margin-bottom: var(--base-line-height);
 }
-/* stylelint-enable */
+
+.wysiwyg--dense p,
+.wysiwyg--dense ul,
+.wysiwyg--dense ol,
+.wysiwyg--dense hr,
+.wysiwyg--dense figure,
+.wysiwyg--dense blockquote {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
