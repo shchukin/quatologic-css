@@ -192,12 +192,12 @@ gulp.task('markups', function() {
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function() {
-  return gulp.src('development/layouts/**/*')
+  return gulp.src('development/*.html')
       .pipe(plumber())
       .pipe(change(symbolsImgToSpriteSvg))
       .pipe(change(uncommentGoogleFonts))
       .pipe(change(addSourcesTimestamp))
-      .pipe(gulp.dest('production/layouts/'))
+      .pipe(gulp.dest('production/'))
   ;
 });
 
