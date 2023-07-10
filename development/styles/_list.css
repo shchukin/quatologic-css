@@ -1,0 +1,23 @@
+.list {
+    padding-left: 0;
+    list-style: none;
+}
+    .list__item {
+        position: relative;
+        padding-left: 26px;
+        margin-top: var(--base-line-height);
+    }
+
+    .list__item:first-child {
+        margin-top: 0;
+    }
+        .list__item::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 2px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--action);
+            border-radius: 50%;
+        }

@@ -49,9 +49,11 @@
             }
 
     .hero__summary {
+        min-height: 1341px;
         padding-top: 768px;
+        padding-bottom: 123px;
         background-image: url("../images/hero-desktop-summary.jpg");
-        background-size: 1864px 1549px;
+        background-size: 1864px 1341px;
         background-repeat: no-repeat;
         background-position: center top;
     }
@@ -68,9 +70,46 @@
             background-size: 100% auto;
         }
     }
-
         .hero__summary-wrap {
 
         }
+            .hero__panel {
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
+                padding: 32px 48px;
+                border-radius: 18px;
+                background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.71));
+                box-shadow: 0 12px 24px rgba(20, 20, 43, 0.04), 0 -2px 4px rgba(20, 20, 43, 0.02), 0 22px 24px rgba(74, 58, 255, 0.03);
+            }
 
+            /* Чуть чуть увеличиваем когда появляется возможность */
+            @media (min-width: 1300px) {
+                .hero__panel {
+                    margin-left: calc(-1 * var(--container-padding));
+                    margin-right: calc(-1 * var(--container-padding));
+                    gap: 67px;
+                }
+            }
+                .hero__column {
+                    flex-grow: 1;
+                    flex-basis: 0;
+                }
+
+                .hero__column:nth-child(2) {
+                    flex-grow: 1.06;
+                }
+                    .hero__sub-heading {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: var(--font-headings);
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+
+                    .hero__features-list {
+                        margin-top: 24px;
+                        margin-bottom: 0;
+                    }
 
