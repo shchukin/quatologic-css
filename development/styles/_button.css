@@ -21,10 +21,19 @@
     background-color: #0A93DA;
 }
 
-
 .button:active {
     transform: translateY(1px);
 }
+
+@media (max-width: 599px) {
+    .button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
 
 
 .button--inverted {

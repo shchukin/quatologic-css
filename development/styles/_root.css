@@ -19,3 +19,9 @@
         --base-line-height: 23px;
     }
 }
+
+@media (max-width: 359px) {
+    :root {
+        --container-padding: 16px;
+    }
+}
