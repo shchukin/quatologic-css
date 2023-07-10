@@ -1,0 +1,19 @@
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 178px;
+    height: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url("../images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logo--inverted {
+    background-image: url("../images/logo-inverted.svg");
+}
