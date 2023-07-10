@@ -119,6 +119,7 @@
 
     .hero {
         /*position: relative;*/
+        overflow: hidden; /* to cut button shadow inside */
     }
         .hero__head {
             position: static;
