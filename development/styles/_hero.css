@@ -1,0 +1,39 @@
+.hero {
+    height: 400px;
+    padding-top: 60px;
+    background-image: url("../images/hero-desktop-cloud.svg");
+    background-size: 1920px 643px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+    .hero__wrap {
+
+    }
+        .hero__pre-heading {
+            font-family: var(--font-headings);
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .hero__heading {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-family: var(--font-headings);
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 62px;
+            text-align: center;
+        }
+
+        .hero__description {
+            max-width: 826px;
+            margin-top: 26px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+        }
