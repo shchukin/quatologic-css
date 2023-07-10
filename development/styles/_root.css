@@ -6,7 +6,8 @@
     --base-font-size: 20px;
     --base-line-height: 29px;
     --action: #0B80BD;
-    --action-hover: #0A93DA;
+    --action-hover: #098BC5;
+    /*098 BC5*/
     --transition-hover: 0.1s ease;
 }
 /* stylelint-enable declaration-colon-space-after */
@@ -25,3 +26,5 @@
         --container-padding: 16px;
     }
 }
+
+
