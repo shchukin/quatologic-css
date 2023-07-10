@@ -1,0 +1,24 @@
+.shadow {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .shadow::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -176px;
+        margin-top: -66px;
+        display: block;
+        width: 352px;
+        height: 182px;
+        background-image: url("../images/shadow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .shadow .button {
+        position: relative;
+    }

@@ -1,39 +1,76 @@
 .hero {
-    height: 400px;
-    padding-top: 60px;
-    background-image: url("../images/hero-desktop-cloud.svg");
-    background-size: 1920px 643px;
-    background-repeat: no-repeat;
-    background-position: center top;
+    position: relative;
 }
-    .hero__wrap {
-
+    .hero__head {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 100; /* выше .hero__summary */
+        min-height: 360px; /* фон */
+        padding-top: 60px;
+        text-align: center;
+        background-image: url("../images/hero-desktop-head.svg");
+        background-size: 1920px 360px;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
-        .hero__pre-heading {
-            font-family: var(--font-headings);
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 26px;
-            text-align: center;
+        .hero__head-wrap {
+
+        }
+            .hero__pre-heading {
+                font-family: var(--font-headings);
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 26px;
+            }
+
+            .hero__heading {
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-family: var(--font-headings);
+                font-weight: bold;
+                font-size: 56px;
+                line-height: 62px;
+            }
+
+            .hero__description {
+                max-width: 826px;
+                margin-top: 26px;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 34px;
+            }
+
+            .hero__submit {
+                margin-top: 51px;
+            }
+
+    .hero__summary {
+        padding-top: 768px;
+        background-image: url("../images/hero-desktop-summary.jpg");
+        background-size: 1864px 1549px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .hero__summary {
+            background-image: url("../images/hero-desktop-summary@2x.jpg");
+        }
+    }
+
+
+    @media (min-width: 1864px) {
+        .hero__summary {
+            background-size: 100% auto;
+        }
+    }
+
+        .hero__summary-wrap {
+
         }
 
-        .hero__heading {
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-family: var(--font-headings);
-            font-weight: bold;
-            font-size: 56px;
-            line-height: 62px;
-            text-align: center;
-        }
 
-        .hero__description {
-            max-width: 826px;
-            margin-top: 26px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 34px;
-            text-align: center;
-        }
