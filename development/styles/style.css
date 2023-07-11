@@ -20,3 +20,6 @@
 @import url("_truth.css");
 @import url("_feature.css");
 @import url("_badge.css");
+@import url("_desktop-only.css");
+@import url("_smartphone-only.css");
+@import url("_hide-scrollbar.css");
