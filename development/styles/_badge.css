@@ -1,0 +1,24 @@
+.badge {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    border-radius: 13px;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.badge--yellow {
+    background-color: #F4DA56;
+}
+
+.badge--pink {
+    background-color: #DE5BFF;
+}
+
+.badge--blue {
+    background-color: #548AEE;
+}
