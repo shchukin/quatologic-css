@@ -61,10 +61,29 @@
         padding-left: 31px;
     }
         .list--simpler .list__item::before {
-            top: 15px;
+            top: 14px;
             left: 13px;
             width: 2px;
             height: 2px;
             background-color: currentColor;
         }
+
+
+@media (max-width: 599px) {
+
+    .list--simpler {
+
+    }
+        .list--simpler .list__item {
+            /*margin-top: 0;*/
+            padding-left: 25px;
+        }
+            .list--simpler .list__item::before {
+                top: 11px;
+                left: 10px;
+                /*width: 2px;*/
+                /*height: 2px;*/
+                /*background-color: currentColor;*/
+            }
+}
 

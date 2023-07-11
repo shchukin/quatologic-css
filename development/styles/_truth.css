@@ -59,7 +59,7 @@
 
         .truth__description {
             margin-top: 12px;
-            font-weight: normal;
+            font-weight: inherit;
             font-size: 16px;
             line-height: 23px;
             /*text-align: center;*/

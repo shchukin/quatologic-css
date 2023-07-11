@@ -15,8 +15,6 @@
     .sales__description {
         margin-top: 4px;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 34px;
         text-align: center;
     }
 
@@ -48,8 +46,8 @@
                     margin-top: 0;
                     margin-bottom: 0;
                     font-weight: bold;
-                    font-size: 20px;
-                    line-height: 29px;
+                    font-size: inherit;
+                    line-height: inherit;
                 }
 
                 .sales__features {
@@ -69,3 +67,78 @@
                 vertical-align: top;
                 pointer-events: none;
             }
+
+
+
+@media (max-width: 599px) {
+
+    .sales {
+        padding-top: 67px;
+        padding-bottom: 133px;
+        background-image: url("../images/sales-background-smartphone.svg");
+        background-size: 730px 537px;
+        /*background-repeat: no-repeat;*/
+        background-position: center bottom -281px;
+    }
+        .sales__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .sales__description {
+            margin-top: 12px;
+            font-weight: inherit;
+            /*text-align: center;*/
+        }
+
+        .sales__body {
+            margin-top: 32px;
+            display: block;
+            /*align-items: flex-start;*/
+            /*gap: 48px;*/
+        }
+            .sales__content {
+                /*flex-shrink: 0;*/
+                width: auto;
+            }
+                .sales__item {
+                    /*margin-top: 16px;*/
+                    /*padding: 24px 32px;*/
+                    /*border-radius: 18px;*/
+                    /*background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.71) 100%);*/
+                    /*box-shadow: 0 12px 24px 0 rgba(20, 20, 43, 0.04),*/
+                    /*            0 -2px 4px 0 rgba(20, 20, 43, 0.02),*/
+                    /*            0 22px 24px 0 rgba(74, 58, 255, 0.03);*/
+                }
+
+                .sales__item:first-child {
+                    /*margin-top: 0;*/
+                }
+                    .sales__sub-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-weight: bold;*/
+                    }
+
+                    .sales__features {
+                        /*margin-top: 16px;*/
+                        /*margin-bottom: 0;*/
+                    }
+
+            .sales__preview {
+                /*flex-shrink: 0;*/
+                width: auto;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 50px;
+                padding-right: 16.5%;
+            }
+                .sales__illustration {
+                    /*position: relative;*/
+                    /*vertical-align: top;*/
+                    /*pointer-events: none;*/
+                    width: 100%;
+                    height: auto;
+                }
+}
