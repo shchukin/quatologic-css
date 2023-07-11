@@ -33,9 +33,11 @@
                 padding: 24px 32px;
                 border-radius: 18px;
                 background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.71) 100%);
+                /* stylelint-disable */
                 box-shadow: 0 12px 24px 0 rgba(20, 20, 43, 0.04),
                             0 -2px 4px 0 rgba(20, 20, 43, 0.02),
                             0 22px 24px 0 rgba(74, 58, 255, 0.03);
+                /* stylelint-ebable */
             }
 
             .sales__item:first-child {
