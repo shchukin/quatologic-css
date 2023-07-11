@@ -50,6 +50,7 @@
     .truth {
         padding-top: 67px;
         padding-bottom: 63px;
+        overflow: hidden; /* обрезаем картинку */
     }
         .truth__heading {
             /*margin-top: 0;*/
@@ -75,7 +76,6 @@
             .truth__preview {
                 margin-left: calc(-1 * var(--container-padding));
                 margin-right: calc(-1 * var(--container-padding));
-                overflow: hidden;
             }
                 .truth__illustration {
                     width: calc(100% + 14px); /* хотим чтобы картинка уходила вправо на 14px, за экран */
