@@ -1,6 +1,7 @@
 .truth {
     padding-top: 112px;
     padding-bottom: 39px;
+    overflow: hidden; /* Обрезаем картинку возле слова "images". Немного обрезанная по правому краю -- это ок.*/
 }
     .truth__heading {
         margin-top: 0;

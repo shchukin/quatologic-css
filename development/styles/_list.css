@@ -50,3 +50,21 @@
                 /*border-radius: 50%;*/
             }
 }
+
+
+
+.list--simpler {
+
+}
+    .list--simpler .list__item {
+        margin-top: 0;
+        padding-left: 31px;
+    }
+        .list--simpler .list__item::before {
+            top: 15px;
+            left: 13px;
+            width: 2px;
+            height: 2px;
+            background-color: currentColor;
+        }
+
