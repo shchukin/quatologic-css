@@ -10,7 +10,7 @@
         min-height: 360px; /* фон */
         padding-top: 60px;
         text-align: center;
-        background-image: url("../images/hero-desktop-head.svg");
+        background-image: url("../vectors/hero-desktop-head.svg");
         background-size: 1920px 360px;
         background-repeat: no-repeat;
         background-position: center top;
@@ -126,7 +126,7 @@
             min-height: 220px; /* фон */
             padding-top: 30px;
             /*text-align: center;*/
-            background-image: url("../images/hero-smartphone-head.svg");
+            background-image: url("../vectors/hero-smartphone-head.svg");
             background-size: 618px 220px;
             /*background-repeat: no-repeat;*/
             /*background-position: center top;*/

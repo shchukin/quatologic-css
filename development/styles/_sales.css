@@ -1,7 +1,7 @@
 .sales {
     padding-top: 112px;
     padding-bottom: 184px;
-    background-image: url("../images/sales-background-desktop.svg");
+    background-image: url("../vectors/sales-background-desktop.svg");
     background-size: 1998px 786px;
     background-repeat: no-repeat;
     background-position: center bottom -456px;
@@ -77,7 +77,7 @@
     .sales {
         padding-top: 67px;
         padding-bottom: 133px;
-        background-image: url("../images/sales-background-smartphone.svg");
+        background-image: url("../vectors/sales-background-smartphone.svg");
         background-size: 730px 537px;
         /*background-repeat: no-repeat;*/
         background-position: center bottom -281px;
