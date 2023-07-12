@@ -28,8 +28,7 @@
                 line-height: 44px;
                 cursor: pointer;
                 white-space: nowrap;
-                transition: background-color var(--transition-hover),
-                            color var(--transition-hover);
+                transition: background-color var(--transition-hover), color var(--transition-hover);
                 user-select: none;
             }
 
@@ -237,11 +236,10 @@
                     }
 
 
-
-
         .benefits__item--for-distributor-manufacturer {
 
         }
+            /* stylelint-disable */
             .benefits__item--for-distributor-manufacturer .benefits__screenshot {
                 margin-top: 47px;
                 margin-bottom: -20px;
@@ -250,10 +248,13 @@
                 width: calc(100% - 2 * 5px);
                 height: auto;
             }
+            /* stylelint-enable */
 
         .benefits__item--for-dealer-and-seller {
 
         }
+
+            /* stylelint-disable */
             .benefits__item--for-dealer-and-seller .benefits__screenshot {
                 margin-top: 32px;
                 margin-left: 10px !important;
@@ -262,4 +263,5 @@
                 width: calc(100% - 2 * 10px);
                 height: auto;
             }
+            /* stylelint-enable */
 }
