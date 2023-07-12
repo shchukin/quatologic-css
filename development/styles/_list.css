@@ -51,6 +51,13 @@
             }
 }
 
+.list--white {
+
+}
+    .list--white .list__item::before {
+        background-color: #FFFFFF;
+    }
+
 
 
 .list--simpler {

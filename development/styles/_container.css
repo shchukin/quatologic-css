@@ -15,6 +15,10 @@
 }
 
 
+.container--wide {
+    width: 100%;
+    max-width: 1440px;
+}
 
 .container--full-width {
     width: 100%;
