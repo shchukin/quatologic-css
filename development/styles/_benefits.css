@@ -32,13 +32,18 @@
             .benefits__tag--current {
                 background-color: var(--background-aspect);
                 color: #FFFFFF;
+                cursor: default;
             }
 
     .benefits__body {
         margin-top: 24px;
     }
         .benefits__item {
+            display: none;
+        }
 
+        .benefits__item--current {
+            display: block;
         }
             .benefits__screen {
                 border-radius: 20px;
@@ -57,7 +62,7 @@
             }
 
             .benefits__screen--alternate {
-                background-image: url("../images/benefits-background-alternate.svg");
+                background-image: url("../vectors/benefits-background-alternate.svg");
                 background-size: 1360px 1288px;
                 background-repeat: no-repeat;
                 background-position: center top;
