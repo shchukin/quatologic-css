@@ -20,7 +20,7 @@
             .benefits__tag {
                 border: none;
                 padding: 16px 41px;
-                background-color: #E7E7E7;
+                background-color: var();
                 border-radius: 38px;
                 font-family: var(--font-headings);
                 font-weight: bold;
