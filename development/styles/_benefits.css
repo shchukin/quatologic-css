@@ -30,6 +30,7 @@
                 padding-top: 77px;
                 padding-bottom: 72px;
                 padding-left: 66px;
+                overflow: hidden;
             }
 
             .benefits__screen--aspect {
@@ -48,7 +49,28 @@
                     flex-shrink: 0;
                     font-weight: 500;
                 }
+                    .benefits__features {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
 
                 .benefits__screenshot {
                     vertical-align: top;
                 }
+
+
+
+
+    .benefits__item--for-distributor-manufacturer {
+
+    }
+
+        @media (min-width: 1400px) {
+            .benefits__item--for-distributor-manufacturer .benefits__screenshot {
+                margin-left: 86px;
+            }
+        }
+
+    .benefits__item--for-dealer-and-seller {
+
+    }
