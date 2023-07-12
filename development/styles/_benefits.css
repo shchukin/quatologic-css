@@ -59,8 +59,8 @@
         }
 
         @keyframes benefits {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from { opacity: 0; transform: translateY(-10px); }
+              to { opacity: 1; transform: translateY(0); }
         }
 
         .benefits__item--current {
@@ -69,8 +69,10 @@
         }
             .benefits__screen {
                 border-radius: 20px;
+                min-height: 671px;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 gap: 50px;
                 padding-top: 77px;
                 padding-bottom: 72px;
@@ -84,7 +86,7 @@
             }
 
             .benefits__screen--alternate {
-                background-image: url("../vectors/benefits-background-alternate.svg");
+                background-image: url("../vectors/benefits-background-alternate-desktop.svg");
                 background-size: 1360px 1288px;
                 background-repeat: no-repeat;
                 background-position: center top;
@@ -108,12 +110,156 @@
 
     }
 
-        @media (min-width: 1400px) {
+        /*@media (min-width: 1400px) {*/
             .benefits__item--for-distributor-manufacturer .benefits__screenshot {
-                margin-left: 86px;
+                margin-right: -44px;
             }
-        }
+        /*}*/
 
     .benefits__item--for-dealer-and-seller {
 
     }
+        .benefits__item--for-dealer-and-seller .benefits__screenshot {
+            margin-right: 14px;
+        }
+
+
+
+@media (max-width: 599px) {
+
+    .benefits {
+        padding-top: 94px;
+        padding-bottom: 58px;
+    }
+        .benefits__navigation {
+            display: block;
+            /*align-items: flex-start;*/
+            /*gap: 24px;*/
+        }
+            .benefits__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+            }
+
+            .benefits__tabs {
+                display: block;
+                margin-top: 10px;
+                /*align-items: flex-start;*/
+                /*gap: 24px;*/
+            }
+                .benefits__tag {
+                    margin-top: 12px;
+                    /*border: none;*/
+                    padding: 12px 24px;
+                    /*background-color: #E7E7E7;*/
+                    /*border-radius: 38px;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-weight: bold;*/
+                    font-size: 20px;
+                    line-height: 28px;
+                    /*cursor: pointer;*/
+                    /*white-space: nowrap;*/
+                    /*transition: background-color var(--transition-hover),*/
+                    /*            color var(--transition-hover);*/
+                    /*user-select: none;*/
+                }
+
+                @media (max-width: 374px) {
+                    .benefits__tag {
+                        padding: 10px 22px;
+                        font-size: 17px;
+                        line-height: 26px;
+                    }
+                }
+
+                .benefits__tag:first-child {
+                    margin-top: 0;
+                }
+
+
+
+        .benefits__body {
+            margin-top: 17px;
+        }
+            .benefits__item {
+                /*display: none;*/
+            }
+
+            @keyframes benefits {
+                /*from { opacity: 0; }*/
+                /*to { opacity: 1; }*/
+            }
+
+            .benefits__item--current {
+                /*display: block;*/
+                /*animation: benefits 0.3s ease;*/
+            }
+                .benefits__screen {
+                    /*border-radius: 20px;*/
+                    display: block;
+                    /*align-items: center;*/
+                    /*gap: 50px;*/
+                    /*padding-top: 77px;*/
+                    /*padding-bottom: 72px;*/
+                    padding: 32px 24px 0;
+                    /*overflow: hidden;*/
+                }
+
+                .benefits__screen--aspect {
+                    /*background-color: var(--background-aspect);*/
+                    /*color: #FFFFFF;*/
+                }
+
+                .benefits__screen--alternate {
+                    background-image: url("../vectors/benefits-background-alternate-smartphone.svg");
+                    background-size: 600px 1200px;
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center top;*/
+                }
+                    .benefits__summary {
+                        width: auto;
+                        /*flex-shrink: 0;*/
+                        /*font-weight: 500;*/
+                    }
+                        .benefits__features {
+                            /*margin-top: 0;*/
+                            /*margin-bottom: 0;*/
+                        }
+                            .benefits__features .list__item {
+                                padding-left: 0;
+                            }
+                                .benefits__features .list__item::before {
+                                    display: none;
+                                }
+
+                    .benefits__screenshot {
+
+                    }
+
+
+
+
+        .benefits__item--for-distributor-manufacturer {
+
+        }
+            .benefits__item--for-distributor-manufacturer .benefits__screenshot {
+                margin-top: 47px;
+                margin-bottom: -20px;
+                margin-left: 5px !important;
+                margin-right: 5px !important;
+                width: calc(100% - 2 * 5px);
+                height: auto;
+            }
+
+        .benefits__item--for-dealer-and-seller {
+
+        }
+            .benefits__item--for-dealer-and-seller .benefits__screenshot {
+                margin-top: 32px;
+                margin-left: 10px !important;
+                margin-right: 10px !important;
+                margin-bottom: -54px;
+                width: calc(100% - 2 * 10px);
+                height: auto;
+            }
+}

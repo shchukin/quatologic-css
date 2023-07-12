@@ -16,15 +16,21 @@
 
 @media (max-width: 599px) {
     :root {
-        --container-padding: 20px;
+        --container-padding: 30px;
         --base-font-size: 16px;
         --base-line-height: 23px;
     }
 }
 
+@media (max-width: 390px) {
+    :root {
+        --container-padding: 20px;
+    }
+}
+
 @media (max-width: 359px) {
     :root {
-        --container-padding: 16px;
+        --container-padding: 15px;
     }
 }
 
