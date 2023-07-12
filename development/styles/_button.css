@@ -15,6 +15,7 @@
     white-space: nowrap;
     cursor: pointer;
     transition: background-color var(--transition-hover);
+    user-select: none;
 }
 
 .button:hover {
