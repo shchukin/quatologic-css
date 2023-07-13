@@ -84,6 +84,7 @@
                 margin-bottom: 0;
                 font-size: 36px;
                 line-height: 48px;
+                letter-spacing: -1px;
                 font-family: var(--font-headings);
                 font-weight: bold;
             }
@@ -94,22 +95,30 @@
                 font-size: 20px;
                 line-height: 34px;
             }
-                .basics__illustration {
-                    vertical-align: top;
+                .basics__meaning-preview {
+                    width: 70.572%; /* 494px на самом широком экране */
+                    margin-left: calc((100% - 70.572%) / 2);
+                    margin-right: calc((100% - 70.572%) / 2);
                     position: relative;
                     left: 9px;
-                    width: 70.572%;
-                    height: auto;
-                    margin: 64px calc((100% - 70.572%) / 2) calc(-1 * var(--vertical-tile-padding));
+                    margin-top: 64px;
+                    margin-bottom: calc(-1 * var(--vertical-tile-padding));
+                    overflow: hidden;
                 }
+                    .basics__illustration {
+                        vertical-align: top;
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: -34%;
+                    }
 
-                .basics__omnichanelling-video {
-                    margin-top: 62px;
-                    margin-left: calc(-1 * var(--horizontal-tile-padding));
-                    margin-right: calc(-1 * var(--horizontal-tile-padding));
-                    width: calc(100% + 2 * var(--horizontal-tile-padding));
-                    height: auto;
-                }
+                    .basics__omnichanelling-video {
+                        margin-top: 62px;
+                        margin-left: calc(-1 * var(--horizontal-tile-padding));
+                        margin-right: calc(-1 * var(--horizontal-tile-padding));
+                        width: calc(100% + 2 * var(--horizontal-tile-padding));
+                        height: auto;
+                    }
 
     .basics__footer {
         margin-top: 42px;
@@ -128,7 +137,7 @@
     }
 
     .basics {
-        padding-top: 45px;
+        padding-top: 2px;
         padding-bottom: 51px;
     }
         .basics__heading {
@@ -149,11 +158,16 @@
             /*grid-template-columns: repeat(5, 1fr);*/
         }
             .basics__tile {
+                margin-top: var(--container-padding);
                 padding-top: 32px;
                 padding-bottom: 32px;
                 /*padding: var(--vertical-tile-padding) var(--horizontal-tile-padding);*/
                 /*border-radius: 15px;*/
                 /*color: var(--gray-1);*/
+            }
+
+            .basics__tile:first-child {
+                margin-top: 0;
             }
 
             .basics__tile--meaning {
@@ -208,6 +222,7 @@
                     /*margin-bottom: 0;*/
                     font-size: 24px;
                     line-height: 32px;
+                    letter-spacing: -0.8px;
                     /*font-family: var(--font-headings);*/
                     /*font-weight: bold;*/
                 }
@@ -218,19 +233,23 @@
                     font-size: 16px;
                     line-height: 27px;
                 }
-                    .basics__illustration {
-                        /*vertical-align: top;*/
+                    .basics__meaning-preview {
                         position: static;
                         left: 0;
-                        width: 100%;
-                        /*height: auto;*/
+                        margin-left: -5%;
+                        margin-right: -5%;
+                        width: 110%;
                         margin-top: 20px;
-                        margin-left: 0;
-                        margin-right: 0;
                     }
+                        .basics__illustration {
+                            /*vertical-align: top;*/
+                            /*height: auto;*/
+                            margin-bottom: -21%;
+                        }
 
                     .basics__omnichanelling-video {
-                        /*margin-top: 62px;*/
+                        margin-top: 30px;
+                        margin-bottom: -10px;
                         /*margin-left: calc(-1 * var(--horizontal-tile-padding));*/
                         /*margin-right: calc(-1 * var(--horizontal-tile-padding));*/
                         /*width: calc(100% + 2 * var(--horizontal-tile-padding));*/
@@ -241,8 +260,8 @@
             /*margin-top: 42px;*/
             /*max-width: var(--max-text-width);*/
             /*font-weight: 500;*/
-            /*font-size: 20px;*/
-            /*line-height: 34px;*/
+            font-size: 16px;
+            line-height: 23px;
         }
 }
 
