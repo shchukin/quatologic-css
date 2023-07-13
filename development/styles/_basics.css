@@ -5,7 +5,6 @@
 
 .basics {
     padding-top: 69px;
-    padding-bottom: 75px;
 }
     .basics__heading {
         margin-top: 0;
@@ -141,7 +140,6 @@
 
     .basics {
         padding-top: 2px;
-        padding-bottom: 51px;
     }
         .basics__heading {
             /*margin-top: 0;*/

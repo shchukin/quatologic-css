@@ -1,45 +1,107 @@
 .about {
-    padding-top: 27px;
-    display: flex;
-    align-items: stretch;
-    background-image: url("../vectors/about.svg");
-    background-size: 1198px 1443px;
+    padding-top: 102px;
+    min-height: 1343px;
+    background-image: url("../vectors/about-desktop.svg");
+    background-size: 1198px 1373px;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: calc(50% + 763px) top;
 }
-    .about__head {
-        width: 32.3529%;
-        flex-shrink: 0;
+    .about__wrap {
+        display: flex;
+        align-items: stretch;
     }
-        .about__heading {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-top: 60px;
-            padding-bottom: 120px;
+        .about__head {
+            width: 32.3529%;
+            flex-shrink: 0;
         }
-
-    .about__body {
-        width: 67.6471%;
-        padding-top: 60px;
-        max-width: 555px;
-        padding-left: 20px;
-    }
-        .about__section {
-            margin-top: 52px;
-        }
-
-        .about__section:first-child {
-            margin-top: 0;
-        }
-            .about__sub-heading {
+            .about__heading {
                 margin-top: 0;
                 margin-bottom: 0;
-                font-family: var(--font-headings);
-                font-weight: bold;
-                font-size: 48px;
-                line-height: 76px;
+                padding-top: 60px;
+                padding-bottom: 120px;
             }
 
-            .about__description {
-                margin-top: 4px;
+        .about__body {
+            width: 67.6471%;
+            padding-top: 60px;
+            max-width: 555px;
+            padding-left: 20px;
+        }
+            .about__section {
+                margin-top: 52px;
             }
+
+            .about__section:first-child {
+                margin-top: 0;
+            }
+                .about__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: var(--font-headings);
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 76px;
+                    letter-spacing: -1px;
+                }
+
+                .about__description {
+                    margin-top: 4px;
+                }
+
+
+
+@media (max-width: 599px) {
+
+    .about {
+        margin-top: -50px;
+        padding-bottom: 177px;
+        min-height: 1128px;
+        background-image: url("../vectors/about-smartphone.svg");
+        background-size: 746px 1128px;
+        /*background-repeat: no-repeat;*/
+        background-position: calc(50% + 303px) top;
+    }
+        .about__wrap {
+            display: block;
+            /*align-items: stretch;*/
+        }
+            .about__head {
+                width: auto;
+                /*flex-shrink: 0;*/
+            }
+                .about__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    color: var(--action);
+                }
+
+            .about__body {
+                width: auto;
+                margin-top: 11px;
+                padding-top: 0;
+                max-width: none;
+                padding-left: 0;
+            }
+                .about__section {
+                    margin-top: 40px;
+                }
+
+                .about__section:first-child {
+                    /*margin-top: 0;*/
+                }
+                    .about__sub-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-family: var(--font-headings);*/
+                        /*font-weight: bold;*/
+                        font-size: 24px;
+                        line-height: 48px;
+                        letter-spacing: -0.8px;
+                    }
+
+                    .about__description {
+                        margin-top: 0;
+                    }
+}
