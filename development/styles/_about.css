@@ -1,7 +1,11 @@
 .about {
-    padding-top: 87px;
+    padding-top: 27px;
     display: flex;
     align-items: stretch;
+    background-image: url("../vectors/about.svg");
+    background-size: 1198px 1443px;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
     .about__head {
         width: 32.3529%;
@@ -10,15 +14,18 @@
         .about__heading {
             margin-top: 0;
             margin-bottom: 0;
+            padding-top: 60px;
+            padding-bottom: 120px;
         }
 
     .about__body {
         width: 67.6471%;
+        padding-top: 60px;
         max-width: 555px;
         padding-left: 20px;
     }
         .about__section {
-            margin-top: 60px;
+            margin-top: 52px;
         }
 
         .about__section:first-child {
@@ -34,5 +41,5 @@
             }
 
             .about__description {
-                margin-top: 12px;
+                margin-top: 4px;
             }
