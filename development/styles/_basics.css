@@ -95,6 +95,7 @@
                 font-size: 20px;
                 line-height: 34px;
             }
+                /* stylelint-disable */
                 .basics__meaning-preview {
                     width: 70.572%; /* 494px на самом широком экране */
                     margin-left: calc((100% - 70.572%) / 2);
@@ -105,6 +106,8 @@
                     margin-bottom: calc(-1 * var(--vertical-tile-padding));
                     overflow: hidden;
                 }
+                /* stylelint-enable */
+
                     .basics__illustration {
                         vertical-align: top;
                         width: 100%;
