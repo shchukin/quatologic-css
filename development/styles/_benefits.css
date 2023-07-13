@@ -44,7 +44,7 @@
 
             .benefits__tag--current,
             .benefits__tag--current:hover {
-                background-color: var(--background-aspect);
+                background-color: var(--background-accent);
                 color: #FFFFFF;
                 cursor: default;
             }
@@ -79,8 +79,8 @@
                 overflow: hidden;
             }
 
-            .benefits__screen--aspect {
-                background-color: var(--background-aspect);
+            .benefits__screen--accent {
+                background-color: var(--background-accent);
                 color: #FFFFFF;
             }
 
@@ -204,8 +204,7 @@
                     /*overflow: hidden;*/
                 }
 
-                .benefits__screen--aspect {
-                    /*background-color: var(--background-aspect);*/
+                .benefits__screen--accent {
                     /*color: #FFFFFF;*/
                 }
 

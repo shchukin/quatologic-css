@@ -2,6 +2,8 @@
 
 }
 
+/* Вариант default */
+
 .wysiwyg p,
 .wysiwyg ul,
 .wysiwyg ol,
@@ -12,6 +14,9 @@
     margin-bottom: var(--base-line-height);
 }
 
+
+/* Вариант dense */
+
 .wysiwyg--dense p,
 .wysiwyg--dense ul,
 .wysiwyg--dense ol,
@@ -21,6 +26,10 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+
+/* Общие стили для всех вариантов */
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,

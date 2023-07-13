@@ -1,6 +1,6 @@
 .cta {
     padding-top: 57px;
-    background-color: var(--background-aspect);
+    background-color: var(--background-accent);
     color: #FFFFFF;
     text-align: center;
     overflow: hidden; /* Обрезаем скриншоты */
@@ -52,7 +52,6 @@
 
     .cta {
         padding-top: 35px;
-        /*background-color: var(--background-aspect);*/
         /*color: #FFFFFF;*/
         /*text-align: center;*/
         /*overflow: hidden; !* Обрезаем скриншоты *!*/
