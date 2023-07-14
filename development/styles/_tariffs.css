@@ -71,6 +71,9 @@
                 margin-bottom: 0;
             }
 
+    .tariffs__section--mobile-head {
+        display: none;
+    }
 
     .tariffs__section--body {
 
@@ -99,7 +102,7 @@
 @media (max-width: 599px) {
 
     .tariffs {
-        /*--cell-horizontal-padding: 18px;*/
+
     }
 
     .tariffs {
@@ -162,44 +165,97 @@
 
                     }
 
-        .tariffs__section--head {
+            .tariffs__section--head {
 
-        }
-            .tariffs__section--head .tariffs__cell {
-                /*vertical-align: top;*/
-                margin-top: 0;
             }
-
-            .tariffs__section--head .tariffs__cell:first-child {
-                margin-top: 0;
-            }
-                .tariffs__heading {
-                    margin-left: 0;
+                .tariffs__section--head .tariffs__cell {
+                    /*vertical-align: top;*/
                     margin-top: 0;
-                    margin-bottom: 27px;
-                    text-align: center;
                 }
 
+                .tariffs__section--head .tariffs__cell:first-child {
+                    margin-top: 0;
+                }
+                    .tariffs__heading {
+                        margin-left: 0;
+                        margin-top: 0;
+                        margin-bottom: 27px;
+                        text-align: center;
+                    }
 
-        .tariffs__section--body {
-            display: none;
-        }
-            .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell {
-                /*background-color: #EBF2FA;*/
-            }
+            .tariffs__section--mobile-head {
 
-            .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:first-child {
-                /*border-top-left-radius: 5px;*/
-                /*border-bottom-left-radius: 5px;*/
             }
+                .tariffs__section--mobile-head .tariffs__cell {
+                    /*vertical-align: top;*/
+                    margin-top: 0;
+                }
 
-            .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:last-child {
-                /*border-top-right-radius: 5px;*/
-                /*border-bottom-right-radius: 5px;*/
-            }
+                .tariffs__section--mobile-head .tariffs__cell:first-child {
+                    margin-top: 0;
+                }
+                    .tariffs__section--mobile-head {
+                        margin-left: 0;
+                        margin-top: 0;
+                        margin-bottom: 27px;
+                        text-align: center;
+                    }
+                        .tariffs__section--mobile-head .tariffs__row {
 
-            .tariffs__section--body .tariffs__row:nth-child(even) .tariffs__cell {
-                /*padding-top: 25px;*/
-                /*padding-bottom: 25px;*/
+                        }
+                            .tariffs__section--mobile-head .tariffs__cell {
+                                font-family: var(--font-headings);
+                                font-weight: bold;
+                                font-size: 20px;
+                                line-height: 30px;
+                                color: var(--action);
+                            }
+
+            .tariffs__section--body {
+
             }
+                .tariffs__section--body .tariffs__row {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                    .tariffs__section--body .tariffs__cell {
+                        width: 33.3334%;
+                        border-radius: 0 !important;
+                    }
+
+                    .tariffs__section--body .tariffs__cell:first-child {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell {
+                        /*background-color: #EBF2FA;*/
+                    }
+
+
+
+                    .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:first-child {
+                        border-top-left-radius: 10px !important;
+                        border-top-right-radius: 10px !important;
+                    }
+
+                    .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:nth-child(2) {
+                        border-bottom-left-radius: 10px !important;
+                    }
+
+                    .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:last-child {
+                        border-bottom-right-radius: 10px !important;
+                    }
+
+
+
+                    .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:first-child {
+                        padding-top: 16px !important;
+                        padding-bottom: 8px !important;
+                    }
+
+                    .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:not(:first-child) {
+                        padding-bottom: 16px !important;
+                    }
 }
