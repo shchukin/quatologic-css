@@ -1,11 +1,93 @@
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
     background-color: var(--background-accent);
+    color: #FFFFFF;
 }
     .footer__wrap {
 
     }
-        .footer__emblem {
-
+        .footer__primary {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 60px;
+            padding-top: 60px;
+            padding-bottom: 54px;
         }
+            .footer__summary {
+
+            }
+                .footer__heading {
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    white-space: nowrap;
+                }
+
+                .footer__slogan {
+                    margin-top: 4px;
+                    font-weight: 500;
+                }
+
+                .footer__contacts {
+                    margin-top: 60px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 48px;
+                }
+                    .footer__channel {
+
+                    }
+                        .footer__param {
+                            font-family: var(--font-headings);
+                            font-weight: bold;
+                            font-size: 32px;
+                            line-height: 43px;
+                        }
+
+                        .footer__value {
+                            margin-top: 8px;
+                        }
+
+            .footer__feedbacks {
+                margin-top: 5px;
+                max-width: 595px;
+                padding: 48px;
+                flex-grow: 1;
+                flex-shrink: 0;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+            }
+
+        .footer__secondary {
+            border-top: 2px solid #FFFFFF;
+            padding-top: 50px;
+            padding-bottom: 32px;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+            .footer__emblem {
+
+            }
+
+            .footer__menu {
+                flex-grow: 1;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+            }
+                .footer__link {
+                    display: inline-block;
+                    vertical-align: top;
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+            .footer__copyright {
+                margin-top: 61px;
+                width: 100%;
+                font-size: 16px;
+                line-height: 23px;
+            }
+
+

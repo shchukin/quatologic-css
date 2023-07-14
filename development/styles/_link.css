@@ -1,0 +1,35 @@
+.link,
+.wysiwyg a {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    display: inline;
+    vertical-align: baseline;
+    padding: 4px 0 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--action);
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-bottom-color var(--transition-hover);
+}
+
+.link:hover,
+.wysiwyg a:hover {
+    border-bottom-color: currentColor;
+}
+
+.link:active,
+.wysiwyg a:active {
+
+}
+
+
+
+.link--inherit {
+    color: inherit;
+}
