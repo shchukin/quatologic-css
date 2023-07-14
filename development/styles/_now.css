@@ -1,4 +1,4 @@
-.selling {
+.now {
     padding-top: 101px;
     padding-bottom: 155px;
     background-image: url("../vectors/selling-background-desktop.svg");
@@ -7,10 +7,10 @@
     background-position: center bottom -456px;
     text-align: center;
 }
-    .selling__wrap {
+    .now__wrap {
 
     }
-        .selling__heading {
+        .now__heading {
             margin: 0 auto;
             font-family: var(--font-headings);
             font-weight: bold;
@@ -18,11 +18,11 @@
             line-height: 64px;
         }
 
-        .selling__action {
+        .now__action {
             margin-top: 32px;
         }
 
-        .selling__note {
+        .now__note {
             margin-top: 6px;
             font-weight: 500;
             font-size: 20px;
@@ -33,7 +33,7 @@
 
 @media (max-width: 599px) {
 
-    .selling {
+    .now {
         padding-top: 40px;
         padding-bottom: 140px;
         background-image: url("../vectors/selling-background-smartphone.svg");
@@ -42,10 +42,10 @@
         background-position: center bottom -301px;
         /*text-align: center;*/
     }
-        .selling__wrap {
+        .now__wrap {
 
         }
-            .selling__heading {
+            .now__heading {
                 /*margin: 0 auto;*/
                 /*font-family: var(--font-headings);*/
                 /*font-weight: bold;*/
@@ -53,16 +53,16 @@
                 line-height: 43px;
             }
 
-            .selling__action {
+            .now__action {
                 /*margin-top: 32px;*/
             }
-                .selling__action.shadow,
-                .selling__action .shadow,
-                .selling__action .button {
+                .now__action.shadow,
+                .now__action .shadow,
+                .now__action .button {
                     width: 100%;
                 }
 
-            .selling__note {
+            .now__note {
                 /*margin-top: 6px;*/
                 /*font-weight: 500;*/
                 /*font-size: 20px;*/
