@@ -93,3 +93,113 @@
             padding-top: 25px;
             padding-bottom: 25px;
         }
+
+
+
+@media (max-width: 599px) {
+
+    .tariffs {
+        /*--cell-horizontal-padding: 18px;*/
+    }
+
+    .tariffs {
+        /*padding-bottom: 81px;*/
+    }
+        .tariffs__table {
+            /*vertical-align: top;*/
+            /*width: 100%;*/
+            /*border-collapse: collapse;*/
+            /*table-layout: fixed;*/
+            display: block;
+        }
+            .tariffs__section {
+                display: block;
+            }
+                .tariffs__row {
+                    display: block;
+                }
+                    .tariffs__cell {
+                        display: block;
+                        width: auto;
+                        padding: 0;
+                        /*font-weight: bold;*/
+                        /*font-size: 16px;*/
+                        /*line-height: 24px;*/
+                        /*text-align: center;*/
+                    }
+
+                    .tariffs__cell:first-child {
+                        /*text-align: left;*/
+                    }
+
+                    .tariffs__cell--heading {
+                        /*font-weight: normal;*/
+                        /*font-size: 18px;*/
+                    }
+
+                    .tariffs__cell--sub-heading {
+                        /*font-family: var(--font-headings);*/
+                        /*font-weight: bold;*/
+                        /*text-transform: uppercase;*/
+                    }
+
+                    .tariffs__cell--single-line-heading {
+                        /*font-family: var(--font-headings);*/
+                        /*font-weight: bold;*/
+                        /*font-size: 20px;*/
+                        /*text-transform: uppercase;*/
+                    }
+
+                    .tariffs__cell:first-child {
+                        width: auto;
+                    }
+
+                    .tariffs__section--head {
+
+                    }
+
+                    .tariffs__section--body {
+
+                    }
+
+        .tariffs__section--head {
+
+        }
+            .tariffs__section--head .tariffs__cell {
+                /*vertical-align: top;*/
+                margin-top: 0;
+            }
+
+            .tariffs__section--head .tariffs__cell:first-child {
+                margin-top: 0;
+            }
+                .tariffs__heading {
+                    margin-left: 0;
+                    margin-top: 0;
+                    margin-bottom: 27px;
+                    text-align: center;
+                }
+
+
+        .tariffs__section--body {
+            display: none;
+        }
+            .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell {
+                /*background-color: #EBF2FA;*/
+            }
+
+            .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:first-child {
+                /*border-top-left-radius: 5px;*/
+                /*border-bottom-left-radius: 5px;*/
+            }
+
+            .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:last-child {
+                /*border-top-right-radius: 5px;*/
+                /*border-bottom-right-radius: 5px;*/
+            }
+
+            .tariffs__section--body .tariffs__row:nth-child(even) .tariffs__cell {
+                /*padding-top: 25px;*/
+                /*padding-bottom: 25px;*/
+            }
+}

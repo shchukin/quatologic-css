@@ -61,6 +61,7 @@
         background-size: 746px 1128px;
         /*background-repeat: no-repeat;*/
         background-position: calc(50% + 303px) top;
+        margin-bottom: -105px;
     }
         .about__wrap {
             display: block;
