@@ -1,0 +1,9 @@
+.check {
+    background-image: url("../vectors/check.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}

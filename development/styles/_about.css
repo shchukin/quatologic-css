@@ -5,6 +5,7 @@
     background-size: 1198px 1373px;
     background-repeat: no-repeat;
     background-position: calc(50% + 763px) top;
+    margin-bottom: -42px;
 }
     .about__wrap {
         display: flex;

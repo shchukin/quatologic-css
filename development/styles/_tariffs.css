@@ -1,0 +1,95 @@
+.tariffs {
+    --cell-horizontal-padding: 18px;
+}
+
+.tariffs {
+    padding-bottom: 81px;
+}
+    .tariffs__table {
+        vertical-align: top;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+        .tariffs__section {
+
+        }
+            .tariffs__row {
+
+            }
+                .tariffs__cell {
+                    padding: 15px var(--cell-horizontal-padding);
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+
+                .tariffs__cell:first-child {
+                    text-align: left;
+                }
+
+                .tariffs__cell--heading {
+                    font-weight: normal;
+                    font-size: 18px;
+                }
+
+                .tariffs__cell--sub-heading {
+                    font-family: var(--font-headings);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .tariffs__cell--single-line-heading {
+                    font-family: var(--font-headings);
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+
+                .tariffs__cell:first-child {
+                    width: 29.28%;
+                }
+
+                .tariffs__section--head {
+
+                }
+
+                .tariffs__section--body {
+
+                }
+
+    .tariffs__section--head {
+
+    }
+        .tariffs__section--head .tariffs__cell {
+            vertical-align: top;
+        }
+            .tariffs__heading {
+                margin-left: calc(-1 * var(--cell-horizontal-padding));
+                margin-top: -23px;
+                margin-bottom: 0;
+            }
+
+
+    .tariffs__section--body {
+
+    }
+        .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell {
+            background-color: #EBF2FA;
+        }
+
+        .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .tariffs__section--body .tariffs__row:nth-child(odd) .tariffs__cell:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .tariffs__section--body .tariffs__row:nth-child(even) .tariffs__cell {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
