@@ -52,7 +52,7 @@
 @media (max-width: 599px) {
 
     .plan {
-        padding-bottom: 41px;
+        padding-bottom: 57px;
         /*text-align: center;*/
     }
         .plan__heading {
@@ -84,7 +84,7 @@
             }
 
         .plan__trial {
-            margin-top: 20px;
+            margin-top: 4px;
             /*font-weight: 500;*/
             /*font-size: 16px;*/
             /*line-height: 30px;*/

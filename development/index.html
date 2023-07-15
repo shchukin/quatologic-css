@@ -653,7 +653,7 @@
                 </div>
             </div>
         </section>
-        <div class="tariffs container container--wide">
+        <section class="tariffs container container--wide">
             <table class="tariffs__table">
                 <thead class="tariffs__section tariffs__section--head">
                     <tr class="tariffs__row">
@@ -712,7 +712,7 @@
                 </thead>
                 <thead class="tariffs__section tariffs__section--mobile-head" role="presentation" aria-hidden="true">
                     <tr class="tariffs__row">
-                        <th>
+                        <th class="tariffs__cell">
 
                         </th>
                         <th class="tariffs__cell">
@@ -938,16 +938,29 @@
                         </td>
                     </tr>
                     <tr class="tariffs__row">
-                        <td class="tariffs__cell tariffs__cell--single-line-heading" colspan="3">
-                            Competitor analysis, price monitoring
+                        <td class="tariffs__cell tariffs__cell--single-line-heading">
+                            <!-- заворачиваем в tariffs__strut если нужно больше места на десктопах -->
+                            <span class="tariffs__strut">Competitor analysis, price monitoring</span>
+                        </td>
+                        <td class="tariffs__cell">
+
+                        </td>
+                        <td class="tariffs__cell">
+
                         </td>
                         <td class="tariffs__cell check">
                             ✓
                         </td>
                     </tr>
                     <tr class="tariffs__row">
-                        <td class="tariffs__cell tariffs__cell--single-line-heading" colspan="3">
+                        <td class="tariffs__cell tariffs__cell--single-line-heading">
                             Advertising
+                        </td>
+                        <td class="tariffs__cell">
+
+                        </td>
+                        <td class="tariffs__cell">
+
                         </td>
                         <td class="tariffs__cell check">
                             ✓
@@ -955,7 +968,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
         <section class="now">
             <div class="now__wrap container">
                 <h2 class="now__heading">
