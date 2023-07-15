@@ -5,8 +5,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Quotalogic</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts/fonts.css?1689344104">
-        <link rel="stylesheet" href="styles/style.css?1689344104">
+        <link rel="stylesheet" href="fonts/fonts.css?1689410783">
+        <link rel="stylesheet" href="styles/style.css?1689410783">
     </head>
     <body>
 
@@ -33,7 +33,7 @@
                         Sharing products from many suppliers as easy as sharing music tracks from many artists on cloud services. Combine them into ‘playlist', tune it, use it or share with partners.
                     </div>
                     <div class="hero__submit shadow">
-                        <a class="button" href="#demo">Book a demo</a>
+                        <a class="button mfp-handler" href="#demo">Book a demo</a>
                     </div>
                 </div>
             </div>
@@ -152,15 +152,9 @@
                 </h2>
                 <div class="catalog__body">
                     <!-- poster="content/catalog@2x.jpg" -->
-                    <video class="catalog__illustration" width="466" preload="auto" autoplay muted playsinline loop>
+                    <video class="catalog__illustration" width="466" autoplay muted playsinline loop>
                         <source src="content/catalog.webm" type="video/webm">
                         <source src="content/catalog.mp4" type="video/mp4">
-                        <img srcset="content/catalog@2x.jpg 2x"
-                             src="content/catalog.jpg"
-                             width="466"
-                             height="362"
-                             alt=""
-                        >
                     </video>
                     <div class="catalog__description wysiwyg wysiwyg--dense">
                         <p>Combine new sets of products using many suppliers catalogs, price lists, promotions, commercial proposals, – and share them with your partners.</p>
@@ -338,14 +332,14 @@
                 <h2 class="cta__heading title">
                     Form your catalog<br class="desktop-only"> and start selling right&nbsp;now
                 </h2>
-                <a class="cta__submit button button--inverted" href="#demo">
+                <a class="cta__submit button button--inverted mfp-handler" href="#demo">
                     Book a demo
                 </a>
                 <div class="cta__note">
                     start for free
                 </div>
                 <div class="cta__preview">
-                    <a class="cta__thumb" href="#"><!-- может быть некликабельным дивом -->
+                    <div class="cta__thumb"><!-- может быть некликабельным дивом -->
                         <img class="cta__screenshot"
                              srcset="temp/cta-screenshot-secondary-a@2x.jpg 2x"
                              src="temp/cta-screenshot-secondary-a.jpg"
@@ -353,8 +347,8 @@
                              height="356"
                              alt=""
                         >
-                    </a>
-                    <a class="cta__thumb cta__thumb--primary" href="#"><!-- может быть некликабельным дивом -->
+                    </div>
+                    <div class="cta__thumb cta__thumb--primary"><!-- может быть некликабельным дивом -->
                         <img class="cta__screenshot"
                              srcset="temp/cta-screenshot-primary@2x.jpg 2x"
                              src="temp/cta-screenshot-primary.jpg"
@@ -362,8 +356,8 @@
                              height="428"
                              alt=""
                         >
-                    </a>
-                    <a class="cta__thumb" href="#"><!-- может быть некликабельным дивом -->
+                    </div>
+                    <div class="cta__thumb"><!-- может быть некликабельным дивом -->
                         <img class="cta__screenshot"
                              srcset="temp/cta-screenshot-secondary-b@2x.jpg 2x"
                              src="temp/cta-screenshot-secondary-b.jpg"
@@ -371,7 +365,7 @@
                              height="356"
                              alt=""
                         >
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -568,15 +562,9 @@
                         <p>Dealers can further override and extend these characteristics before resharing with partners.</p>
                         <p>This way, the product core stays consistent while each seller in a chain sees an unique product version.</p>
                     </div>
-                    <video class="basics__omnichanelling-video" preload="auto" autoplay muted playsinline loop>
+                    <video class="basics__omnichanelling-video" autoplay muted playsinline loop>
                         <source src="content/basics-omnichanelling.webm" type="video/webm">
                         <source src="content/basics-omnichanelling.mp4" type="video/mp4">
-                        <img srcset="content/catalog@2x.jpg 2x"
-                             src="content/catalog.jpg"
-                             width="532"
-                             height=""
-                             alt=""
-                        >
                     </video>
                 </div>
                 <div class="basics__tile basics__tile--dealer-network">
@@ -653,7 +641,7 @@
                 </div>
             </div>
         </section>
-        <div class="tariffs container container--wide">
+        <section class="tariffs container container--wide">
             <table class="tariffs__table">
                 <thead class="tariffs__section tariffs__section--head">
                     <tr class="tariffs__row">
@@ -712,7 +700,7 @@
                 </thead>
                 <thead class="tariffs__section tariffs__section--mobile-head" role="presentation" aria-hidden="true">
                     <tr class="tariffs__row">
-                        <th>
+                        <th class="tariffs__cell">
 
                         </th>
                         <th class="tariffs__cell">
@@ -938,16 +926,29 @@
                         </td>
                     </tr>
                     <tr class="tariffs__row">
-                        <td class="tariffs__cell tariffs__cell--single-line-heading" colspan="3">
-                            Competitor analysis, price monitoring
+                        <td class="tariffs__cell tariffs__cell--single-line-heading">
+                            <!-- заворачиваем в tariffs__strut если нужно больше места на десктопах -->
+                            <span class="tariffs__strut">Competitor analysis, price monitoring</span>
+                        </td>
+                        <td class="tariffs__cell">
+
+                        </td>
+                        <td class="tariffs__cell">
+
                         </td>
                         <td class="tariffs__cell check">
                             ✓
                         </td>
                     </tr>
                     <tr class="tariffs__row">
-                        <td class="tariffs__cell tariffs__cell--single-line-heading" colspan="3">
+                        <td class="tariffs__cell tariffs__cell--single-line-heading">
                             Advertising
+                        </td>
+                        <td class="tariffs__cell">
+
+                        </td>
+                        <td class="tariffs__cell">
+
                         </td>
                         <td class="tariffs__cell check">
                             ✓
@@ -955,14 +956,14 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
         <section class="now">
             <div class="now__wrap container">
                 <h2 class="now__heading">
                     Form your catalog<br class="desktop-only"> and start selling right&nbsp;now
                 </h2>
                 <div class="now__action shadow">
-                    <a class="button button--alternate" href="#demo">
+                    <a class="button button--alternate mfp-handler" href="#demo">
                         Book a demo
                     </a>
                 </div>
@@ -1009,9 +1010,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer__feedbacks">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem doloribus enim eos? Amet beatae, consectetur cupiditate dolores eaque eligendi eos eveniet incidunt ipsum magni modi nemo obcaecati officiis omnis, provident quas quia rerum saepe sed similique sint sit temporibus velit. A accusamus ad animi blanditiis consectetur culpa, cum debitis distinctio eligendi enim, est inventore ip
-                    </div>
+                    <form class="footer__feedbacks contact">
+                        <b class="contact__heading">
+                            Contact us
+                        </b>
+                        <div class="contact__fieldset">
+                            <div class="contact__field input">
+                                <input class="input__widget" type="text" placeholder="Email address">
+                            </div>
+                            <div class="contact__field input input--area">
+                                <textarea class="input__widget" placeholder="Message" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact__footer">
+                            <button class="contact__submit button button--submit" type="submit">Send message</button>
+                            <div class="contact__note">We will not use your contacts to pass them on to third parties. Only to reply to&nbsp;you.</div>
+                        </div>
+                    </form>
                 </div>
                 <div class="footer__secondary">
                     <div class="footer__emblem logo logo--inverted">
@@ -1019,12 +1034,12 @@
                     </div>
                     <div class="footer__menu">
                         <div class="footer__link">
-                            <a class="button-alike-link" href="#">
+                            <a class="button-alike-link mfp-handler" href="#privacy-policy">
                                 <span class="button-alike-link__inline">Privacy Policy</span>
                             </a>
                         </div>
                         <div class="footer__link">
-                            <a class="footer__link button-alike-link" href="#">
+                            <a class="button-alike-link mfp-handler" href="#terms-of-use">
                                 <span class="button-alike-link__inline">Terms of Use</span>
                             </a>
                         </div>
@@ -1036,11 +1051,102 @@
             </div>
         </footer>
 
+        <div class="window mfp-hide" id="demo">
+            <button class="window__close mfp-close" type="button">
+                Close
+            </button>
+            <div class="window__body">
+                <form class="contact contact--in-modal">
+                    <b class="contact__heading">
+                        Contact us
+                    </b>
+                    <div class="contact__fieldset">
+                        <div class="contact__field input">
+                            <input class="input__widget" type="text" placeholder="Email address">
+                        </div>
+                        <div class="contact__field input input--area">
+                            <textarea class="input__widget" placeholder="Message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="contact__footer">
+                        <button class="contact__submit button button--submit" type="submit">Send message</button>
+                        <div class="contact__note">We will not use your contacts to pass them on to third parties. Only to reply to&nbsp;you.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="window mfp-hide" id="privacy-policy">
+            <button class="window__close mfp-close" type="button">
+                Close
+            </button>
+            <div class="window__body">
+                <article class="article">
+                    <h2 class="article__heading">
+                        Privacy Policy
+                    </h2>
+                    <div class="article__content wysiwyg wysiwyg--smaller">
+                        <p>Updated March 3rd, 2020.<br> A Starting Point LLC (“A Starting Point”) respects the sensitive nature of any personal information you provide to us. We have created this Privacy Policy in order to demonstrate our commitment to the privacy of those who visit our website https://www.astartingpoint.com/ (the “Site”). This Privacy Policy describes our online information collection, storage and disclosure practices and the choices you have regarding how your personal information is collected and used by us and our service providers. By accessing and using the Site, you consent to the collection, use and disclosure of information through the Site as described in this Privacy Policy.
+                        <p>Residents of the European Economic Area (“EEA”), which includes the member states of the European Union (“EU”), should consult the sections of this policy relating to the “Rights of EEA Residents” and “International Data Transfers” for provisions that may apply to them.
+                        <p>California residents should consult the section titled “Your California Privacy Rights” for rights that apply to them.
+                        <p>We reserve the right to change this Privacy Policy at any time. In the event we make changes to this Privacy Policy, such policy will be re-posted in the “Privacy” section of our Site with the date such modifications were made indicated on the top of the page or we may contact you to inform you about the revisions with a link to the revised Privacy Policy. All changes are effective on the date listed at the top of this page and will apply to all information that we have about you. Your continued use of the Site or the services that we provide (“Services”) after any change is posted indicates your acceptance of the changes and your continued consent to our processing of your personal data. If at any point you do not agree to any portion of this Privacy Policy then in effect you should immediately stop using the Site and the Services. Because this Privacy Policy contains legal obligations we encourage you to review this Privacy Policy carefully. If you have any questions concerning this Privacy Policy or our information collection, storage and disclosure practices, please contact us at info@astartingpoint.com or mail us at A Starting Point, 1626 Wilcox Avenue, Suite 104, Los Angeles, California 90028-6206.
+                        <p>Personal Information That We Collect and How We Use It
+                        <p>A Starting Point collects personal data about you when you visit the Site. “Personal Information” is information that may be used to directly or indirectly identify you, including your name, email address, physical address, phone number or other information about you. The majority of such Personal Information is collected when you register with the Site, use our Services, subscribe to updates, sign up for our mailing list or otherwise provide us with your contact information. Some of this Personal Information will be required if you wish to partake in the Services that we provide.
+                        <p>In general, the type of Personal Information we collect includes, but is not limited to:
+                        <p>Personal Information to contact you to promote our Services or alert you to features or matters of interest;
+                        <p>Personal Information necessary to use the Services that you have requested, including establishing an account;
+                        <p>Un-identifiable and aggregated Personal Information pertaining to your Site visits that help us maintain the appropriate features, functionality and user experience
+                        <p>We and our service providers use that data to: (i) enable you to log in to the Site; (ii) enable you to contact your government representatives; (iii) guard against potential fraud; (iv) contact you if there is a problem with your account; (v) provide answers to your inquiries or questions; and (vi) maintain regular communication with you as may be necessary to inform you of offers, updates and other information regarding A Starting Point and its Services.
+                        <h3>Social Networks</h3>
+                        <p>If you choose to connect to our Site through a third-party social network such as Facebook, Twitter, Instagram and other networks (each, a “Social Network”), we may collect Personal Information from your profile on such Social Network, such as your name, user name, and email address. In addition, our Site offers features that will allow you to share information from our Site to a Social Network or share information from our Social Network sites. If you decide to use such features, they may allow the sharing and collection of information both to and from such Social Network so you should check the privacy policy of each Social Network before using such features.
+                        <p>Non-Identifiable Data and Aggregated Personal Information
+                        <p>Regardless of whether you register for an account or submit information to us, A Starting Point and third parties performing services for us may send one or more "cookies" to your computer. Cookies are small text files placed on your web browser when you visit our Site that store information on your computer, such as your Site preferences. We use cookies when you sign in to keep track of your personal session. We also use cookies to track your activity on the Site as a unique person. For security purposes, all of this information is stored in encrypted form. This data may be used to display information about our Services on websites operated by third parties.
+                        <p>You can set your web browser to inform you when cookies are set, or to prevent cookies from being set altogether. Please note, however, that if you decline to use cookies, you may experience reduced functionality and slower site response times.
+                        <p>A Starting Point or our service providers, including Google Analytics, may also collect web surfing data related to your use of the Site. Such information may include: your Internet Protocol (IP) address, browser type, and internet service provider (ISP); your operating system; which of our web pages you access and how frequently you access them; referral or exit pages; click stream data; and the dates and times that you visit the Site. This data may be collected using cookies, web beacons, page tags or similar tools. As with cookies, the web surfing information is anonymous, "click stream" transactional data that is not associated with any users as individuals.
+                        <p>Web surfing data and similar information may be aggregated for administrative purposes. A Starting Point may, for example, use this aggregated information in the administration of the Site to improve its usability and to evaluate the success of particular marketing and advertising campaigns, search engine optimization strategies, and other marketing activities. We also use it to help optimize the Site based on the needs of our users.
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="window mfp-hide" id="terms-of-use">
+            <button class="window__close mfp-close" type="button">
+                Close
+            </button>
+            <div class="window__body">
+                <article class="article">
+                    <h2 class="article__heading">
+                        Terms of Use
+                    </h2>
+                    <div class="article__content wysiwyg wysiwyg--smaller">
+                        <p>Updated March 3rd, 2020.<br> A Starting Point LLC (“A Starting Point”) respects the sensitive nature of any personal information you provide to us. We have created this Privacy Policy in order to demonstrate our commitment to the privacy of those who visit our website https://www.astartingpoint.com/ (the “Site”). This Privacy Policy describes our online information collection, storage and disclosure practices and the choices you have regarding how your personal information is collected and used by us and our service providers. By accessing and using the Site, you consent to the collection, use and disclosure of information through the Site as described in this Privacy Policy.
+                        <p>Residents of the European Economic Area (“EEA”), which includes the member states of the European Union (“EU”), should consult the sections of this policy relating to the “Rights of EEA Residents” and “International Data Transfers” for provisions that may apply to them.
+                        <p>California residents should consult the section titled “Your California Privacy Rights” for rights that apply to them.
+                        <p>We reserve the right to change this Privacy Policy at any time. In the event we make changes to this Privacy Policy, such policy will be re-posted in the “Privacy” section of our Site with the date such modifications were made indicated on the top of the page or we may contact you to inform you about the revisions with a link to the revised Privacy Policy. All changes are effective on the date listed at the top of this page and will apply to all information that we have about you. Your continued use of the Site or the services that we provide (“Services”) after any change is posted indicates your acceptance of the changes and your continued consent to our processing of your personal data. If at any point you do not agree to any portion of this Privacy Policy then in effect you should immediately stop using the Site and the Services. Because this Privacy Policy contains legal obligations we encourage you to review this Privacy Policy carefully. If you have any questions concerning this Privacy Policy or our information collection, storage and disclosure practices, please contact us at info@astartingpoint.com or mail us at A Starting Point, 1626 Wilcox Avenue, Suite 104, Los Angeles, California 90028-6206.
+                        <p>Personal Information That We Collect and How We Use It
+                        <p>A Starting Point collects personal data about you when you visit the Site. “Personal Information” is information that may be used to directly or indirectly identify you, including your name, email address, physical address, phone number or other information about you. The majority of such Personal Information is collected when you register with the Site, use our Services, subscribe to updates, sign up for our mailing list or otherwise provide us with your contact information. Some of this Personal Information will be required if you wish to partake in the Services that we provide.
+                        <p>In general, the type of Personal Information we collect includes, but is not limited to:
+                        <p>Personal Information to contact you to promote our Services or alert you to features or matters of interest;
+                        <p>Personal Information necessary to use the Services that you have requested, including establishing an account;
+                        <p>Un-identifiable and aggregated Personal Information pertaining to your Site visits that help us maintain the appropriate features, functionality and user experience
+                        <p>We and our service providers use that data to: (i) enable you to log in to the Site; (ii) enable you to contact your government representatives; (iii) guard against potential fraud; (iv) contact you if there is a problem with your account; (v) provide answers to your inquiries or questions; and (vi) maintain regular communication with you as may be necessary to inform you of offers, updates and other information regarding A Starting Point and its Services.
+                        <h3>Social Networks</h3>
+                        <p>If you choose to connect to our Site through a third-party social network such as Facebook, Twitter, Instagram and other networks (each, a “Social Network”), we may collect Personal Information from your profile on such Social Network, such as your name, user name, and email address. In addition, our Site offers features that will allow you to share information from our Site to a Social Network or share information from our Social Network sites. If you decide to use such features, they may allow the sharing and collection of information both to and from such Social Network so you should check the privacy policy of each Social Network before using such features.
+                        <p>Non-Identifiable Data and Aggregated Personal Information
+                        <p>Regardless of whether you register for an account or submit information to us, A Starting Point and third parties performing services for us may send one or more "cookies" to your computer. Cookies are small text files placed on your web browser when you visit our Site that store information on your computer, such as your Site preferences. We use cookies when you sign in to keep track of your personal session. We also use cookies to track your activity on the Site as a unique person. For security purposes, all of this information is stored in encrypted form. This data may be used to display information about our Services on websites operated by third parties.
+                        <p>You can set your web browser to inform you when cookies are set, or to prevent cookies from being set altogether. Please note, however, that if you decline to use cookies, you may experience reduced functionality and slower site response times.
+                        <p>A Starting Point or our service providers, including Google Analytics, may also collect web surfing data related to your use of the Site. Such information may include: your Internet Protocol (IP) address, browser type, and internet service provider (ISP); your operating system; which of our web pages you access and how frequently you access them; referral or exit pages; click stream data; and the dates and times that you visit the Site. This data may be collected using cookies, web beacons, page tags or similar tools. As with cookies, the web surfing information is anonymous, "click stream" transactional data that is not associated with any users as individuals.
+                        <p>Web surfing data and similar information may be aggregated for administrative purposes. A Starting Point may, for example, use this aggregated information in the administration of the Site to improve its usability and to evaluate the success of particular marketing and advertising campaigns, search engine optimization strategies, and other marketing activities. We also use it to help optimize the Site based on the needs of our users.
+                    </div>
+                </article>
+            </div>
+        </div>
 
         <!-- Outline.js -->
         <script src="vendors/jquery/jquery-3.7.0.min.js"></script>
+        <script src="vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
-        <script src="scripts/_benefits.js?1689344104"></script>
+        <script src="scripts/scripts.js?1689410783"></script>
 
     </body>
 </html>

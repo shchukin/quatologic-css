@@ -1,5 +1,16 @@
 (function($) {
 
+    /* Magnific popup */
+
+    $('.mfp-handler').magnificPopup({
+        type: 'inline',
+        removalDelay: 200,
+        showCloseBtn: false
+    });
+
+
+    /* Benefits tabs */
+
     $('.benefits__tag').on('click', function () {
         const $this = $(this);
         if ( ! $this.hasClass('benefits__tag--current') ) {
