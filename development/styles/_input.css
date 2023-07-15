@@ -34,6 +34,6 @@
     .input--area .input__widget {
         vertical-align: top;
         height: auto; /* user rows="" attribute */
-        min-height: 40px; /* one row */
+        min-height: 52px; /* one row */
         resize: vertical;
     }
