@@ -54,27 +54,6 @@
                             }
                         }
 
-                @media (max-width: 359px) {
-                    .footer__contacts {
-                        display: block;
-                    }
-                        .footer__channel {
-                            margin-top: 30px;
-                        }
-
-                        .footer__channel:first-child {
-                            margin-top: 0;
-                        }
-
-                            .footer__param {
-
-                            }
-
-                            .footer__value {
-                                margin-top: 0;
-                            }
-                }
-
             .footer__feedbacks {
                 margin-top: 37px;
                 max-width: 595px;
@@ -173,6 +152,14 @@
                         justify-content: space-between;
                         gap: 10px;
                     }
+
+                    @media (min-width: 450px) {
+                        .footer__contacts {
+                            justify-content: flex-start;
+                            gap: 50px;
+                        }
+                    }
+
                         .footer__channel {
 
                         }
@@ -186,6 +173,28 @@
                             .footer__value {
                                 margin-top: 0;
                             }
+
+
+                    @media (max-width: 359px) {
+                        .footer__contacts {
+                            display: block;
+                        }
+                            .footer__channel {
+                                margin-top: 20px;
+                            }
+
+                            .footer__channel:first-child {
+                                margin-top: 0;
+                            }
+                                .footer__param {
+
+                                }
+
+                        .footer__value {
+                            margin-top: 0;
+                        }
+                    }
+
 
                 .footer__feedbacks {
                     /*margin-top: 5px;*/
