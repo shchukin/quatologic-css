@@ -3,8 +3,8 @@
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    background: linear-gradient(47.41deg, rgba(250, 208, 61, 0.53) 0%, rgba(255, 227, 107, 0) 73.95%), #FFFFFF;
-    border-radius: 16px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
 }
     .window__back {
         position: absolute;
