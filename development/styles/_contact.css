@@ -1,0 +1,98 @@
+.contact {
+    padding: 25px;
+    background-color: #61ACD4;
+    border-radius: 10px;
+}
+    .contact__heading {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--font-headings);
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contact__fieldset {
+        margin-top: 16px;
+    }
+        .contact__field {
+            margin-top: 14px;
+        }
+
+        .contact__field:first-child {
+            margin-top: 0;
+        }
+
+    .contact__footer {
+        margin-top: 27px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+        .contact__submit {
+
+        }
+
+        .contact__note {
+            margin-top: 1px;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0;
+        }
+
+
+
+@media (max-width: 599px) {
+
+    .contact {
+        /*padding: 25px;*/
+        /*background-color: #61ACD4;*/
+        /*border-radius: 10px;*/
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+        .contact__heading {
+            /*display: block;*/
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-family: var(--font-headings);*/
+            /*font-weight: bold;*/
+            /*font-size: 24px;*/
+            /*line-height: 32px;*/
+        }
+
+        .contact__fieldset {
+            /*margin-top: 16px;*/
+        }
+            .contact__field {
+                /*margin-top: 14px;*/
+            }
+
+            .contact__field:first-child {
+                /*margin-top: 0;*/
+            }
+
+        .contact__footer {
+            /*margin-top: 27px;*/
+            display: block;
+            /*align-items: flex-start;*/
+            /*gap: 20px;*/
+        }
+            .contact__submit {
+
+            }
+                .contact__submit.button,
+                .contact__submit .button {
+                    width: 100%;
+                }
+
+            .contact__note {
+                margin-top: 15px;
+                display: block;
+                text-align: center;
+                /*font-size: 16px;*/
+                /*line-height: 23px;*/
+                /*letter-spacing: 0;*/
+            }
+}

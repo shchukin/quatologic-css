@@ -1,0 +1,36 @@
+.input {
+
+}
+    .input__widget {
+        width: 100%;
+        height: 52px;
+        vertical-align: top;
+        padding: 16px 24px;
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 15px; /* reset iOS default border-radius */
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .input__widget::-webkit-input-placeholder { font-style: normal; color: #999999; }
+    .input__widget::-moz-placeholder          { font-style: normal; color: #999999; opacity: 1; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; color: #999999; }
+    /* stylelint-enable */
+
+
+.input--area {
+
+}
+    .input--area .input__widget {
+        vertical-align: top;
+        height: auto; /* user rows="" attribute */
+        min-height: 40px; /* one row */
+        resize: vertical;
+    }

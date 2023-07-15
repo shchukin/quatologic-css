@@ -40,8 +40,8 @@
                         .footer__param {
                             font-family: var(--font-headings);
                             font-weight: bold;
-                            font-size: 24px;
-                            line-height: 32px;
+                            font-size: 32px;
+                            line-height: 43px;
                         }
 
                         .footer__value {
@@ -55,13 +55,10 @@
                         }
 
             .footer__feedbacks {
-                margin-top: 37px;
+                margin-top: 6px;
                 max-width: 595px;
-                padding: 48px;
                 flex-grow: 1;
                 flex-shrink: 0;
-                background-color: rgba(255, 255, 255, 0.1);
-                border-radius: 10px;
             }
 
         .footer__secondary {
@@ -166,8 +163,8 @@
                             .footer__param {
                                 /*font-family: var(--font-headings);*/
                                 /*font-weight: bold;*/
-                                /*font-size: 32px;*/
-                                /*line-height: 43px;*/
+                                font-size: 24px;
+                                line-height: 32px;
                             }
 
                             .footer__value {
@@ -197,7 +194,7 @@
 
 
                 .footer__feedbacks {
-                    /*margin-top: 5px;*/
+                    margin-top: 37px;
                     /*max-width: 595px;*/
                     padding: 22px;
                     /*flex-grow: 1;*/
