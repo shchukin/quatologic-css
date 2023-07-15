@@ -17,7 +17,56 @@
         right: 32px !important; /* when used with .mfp-close */
         top: 32px !important;   /* when used with .mfp-close */
         opacity: 1 !important;  /* when used with .mfp-close */
+        width: 44px;
+        height: 44px;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden !important;
     }
+
+    .window__close:active {
+        transform: translateY(1px);
+    }
+
+        /* hover */
+        .window__close::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            background-color: #61ACD4;
+            opacity: 0;
+            border-radius: 50%;
+            transition: opacity var(--transition-hover);
+        }
+
+        .window__close:hover::before {
+            opacity: 0.2;
+        }
+
+        /* cross */
+        .window__close::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            margin: auto;
+            width: 36px;
+            height: 36px;
+            background-image: url("../vectors/window-close.svg") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
 
     .window__body {
 
