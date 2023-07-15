@@ -23,6 +23,8 @@
         --container-padding: 30px;
         --base-font-size: 16px;
         --base-line-height: 23px;
+        --small-font-size: 14px;
+        --small-line-height: 18px;
     }
 }
 
