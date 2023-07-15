@@ -57,6 +57,9 @@
             .footer__feedbacks {
                 margin-top: 6px;
                 max-width: 595px;
+                padding: 20px;
+                background-color: #50A3CF;
+                border-radius: 10px;
                 flex-grow: 1;
                 flex-shrink: 0;
             }
@@ -196,7 +199,8 @@
                 .footer__feedbacks {
                     margin-top: 37px;
                     /*max-width: 595px;*/
-                    padding: 22px;
+                    border-radius: 10px;
+                    padding: var(--container-padding);
                     /*flex-grow: 1;*/
                     /*flex-shrink: 0;*/
                     /*background-color: rgba(255, 255, 255, 0.1);*/

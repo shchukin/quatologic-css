@@ -1,7 +1,5 @@
 .contact {
-    padding: 25px;
-    background-color: #61ACD4;
-    border-radius: 10px;
+
 }
     .contact__heading {
         display: block;
@@ -46,8 +44,7 @@
 @media (max-width: 599px) {
 
     .contact {
-        padding-left: var(--container-padding);
-        padding-right: var(--container-padding);
+
     }
         .contact__heading {
 
@@ -80,4 +77,34 @@
                 display: block;
                 text-align: center;
             }
+}
+
+
+.contact--in-modal {
+    width: 100%;
+    max-width: 635px;
+    padding: var(--container-padding);
+}
+    .contact--in-modal .contact__heading {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .contact--in-modal .contact__fieldset {
+        margin-top: 28px;
+    }
+        .contact--in-modal .input__widget {
+            box-shadow: 0 0 0 1px var(--background-accent);
+        }
+        .contact--in-modal .input__widget:focus {
+            box-shadow: 0 0 0 2px var(--background-accent);
+        }
+
+
+@media (max-width: 599px) {
+
+    .contact--in-modal {
+        padding-top: 38px;
+    }
+
 }

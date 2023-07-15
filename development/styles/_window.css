@@ -14,8 +14,8 @@
 
     .window__close {
         position: absolute;
-        right: 32px !important; /* when used with .mfp-close */
-        top: 32px !important;   /* when used with .mfp-close */
+        right: calc(var(--container-padding) - 8px) !important; /* when used with .mfp-close */
+        top: calc(var(--container-padding) - 8px) !important;   /* when used with .mfp-close */
         opacity: 1 !important;  /* when used with .mfp-close */
         width: 44px;
         height: 44px;

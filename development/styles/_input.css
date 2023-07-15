@@ -17,6 +17,9 @@
         color: #000000;
     }
 
+    .input__widget:focus {
+        box-shadow: 0 0 0 2px var(--background-accent);
+    }
 
     /* stylelint-disable block-opening-brace-space-before */
     .input__widget::-webkit-input-placeholder { font-style: normal; color: #999999; }
