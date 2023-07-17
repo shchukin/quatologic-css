@@ -21,4 +21,39 @@
         }
     });
 
+
+    /* Fade in animations */
+
+    var $animation = [];
+    var windowHeight = $(window).outerHeight();
+    var startOffset = 250;
+
+    $('.animation').each(function () {
+        $animation.push({
+            element: $(this),
+            scroll: $(this).offset().top - windowHeight
+        })
+    });
+
+    console.log($animation);
+
+    $('.animation').addClass('animation--ready');
+
+    var scrolled = 0;
+
+    function scrollingAnimation() {
+        scrolled = $(window).scrollTop()
+        $animation.map(function (item, i) {
+
+            console.log(i, scrolled, item.scroll)
+
+            if(scrolled > item.scroll + startOffset) {
+                item.element.addClass('animation--completed');
+            }
+        })
+    }
+
+    $(window).on('scroll', scrollingAnimation);
+
+
 })(jQuery);

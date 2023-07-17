@@ -1,0 +1,18 @@
+.animation {
+
+}
+
+.animation--fade {
+
+}
+    .animation--fade.animation--ready {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    .animation--fade.animation--completed {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 1s ease,
+                    transform 1s ease;
+    }
