@@ -24,35 +24,43 @@
 
     /* Fade in animations */
 
-    var $animation = [];
-    var windowHeight = $(window).outerHeight();
+    /* init и re-init */
+    var animations = [];
     var startOffset = 250;
 
-    $('.animation').each(function () {
-        $animation.push({
-            element: $(this),
-            scroll: $(this).offset().top - windowHeight
-        })
-    });
+    function initAnimationsGeometry() {
+        animations.length = 0;
+        $('.animation:not(.animation--completed)').each(function () {
+            animations.push({
+                element: $(this),
+                scroll: $(this).offset().top - $(window).outerHeight()
+            })
+        });
+    }
 
-    console.log($animation);
+    $(document).ready(initAnimationsGeometry);
+    $(window).on('resize', initAnimationsGeometry);
 
-    $('.animation').addClass('animation--ready');
+
+    /* run */
+
+    $('.animation').addClass('animation--ready'); /* Запускаем это всё только есть JS отработал */
 
     var scrolled = 0;
 
     function scrollingAnimation() {
-        scrolled = $(window).scrollTop()
-        $animation.map(function (item, i) {
-
-            console.log(i, scrolled, item.scroll)
-
-            if(scrolled > item.scroll + startOffset) {
-                item.element.addClass('animation--completed');
-            }
-        })
+        if (animations.length) { /* если ещё остались непоказанные элементы */
+            scrolled = $(window).scrollTop()
+            animations.map(function (item, i) {
+                if (scrolled > item.scroll + startOffset) {
+                    item.element.addClass('animation--completed');
+                    animations.splice(i, 1); /* Удаляем за ненадобностью */
+                }
+            })
+        }
     }
 
+    $(document).ready(scrollingAnimation);
     $(window).on('scroll', scrollingAnimation);
 
 
