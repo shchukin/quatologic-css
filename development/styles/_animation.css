@@ -13,8 +13,10 @@
     .animation--fade.animation--completed {
         opacity: 1;
         transform: translateY(0);
+        /* stylelint-disable */
         transition: opacity 1400ms ease,
                     transform 1400ms var(--ease-out-quint);
+        /* stylelint-enable */
     }
 
 
@@ -29,9 +31,11 @@
 
     .animation--slide.animation--completed {
         opacity: 1;
+        /* stylelint-disable */
         transform: translateY(0);
         transition: opacity 1200ms ease,
                     transform 1200ms var(--ease-out-quint);
+        /* stylelint-enable */
     }
 
 

@@ -21,4 +21,47 @@
         }
     });
 
+
+    /* Fade in animations */
+
+    /* init и re-init */
+    var animations = [];
+    var startOffset = 250;
+
+    function initAnimationsGeometry() {
+        animations.length = 0;
+        $('.animation:not(.animation--completed)').each(function () {
+            animations.push({
+                element: $(this),
+                scroll: $(this).offset().top - $(window).outerHeight()
+            })
+        });
+    }
+
+    $(document).ready(initAnimationsGeometry);
+    $(window).on('resize', initAnimationsGeometry);
+
+
+    /* run */
+
+    $('.animation').addClass('animation--ready'); /* Запускаем это всё только есть JS отработал */
+
+    var scrolled = 0;
+
+    function scrollingAnimation() {
+        if (animations.length) { /* если ещё остались непоказанные элементы */
+            scrolled = $(window).scrollTop()
+            animations.map(function (item, i) {
+                if (scrolled > item.scroll + startOffset) {
+                    item.element.addClass('animation--completed');
+                    animations.splice(i, 1); /* Удаляем за ненадобностью */
+                }
+            })
+        }
+    }
+
+    $(document).ready(scrollingAnimation);
+    $(window).on('scroll', scrollingAnimation);
+
+
 })(jQuery);
