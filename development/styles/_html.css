@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     min-width: 1240px;
     overflow-y: scroll;
 }
