@@ -64,4 +64,10 @@
     $(window).on('scroll', scrollingAnimation);
 
 
+    /* Contacts */
+
+    $('.contact__submit').on('click', function (event) {
+        event.preventDefault();
+    });
+
 })(jQuery);
