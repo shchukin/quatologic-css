@@ -71,7 +71,7 @@
 }
 
 @media (max-width: 599px) {
-    .header__contacts-handler:first-letter {
+    .header__contacts-handler::first-letter {
         text-transform: uppercase;
     }
         .header__book-string {
