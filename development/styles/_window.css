@@ -83,6 +83,7 @@
         }
 
         .window__close {
-            right: 24px !important;
+            right: 24px;
+            top: 24px;
         }
 }
