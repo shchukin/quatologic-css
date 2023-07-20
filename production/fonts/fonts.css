@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Jost";
-	src: url("jost-regular.woff");
+	src: url("jost-regular.woff2") format("woff2"),
+	     url("jost-regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
 	font-family: "Jost";
-	src: url("jost-medium.woff");
+	src: url("jost-medium.woff2") format("woff2"),
+		 url("jost-medium.woff") format("woff");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -16,7 +18,8 @@
 
 @font-face {
 	font-family: "Jost";
-	src: url("jost-bold.woff");
+	src: url("jost-bold.woff2") format("woff2"),
+		 url("jost-bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -24,7 +27,8 @@
 
 @font-face {
 	font-family: "Evolventa";
-	src: url("evolventa-bold.woff");
+	src: url("evolventa-bold.woff2") format("woff2"),
+	     url("evolventa-bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
