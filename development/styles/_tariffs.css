@@ -19,6 +19,7 @@
             }
                 .tariffs__cell {
                     padding: 15px var(--cell-horizontal-padding);
+                    font-family: var(--font-headings);
                     font-weight: bold;
                     font-size: 16px;
                     line-height: 24px;
@@ -26,6 +27,7 @@
                 }
 
                 .tariffs__cell:first-child {
+                    font-family: var(--font-text);
                     text-align: left;
                 }
 
@@ -34,13 +36,15 @@
                     font-size: 18px;
                 }
 
-                .tariffs__cell--sub-heading {
+                .tariffs__cell--sub-heading,
+                .tariffs__cell--sub-heading:first-child {
                     font-family: var(--font-headings);
                     font-weight: bold;
                     text-transform: uppercase;
                 }
 
-                .tariffs__cell--single-line-heading {
+                .tariffs__cell--single-line-heading,
+                .tariffs__cell--single-line-heading:first-child {
                     font-family: var(--font-headings);
                     font-weight: bold;
                     font-size: 20px;
