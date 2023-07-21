@@ -3,7 +3,8 @@
     font-family: "Jost";
     font-weight: normal;
     font-style: normal;
-    src: url("jost-v14-latin-regular.woff2") format("woff2"),
+    src: local("Jost Regular"),
+         url("jost-v14-latin-regular.woff2") format("woff2"),
          url("jost-v14-latin-regular.ttf") format("truetype");
 }
 
@@ -12,7 +13,8 @@
     font-family: "Jost";
     font-weight: 500;
     font-style: normal;
-    src: url("jost-v14-latin-500.woff2") format("woff2"),
+    src: local("Jost Medium"),
+         url("jost-v14-latin-500.woff2") format("woff2"),
          url("jost-v14-latin-500.ttf") format("truetype");
 }
 
@@ -21,7 +23,8 @@
     font-family: "Jost";
     font-weight: bold;
     font-style: normal;
-    src: url("jost-v14-latin-700.woff2") format("woff2"),
+    src: local("Jost Bold"),
+         url("jost-v14-latin-700.woff2") format("woff2"),
          url("jost-v14-latin-700.ttf") format("truetype");
 }
 
@@ -29,7 +32,8 @@
 @font-face {
     font-display: swap;
     font-family: "Evolventa";
-	src: url("evolventa-bold.woff2") format("woff2"),
+	src: local("Evolventa Bold"),
+         url("evolventa-bold.woff2") format("woff2"),
 	     url("evolventa-bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
