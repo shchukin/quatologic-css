@@ -77,7 +77,6 @@
             animations.map(function (item, i) {
                 if (scrolled > item.scroll + startOffset) {
                     item.element.addClass('animation--completed');
-                    animations.splice(i, 1); /* Удаляем за ненадобностью */
                 }
             })
         }
@@ -85,6 +84,7 @@
 
     $(document).ready(scrollingAnimation);
     $(window).on('scroll', scrollingAnimation);
+
 
 
     /* Init magnific popup */
