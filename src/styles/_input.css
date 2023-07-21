@@ -21,6 +21,10 @@
         box-shadow: 0 0 0 2px var(--background-accent);
     }
 
+    .input__widget:disabled {
+        opacity: 0.5;
+    }
+
     /* stylelint-disable block-opening-brace-space-before */
     .input__widget::-webkit-input-placeholder { font-style: normal; color: #999999; }
     .input__widget::-moz-placeholder          { font-style: normal; color: #999999; opacity: 1; }
