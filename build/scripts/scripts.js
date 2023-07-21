@@ -102,14 +102,17 @@
         event.preventDefault();
         const $this = $(this);
         const $form = $this.parents('.contact');
+        const $inputs = $form.find('.input__widget');
         const $alert = Math.random() < 0.5 ? $form.siblings('.inner-alert--success') : $form.siblings('.inner-alert--danger');
         let formWidth = $form.outerWidth();
         let formHeight = $form.outerHeight();
 
         if ( !$this.hasClass('button--loading') ) {
             $this.addClass('button--loading');
+            $inputs.attr('disabled', true);
             setTimeout(function () {
                 $this.removeClass('button--loading');
+                $inputs.attr('disabled', false);
                 $form.hide();
                 $alert.show();
                 $alert.css('width', formWidth);
