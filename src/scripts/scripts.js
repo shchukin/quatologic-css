@@ -1,5 +1,15 @@
 (function($) {
 
+    /* Detect macOS */
+    // For some reason macOS changes colors on video files, so they don't match with background
+    // We should ideally fix video files: https://stackoverflow.com/questions/63686800/color-variations-in-video-html5
+    // but for now let's just change few backgrounds on macOS
+
+    if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+        $('html').addClass('macos');
+    }
+
+
     /* Benefits tabs */
 
     $('.benefits__tag').on('click', function () {
