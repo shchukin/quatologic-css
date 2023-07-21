@@ -26,9 +26,13 @@
     $(document).ready(initAnchorsOffest);
     $(window).on('resize', initAnchorsOffest);
 
+    // set offest
+
+    const anchorsOffset = 40;
+
     // run anchors
     $(".anchor").on('click', function () {
-        $('html, body').animate({ scrollTop: $( $(this).attr('href') ).offset().top - headerHeight }, 800);
+        $('html, body').animate({ scrollTop: $( $(this).attr('href') ).offset().top - anchorsOffset - headerHeight}, 800);
         return true;
     });
 
