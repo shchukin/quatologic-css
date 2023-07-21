@@ -1,14 +1,5 @@
 (function($) {
 
-    /* Magnific popup */
-
-    $('.mfp-handler').magnificPopup({
-        type: 'inline',
-        removalDelay: 200,
-        showCloseBtn: false
-    });
-
-
     /* Benefits tabs */
 
     $('.benefits__tag').on('click', function () {
@@ -24,7 +15,7 @@
 
     /* Fade in animations */
 
-    /* init и re-init */
+    //init и re-init
     var animations = [];
     var startOffset = 250;
 
@@ -41,9 +32,7 @@
     $(document).ready(initAnimationsGeometry);
     $(window).on('resize', initAnimationsGeometry);
 
-
-    /* run */
-
+    //run
     $('.animation').addClass('animation--ready'); /* Запускаем это всё только есть JS отработал */
 
     var scrolled = 0;
@@ -64,10 +53,45 @@
     $(window).on('scroll', scrollingAnimation);
 
 
+    /* Init magnific popup */
+
+    $('.mfp-handler').magnificPopup({
+        type: 'inline',
+        removalDelay: 200,
+        showCloseBtn: false
+    });
+
+
     /* Contacts */
 
     $('.contact__submit').on('click', function (event) {
         event.preventDefault();
+        const $this = $(this);
+        const $form = $this.parents('.contact');
+        const $alert = Math.random() < 0.5 ? $form.siblings('.inner-alert--success') : $form.siblings('.inner-alert--danger');
+        let formWidth = $form.outerWidth();
+        let formHeight = $form.outerHeight();
+
+        if ( !$this.hasClass('button--loading') ) {
+            $this.addClass('button--loading');
+            setTimeout(function () {
+                $this.removeClass('button--loading');
+                $form.hide();
+                $alert.show();
+                $alert.css('width', formWidth);
+                $alert.css('height', formHeight);
+            }, 500);
+        }
+    });
+
+    $('.inner-alert__action').on('click', function () {
+        $(this).parents('.inner-alert').hide();
+        $(this).parents('.inner-alert').siblings('.contact').show();
+    });
+
+    $('.mfp-close').on('click', function () {
+        $('.contact').show();
+        $('.inner-alert').hide();
     });
 
 })(jQuery);

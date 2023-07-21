@@ -1,0 +1,97 @@
+.inner-alert {
+    display: flex;
+    flex-direction: column;
+    padding: 121px 0 10px;
+    background-size: 72px 72px;
+    background-repeat: no-repeat;
+    background-position: center 28px;
+}
+
+.inner-alert--success {
+    background-image: url("../vectors/inner-alert-check-inverted.svg");
+}
+
+.inner-alert--danger {
+    background-image: url("../vectors/inner-alert-stop-inverted.svg");
+}
+    .inner-alert__heading {
+        font-family: var(--font-headings);
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+
+    .inner-alert__description {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .inner-alert__action {
+        margin-top: auto;
+        align-self: center;
+    }
+        .inner-alert__action.button,
+        .inner-alert__action .button {
+            min-width: 210px;
+        }
+
+
+
+
+.inner-alert--in-modal {
+    padding: 161px 30px 50px;
+    background-position: center 68px;
+}
+
+.inner-alert--in-modal.inner-alert--success {
+    background-image: url("../vectors/inner-alert-check.svg");
+}
+
+.inner-alert--in-modal.inner-alert--danger {
+    background-image: url("../vectors/inner-alert-stop.svg");
+}
+
+
+
+
+@media (max-width: 599px) {
+
+    .inner-alert {
+        background-size: 60px 60px;
+    }
+        .inner-alert__heading {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        .inner-alert__description {
+            /*margin-top: 4px;*/
+            /*font-size: 16px;*/
+            /*line-height: 22px;*/
+            /*text-align: center;*/
+        }
+
+        .inner-alert__action {
+            /*margin-top: auto;*/
+            /*align-self: center;*/
+        }
+            .inner-alert__action.button,
+            .inner-alert__action .button {
+                /*min-width: 210px;*/
+            }
+
+
+
+
+    .inner-alert--in-modal {
+        padding: 161px 20px 40px;
+        background-position: center 68px;
+    }
+}
+
+

@@ -1059,23 +1059,44 @@
                             </div>
                         </div>
                     </div>
-                    <form class="footer__feedbacks contact">
-                        <b class="contact__heading">
-                            Contact us
-                        </b>
-                        <div class="contact__fieldset">
-                            <div class="contact__field input">
-                                <input class="input__widget" type="text" placeholder="Email address">
+                    <div class="footer__feedbacks">
+                        <form class="contact">
+                            <b class="contact__heading">
+                                Contact us
+                            </b>
+                            <div class="contact__fieldset">
+                                <div class="contact__field input">
+                                    <input class="input__widget" type="text" placeholder="Email address">
+                                </div>
+                                <div class="contact__field input input--area">
+                                    <textarea class="input__widget" placeholder="Message" rows="4"></textarea>
+                                </div>
                             </div>
-                            <div class="contact__field input input--area">
-                                <textarea class="input__widget" placeholder="Message" rows="4"></textarea>
+                            <div class="contact__footer">
+                                <button class="contact__submit button button--submit" type="submit">Send message</button>
+                                <div class="contact__note">We will not use your contacts to pass them on to third parties. Only to reply to&nbsp;you.</div>
                             </div>
+                        </form>
+                        <div class="inner-alert inner-alert--success" style="display: none;">
+                            <div class="inner-alert__heading">
+                                Thank you for your request
+                            </div>
+                            <button class="inner-alert__action button button--submit" type="button">
+                                Sent new massage
+                            </button>
                         </div>
-                        <div class="contact__footer">
-                            <button class="contact__submit button button--submit" type="submit">Send message</button>
-                            <div class="contact__note">We will not use your contacts to pass them on to third parties. Only to reply to&nbsp;you.</div>
+                        <div class="inner-alert inner-alert--danger" style="display: none;">
+                            <div class="inner-alert__heading">
+                                Form has not been sent
+                            </div>
+                            <div class="inner-alert__description">
+                                Something went wrong. Check your internet connection, and try again.
+                            </div>
+                            <button class="inner-alert__action button button--submit" type="button">
+                                Try again
+                            </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="footer__secondary">
                     <div class="footer__emblem logo logo--inverted">
@@ -1122,6 +1143,25 @@
                         <div class="contact__note">We will not use your contacts to pass them on to third parties. Only to reply to&nbsp;you.</div>
                     </div>
                 </form>
+                <div class="inner-alert inner-alert--in-modal inner-alert--success" style="display: none;">
+                    <div class="inner-alert__heading">
+                        Thank you for your request
+                    </div>
+                    <button class="inner-alert__action button button--submit" type="button">
+                        Sent new massage
+                    </button>
+                </div>
+                <div class="inner-alert inner-alert--in-modal inner-alert--danger" style="display: none;">
+                    <div class="inner-alert__heading">
+                        Form has not been sent
+                    </div>
+                    <div class="inner-alert__description">
+                        Something went wrong. Check your internet connection, and try again.
+                    </div>
+                    <button class="inner-alert__action button button--submit" type="button">
+                        Try again
+                    </button>
+                </div>
             </div>
         </div>
 

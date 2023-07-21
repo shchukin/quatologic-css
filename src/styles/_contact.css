@@ -31,6 +31,11 @@
         .contact__submit {
 
         }
+            .contact__submit.button,
+            .contact__submit .button {
+                padding-left: 44px;
+                padding-right: 44px;
+            }
 
         .contact__note {
             margin-top: 1px;
