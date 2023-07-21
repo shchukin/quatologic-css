@@ -15,13 +15,25 @@
 
     /* Anchors */
 
+    // Calculate header height. If it's fixed, our anchors distance should be 80px less (header height)
+    const $header = $('.header__fixed-bar');
+    let headerHeight = 0;
+
+    function initAnchorsOffest() {
+        headerHeight = $header.css('position') === 'fixed' ? $header.outerHeight() : 0;
+    }
+
+    $(document).ready(initAnchorsOffest);
+    $(window).on('resize', initAnchorsOffest);
+
+    // run anchors
     $(".anchor").on('click', function () {
-        $('html, body').animate({scrollTop: $( $(this).attr('href') ).offset().top - 80}, 800);
+        $('html, body').animate({ scrollTop: $( $(this).attr('href') ).offset().top - headerHeight }, 800);
         return true;
     });
 
 
-    /* Fade in animations */
+    /* Scroll animations */
 
     //init и re-init
     var animations = [];
@@ -88,7 +100,7 @@
                 $alert.show();
                 $alert.css('width', formWidth);
                 $alert.css('height', formHeight);
-            }, 500);
+            }, 1500);
         }
     });
 
