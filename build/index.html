@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Quotalogic</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/style.css?1690024151">
+        <link rel="stylesheet" href="styles/style.css?1690024461">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -236,8 +236,10 @@
                 <div class="truth__body">
                     <div class="truth__preview">
                         <picture>
-                            <source srcset="content/truth-desktop@2x.avif 2x, content/truth-desktop.avif" type="image/avif">
-                            <source srcset="content/truth-desktop@2x.jpg 2x, content/truth-desktop.jpg">
+                            <source media="(max-width: 599px)" srcset="content/truth-smartphone@2x.avif 2x, content/truth-smartphone.avif" type="image/avif">
+                            <source media="(max-width: 599px)" srcset="content/truth-smartphone@2x.jpg 2x, content/truth-smartphone.jpg">
+                            <source media="(min-width: 600px)" srcset="content/truth-desktop@2x.avif 2x, content/truth-desktop.avif" type="image/avif">
+                            <source media="(min-width: 600px)" srcset="content/truth-desktop@2x.jpg 2x, content/truth-desktop.jpg">
                             <img class="truth__illustration"
                                  src="content/truth-desktop.jpg"
                                  width="509"
@@ -1264,7 +1266,7 @@
         <script src="vendors/jquery/jquery-3.7.0.min.js"></script>
         <script src="vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
-        <script src="scripts/scripts.js?1690024151"></script>
+        <script src="scripts/scripts.js?1690024461"></script>
 
     </body>
 </html>
