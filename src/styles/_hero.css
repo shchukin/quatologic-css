@@ -52,17 +52,24 @@
         min-height: 1341px;
         padding-top: 768px;
         padding-bottom: 123px;
-        background-image: url("../images/hero-desktop-summary.jpg");
+        background-image: image-set(
+            url('../images/hero-desktop-summary@2x.avif') type('image/avif') 2x,
+            url('../images/hero-desktop-summary.avif') type('image/avif') 2x,
+            url('../images/hero-desktop-summary@2x.webp') type('image/webp') 2x,
+            url('../images/hero-desktop-summary.webp') type('image/webp') 1x,
+            url('../images/hero-desktop-summary@2x.jpg') 2x,
+            url('../images/hero-desktop-summary.jpg') 1x
+        );
         background-size: 1864px 1341px;
         background-repeat: no-repeat;
         background-position: center top;
     }
 
-    @media (min-resolution: 2dppx) {
-        .hero__summary {
-            background-image: url("../images/hero-desktop-summary@2x.jpg");
-        }
-    }
+    /*@media (min-resolution: 2dppx) {*/
+    /*    .hero__summary {*/
+    /*        background-image: url("../images/hero-desktop-summary@2x.jpg");*/
+    /*    }*/
+    /*}*/
 
     /* картинка у нас мас 1864px */
     @media (min-width: 1864px) {
@@ -177,21 +184,19 @@
                         width: 100%;
                     }
 
-        .hero__summary {
-            min-height: 366px;
-            padding-top: 220px;
-            padding-bottom: 81px;
-            background-image: url("../images/hero-smartphone-summary.jpg");
-            background-size: 586px 366px;
-            /*background-repeat: no-repeat;*/
-            /*background-position: center top;*/
-        }
+        /*.hero__summary {*/
+        /*    min-height: 366px;*/
+        /*    padding-top: 220px;*/
+        /*    padding-bottom: 81px;*/
+        /*    background-image: url("../images/hero-smartphone-summary.jpg");*/
+        /*    background-size: 586px 366px;*/
+        /*}*/
 
-        @media (min-resolution: 2dppx) {
-            .hero__summary {
-                background-image: url("../images/hero-smartphone-summary@2x.jpg");
-            }
-        }
+        /*@media (min-resolution: 2dppx) {*/
+        /*    .hero__summary {*/
+        /*        background-image: url("../images/hero-smartphone-summary@2x.jpg");*/
+        /*    }*/
+        /*}*/
 
         /* картинка у нас мас 586px */
         @media (min-width: 586px) {
