@@ -235,13 +235,16 @@
                 </div>
                 <div class="truth__body">
                     <div class="truth__preview">
-                        <img class="truth__illustration"
-                             srcset="content/truth@2x.jpg 2x"
-                             src="content/truth.jpg"
-                             width="509"
-                             height="570"
-                             alt=""
-                        >
+                        <picture>
+                            <source srcset="content/truth@2x.avif 2x, content/truth.avif" type="image/avif">
+                            <img class="truth__illustration"
+                                 srcset="content/truth@2x.jpg 2x"
+                                 src="content/truth.jpg"
+                                 width="509"
+                                 height="570"
+                                 alt=""
+                            >
+                        </picture>
                     </div>
                     <div class="truth__content">
                         <div class="truth__list hide-scrollbar">
