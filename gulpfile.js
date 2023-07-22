@@ -152,6 +152,7 @@ gulp.task('manifest', function () {
     return gulp.src([
         'src/browserconfig.xml',
         'src/site.webmanifest',
+        'src/humans.txt',
         'src/favicon.ico'])
     .pipe(plumber())
     .pipe(gulp.dest('build/'))
