@@ -67,10 +67,10 @@
 
     .hero__summary {
         background-image: image-set(
-            url("../images/hero-desktop-summary@2x.webp") type("image/webp") 2x,
-            url("../images/hero-desktop-summary.webp") type("image/webp") 1x,
             url("../images/hero-desktop-summary@2x.avif") type("image/avif") 2x,
-            url("../images/hero-desktop-summary.avif") type("image/avif") 1x
+            url("../images/hero-desktop-summary.avif") type("image/avif") 1x,
+            url("../images/hero-desktop-summary@2x.webp") type("image/webp") 2x,
+            url("../images/hero-desktop-summary.webp") type("image/webp") 1x
         );
     }
 
@@ -187,19 +187,30 @@
                         width: 100%;
                     }
 
-        /*.hero__summary {*/
-        /*    min-height: 366px;*/
-        /*    padding-top: 220px;*/
-        /*    padding-bottom: 81px;*/
-        /*    background-image: url("../images/hero-smartphone-summary.jpg");*/
-        /*    background-size: 586px 366px;*/
-        /*}*/
+        .hero__summary {
+            min-height: 366px;
+            padding-top: 220px;
+            padding-bottom: 81px;
+            background-image: url("../images/hero-smartphone-summary.jpg");
+            background-size: 586px 366px;
+        }
 
-        /*@media (min-resolution: 2dppx) {*/
-        /*    .hero__summary {*/
-        /*        background-image: url("../images/hero-smartphone-summary@2x.jpg");*/
-        /*    }*/
-        /*}*/
+        @media (min-resolution: 2dppx) {
+            .hero__summary {
+                background-image: url("../images/hero-smartphone-summary@2x.jpg");
+            }
+        }
+
+
+        .hero__summary {
+            background-image: image-set(
+                url("../images/hero-smartphone-summary@2x.avif") type("image/avif") 2x,
+                url("../images/hero-smartphone-summary.avif") type("image/avif") 1x,
+                url("../images/hero-smartphone-summary@2x.webp") type("image/webp") 2x,
+                url("../images/hero-smartphone-summary.webp") type("image/webp") 1x
+            );
+        }
+
 
         /* картинка у нас мас 586px */
         @media (min-width: 586px) {
