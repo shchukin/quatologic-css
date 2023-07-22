@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Quotalogic</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/style.css?1690024461">
+        <link rel="stylesheet" href="styles/style.css?1690025441">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -474,8 +474,16 @@
                             </ul>
                         </div>
                         <picture>
-                            <source srcset="content/benefits-screenshot-a@2x.avif 2x, content/benefits-screenshot-a.avif" type="image/avif">
-                            <img class="benefits__screenshot" srcset="content/benefits-screenshot-a@2x.jpg 2x" src="content/benefits-screenshot-a.jpg" width="622" height="466" alt="">
+                            <source media="(max-width: 600px)" srcset="content/benefits-screenshot-a-smartphone@2x.avif 2x, content/benefits-screenshot-a-desktop.avif" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="content/benefits-screenshot-a-smartphone@2x.jpg 2x, content/benefits-screenshot-a-desktop.jpg">
+                            <source media="(min-width: 600px)" srcset="content/benefits-screenshot-a-desktop@2x.avif 2x, content/benefits-screenshot-a-desktop.avif" type="image/avif">
+                            <source media="(min-width: 600px)" srcset="content/benefits-screenshot-a-desktop@2x.jpg 2x, content/benefits-screenshot-a-desktop.jpg">
+                            <img class="benefits__screenshot"
+                                 src="content/benefits-screenshot-a-desktop.jpg"
+                                 width="622"
+                                 height="466"
+                                 alt=""
+                            >
                         </picture>
                     </div>
                 </div>
@@ -492,9 +500,18 @@
                             </ul>
                         </div>
                         <picture>
-                            <source srcset="content/benefits-screenshot-b@2x.avif 2x, content/benefits-screenshot-b.avif" type="image/avif">
-                            <source srcset="content/benefits-screenshot-b@2x.webp 2x, content/benefits-screenshot-b.webp" type="image/webp">
-                            <img class="benefits__screenshot" srcset="content/benefits-screenshot-b@2x.png 2x" src="content/benefits-screenshot-b.png" width="622" height="466" alt="">
+                            <source media="(max-width: 599px)" srcset="content/benefits-screenshot-b-smartphone@2x.avif 2x, content/benefits-screenshot-b-desktop.avif" type="image/avif">
+                            <source media="(max-width: 599px)" srcset="content/benefits-screenshot-b-smartphone@2x.webp 2x, content/benefits-screenshot-b-desktop.webp" type="image/webp">
+                            <source media="(max-width: 599px)" srcset="content/benefits-screenshot-b-smartphone@2x.png 2x, content/benefits-screenshot-b-desktop.png">
+                            <source media="(min-width: 600px)" srcset="content/benefits-screenshot-b-desktop@2x.avif 2x, content/benefits-screenshot-b-desktop.avif" type="image/avif">
+                            <source media="(min-width: 600px)" srcset="content/benefits-screenshot-b-desktop@2x.webp 2x, content/benefits-screenshot-b-desktop.webp" type="image/webp">
+                            <source media="(min-width: 600px)" srcset="content/benefits-screenshot-b-desktop@2x.png 2x, content/benefits-screenshot-b-desktop.png">
+                            <img class="benefits__screenshot"
+                                 src="content/benefits-screenshot-b-desktop.png"
+                                 width="622"
+                                 height="466"
+                                 alt=""
+                            >
                         </picture>
                     </div>
                 </div>
@@ -1266,7 +1283,7 @@
         <script src="vendors/jquery/jquery-3.7.0.min.js"></script>
         <script src="vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
-        <script src="scripts/scripts.js?1690024461"></script>
+        <script src="scripts/scripts.js?1690025441"></script>
 
     </body>
 </html>
