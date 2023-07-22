@@ -6,12 +6,11 @@ var stylelint    = require('gulp-stylelint');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
 var postcss      = require('gulp-postcss');
-var cssnext      = require('postcss-cssnext');
+var postcssPresetEnv = require('postcss-preset-env');
 var base64       = require('gulp-base64');
 var svgstore     = require('gulp-svgstore');
 var svgmin       = require('gulp-svgmin');
 var change       = require('gulp-change');
-
 
 
 function addSourcesTimestamp(content) {
@@ -275,12 +274,7 @@ gulp.task('symbols', function() {
 gulp.task('styles', function() {
 
   var processors = [
-    cssnext({
-        'browsers': 'last 2 versions', // for autoprefixer and features list
-        'features': {
-            'customProperties': false
-        }
-    })
+    postcssPresetEnv()
   ];
 
   return gulp.src([
