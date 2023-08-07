@@ -3,7 +3,7 @@
     text-align: center;
 }
     .plan__heading {
-        font-family: var(--font-headings);
+        font-family: var(--font-evolventa);
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
@@ -13,7 +13,7 @@
     .plan__price {
         position: relative;
         margin-top: 10px;
-        font-family: var(--font-headings);
+        font-family: var(--font-evolventa);
         font-weight: bold;
         font-size: 32px;
         line-height: 43px;
@@ -42,6 +42,7 @@
         max-width: 240px;
         margin-left: auto;
         margin-right: auto;
+        font-family: var(--font-evolventa);
         font-weight: normal;
         font-size: 16px;
         line-height: 23px;

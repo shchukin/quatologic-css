@@ -15,7 +15,7 @@
     background-image: url("../vectors/inner-alert-stop-inverted.svg");
 }
     .inner-alert__heading {
-        font-family: var(--font-headings);
+        font-family: var(--font-evolventa);
         font-size: 36px;
         line-height: 48px;
         text-align: center;

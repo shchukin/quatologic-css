@@ -1,7 +1,7 @@
 /* stylelint-disable declaration-colon-space-after */
 :root {
-    --font-text: "Jost", sans-serif;
-    --font-headings: "Evolventa", sans-serif;
+    --font-jost: "Jost", sans-serif;
+    --font-evolventa: "Evolventa", sans-serif;
     --container-padding: 40px;
     --base-font-size: 20px;
     --base-line-height: 29px;
