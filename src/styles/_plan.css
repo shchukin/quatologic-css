@@ -24,6 +24,8 @@
             right: 0;
             top: 100%;
             margin-top: 9px;
+            font-family: var(--font-jost);
+            font-weight: 500;
             font-size: 10px;
             line-height: 30px;
             color: var(--accent);
@@ -31,6 +33,7 @@
 
     .plan__trial {
         margin-top: 50px;
+        font-family: var(--font-jost);
         font-weight: 500;
         font-size: 16px;
         line-height: 30px;
@@ -42,7 +45,7 @@
         max-width: 240px;
         margin-left: auto;
         margin-right: auto;
-        font-family: var(--font-evolventa);
+        font-family: var(--font-jost);
         font-weight: normal;
         font-size: 16px;
         line-height: 23px;
