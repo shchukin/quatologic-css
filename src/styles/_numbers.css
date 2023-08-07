@@ -28,7 +28,7 @@
             .numbers__stat {
                 display: block;
                 min-height: 96px;
-                font-family: var(--font-evolventa);
+                font-family: var(--evolventa);
                 font-weight: bold;
                 font-size: 36px;
                 line-height: 48px;
@@ -65,7 +65,7 @@
                     margin-bottom: 16px;
                 }
                     .numbers__percent {
-                        font-family: var(--font-evolventa);
+                        font-family: var(--evolventa);
                         font-weight: bold;
                         font-size: 36px;
                         line-height: 48px;

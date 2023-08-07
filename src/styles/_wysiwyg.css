@@ -125,7 +125,7 @@
 
 
 .wysiwyg h2 {
-    font-family: var(--font-evolventa);
+    font-family: var(--evolventa);
     font-weight: bold;
 /*    font-weight: var(--font_weight_strong);*/
 /*    font-size: var(--font_size_default-title);*/
@@ -135,7 +135,7 @@
 }
 
 .wysiwyg h3 {
-    font-family: var(--font-evolventa);
+    font-family: var(--evolventa);
     font-weight: bold;
 /*    font-weight: var(--font_weight_strong);*/
 /*    font-size: var(--font_size_smaller-title);*/
@@ -145,7 +145,7 @@
 }
 
 .wysiwyg h4 {
-    font-family: var(--font-evolventa);
+    font-family: var(--evolventa);
     font-weight: bold;
 /*    font-weight: var(--font_weight_strong);*/
 /*    font-size: var(--font_size_smallest-title);*/
