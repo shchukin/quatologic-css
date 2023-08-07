@@ -9,7 +9,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    color: var(--action);
+    color: var(--accent);
     white-space: nowrap;
 }
     .feature__tag {

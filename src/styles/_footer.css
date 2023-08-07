@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--background-accent);
+    background-color: var(--accent);
     color: #FFFFFF;
 }
     .footer__wrap {
@@ -58,7 +58,7 @@
                 margin-top: 6px;
                 max-width: 595px;
                 padding: 20px;
-                background-color: #50A3CF;
+                background-color: #5CA9E4;
                 border-radius: 10px;
                 flex-grow: 1;
                 flex-shrink: 0;

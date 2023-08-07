@@ -48,7 +48,7 @@
 
             .benefits__tag--current,
             .benefits__tag--current:hover {
-                background-color: var(--background-accent);
+                background-color: var(--accent);
                 color: #FFFFFF;
                 transform: none;
                 cursor: default;
@@ -85,7 +85,7 @@
             }
 
             .benefits__screen--accent {
-                background-color: var(--background-accent);
+                background-color: var(--accent);
                 color: #FFFFFF;
             }
 
