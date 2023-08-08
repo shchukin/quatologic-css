@@ -103,13 +103,22 @@
                 line-height: 34px;
             }
                 /* stylelint-disable */
-                .basics__meaning-preview {
+                .basics__tile--meaning .basics__preview {
                     width: calc(100% + 4px);
                     margin-left: -2px;
                     margin-right: -2px;
                     margin-top: 30px;
                     margin-bottom: -54px;
-                    overflow: hidden;
+                }
+                /* stylelint-enable */
+
+                /* stylelint-disable */
+                .basics__tile--integrations .basics__preview {
+                    width: calc(100% + 15px);
+                    margin-left: -8px;
+                    margin-right: -7px;
+                    margin-top: 91px;
+                    margin-bottom: -91px;
                 }
                 /* stylelint-enable */
 
@@ -117,7 +126,6 @@
                         vertical-align: top;
                         width: 100%;
                         height: auto;
-                        /*margin-bottom: -34%;*/
                     }
 
                     .basics__omnichanelling-video {
@@ -240,7 +248,7 @@
                     font-size: 16px;
                     line-height: 27px;
                 }
-                    .basics__meaning-preview {
+                    .basics__preview {
                         position: static;
                         left: 0;
                         margin-left: -5%;
