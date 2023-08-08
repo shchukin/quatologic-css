@@ -104,13 +104,11 @@
             }
                 /* stylelint-disable */
                 .basics__meaning-preview {
-                    width: 70.572%; /* 494px на самом широком экране */
-                    margin-left: calc((100% - 70.572%) / 2);
-                    margin-right: calc((100% - 70.572%) / 2);
-                    position: relative;
-                    left: 9px;
-                    margin-top: 64px;
-                    margin-bottom: calc(-1 * var(--vertical-tile-padding));
+                    width: calc(100% + 4px);
+                    margin-left: -2px;
+                    margin-right: -2px;
+                    margin-top: 30px;
+                    margin-bottom: -54px;
                     overflow: hidden;
                 }
                 /* stylelint-enable */
@@ -119,7 +117,7 @@
                         vertical-align: top;
                         width: 100%;
                         height: auto;
-                        margin-bottom: -34%;
+                        /*margin-bottom: -34%;*/
                     }
 
                     .basics__omnichanelling-video {
