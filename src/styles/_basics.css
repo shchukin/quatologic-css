@@ -13,7 +13,7 @@
 
     .basics__description {
         margin-top: 10px;
-        max-width: var(--max-text-width);
+        max-width: 717px;
         font-weight: 500;
         font-size: 20px;
         line-height: 34px;
@@ -102,7 +102,18 @@
                 font-size: 20px;
                 line-height: 34px;
             }
-                /* stylelint-disable */
+
+            .basics__tile--data-model .basics__text {
+                max-width: 595px;
+            }
+
+            .basics__tile--quoting .basics__text {
+                max-width: 540px;
+            }
+                .basics__preview {
+
+                }
+
                 .basics__tile--meaning .basics__preview {
                     width: calc(100% + 4px);
                     margin-left: -2px;
@@ -110,9 +121,7 @@
                     margin-top: 30px;
                     margin-bottom: -54px;
                 }
-                /* stylelint-enable */
 
-                /* stylelint-disable */
                 .basics__tile--integrations .basics__preview {
                     width: calc(100% + 15px);
                     margin-left: -8px;
@@ -120,8 +129,6 @@
                     margin-top: 91px;
                     margin-bottom: -91px;
                 }
-                /* stylelint-enable */
-
                     .basics__illustration {
                         vertical-align: top;
                         width: 100%;
@@ -138,7 +145,7 @@
 
     .basics__footer {
         margin-top: 42px;
-        max-width: var(--max-text-width);
+        max-width: 750px;
         font-weight: 500;
         font-size: 20px;
         line-height: 34px;

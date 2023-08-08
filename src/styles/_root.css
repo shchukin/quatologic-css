@@ -12,7 +12,6 @@
     --alternative: #E7E7E7;
     --gray-1: #333333;
     --transition-hover: 0.1s ease;
-    --max-text-width: 717px;
     --ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1);
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
