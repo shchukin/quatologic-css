@@ -115,7 +115,6 @@
                 }
 
                 .basics__tile--meaning .basics__preview {
-                    width: calc(100% + 4px);
                     margin-left: -2px;
                     margin-right: -2px;
                     margin-top: 30px;
@@ -123,11 +122,16 @@
                 }
 
                 .basics__tile--integrations .basics__preview {
-                    width: calc(100% + 15px);
                     margin-left: -8px;
                     margin-right: -7px;
                     margin-top: 91px;
                     margin-bottom: -91px;
+                }
+
+                .basics__tile--omnichanelling .basics__preview {
+                    margin-top: 62px;
+                    margin-left: calc(-1 * var(--horizontal-tile-padding));
+                    margin-right: calc(-1 * var(--horizontal-tile-padding));
                 }
                     .basics__illustration {
                         vertical-align: top;
@@ -135,13 +139,12 @@
                         height: auto;
                     }
 
-                    .basics__omnichanelling-video {
-                        margin-top: 62px;
-                        margin-left: calc(-1 * var(--horizontal-tile-padding));
-                        margin-right: calc(-1 * var(--horizontal-tile-padding));
-                        width: calc(100% + 2 * var(--horizontal-tile-padding));
+                    .basics__video {
+                        vertical-align: top;
+                        width: 100%;
                         height: auto;
                     }
+
 
     .basics__footer {
         margin-top: 42px;
@@ -256,27 +259,35 @@
                     line-height: 27px;
                 }
                     .basics__preview {
-                        position: static;
-                        left: 0;
-                        margin-left: -5%;
-                        margin-right: -5%;
-                        width: 110%;
-                        margin-top: 20px;
-                    }
-                        .basics__illustration {
-                            /*vertical-align: top;*/
-                            /*height: auto;*/
-                            margin-bottom: -21%;
-                        }
 
-                    .basics__omnichanelling-video {
+                    }
+
+                    .basics__tile--meaning .basics__preview {
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        margin-top: 20px;
+                        margin-bottom: -10px;
+                    }
+
+                    .basics__tile--integrations .basics__preview {
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-top: 36px;
+                        margin-bottom: 0;
+                    }
+
+                    .basics__tile--omnichanelling .basics__preview {
                         margin-top: 30px;
                         margin-bottom: -10px;
-                        /*margin-left: calc(-1 * var(--horizontal-tile-padding));*/
-                        /*margin-right: calc(-1 * var(--horizontal-tile-padding));*/
-                        /*width: calc(100% + 2 * var(--horizontal-tile-padding));*/
-                        /*height: auto;*/
                     }
+
+                        .basics__illustration {
+
+                        }
+
+                        .basics__omnichanelling-video {
+
+                        }
 
         .basics__footer {
             /*margin-top: 42px;*/
