@@ -10,9 +10,8 @@
    but for now let's just change few backgrounds on macOS
  */
 .macos .catalog {
-    /*background-color: #038FED;*/
+    background-color: #038FED;
 }
-
     .catalog__wrap {
 
     }
@@ -25,14 +24,17 @@
         .catalog__body {
             margin-top: 48px;
             display: grid;
-            grid-template-columns: 555px 530px;
+            grid-template-columns: 555px 504px;
             gap: 81px;
             align-items: center;
         }
-            .catalog__illustration {
-                vertical-align: top;
-                margin-right: -26px;
+            .catalog__preview {
+
             }
+                .catalog__illustration {
+                    vertical-align: top;
+                    margin-right: -26px;
+                }
 
             .catalog__description {
                 order: -1;
@@ -64,13 +66,15 @@
                 /*gap: 66px;*/
                 /*align-items: center;*/
             }
-                .catalog__illustration {
-                    /*vertical-align: top;*/
-                    width: calc(100% + 2 * var(--container-padding));
-                    height: auto;
+                .catalog__preview {
                     margin-left: calc(-1 * var(--container-padding));
                     margin-right: calc(-1 * var(--container-padding));
                 }
+                    .catalog__illustration {
+                        width: 100%;
+                        height: auto;
+                        margin: 0;
+                    }
 
                 .catalog__description {
                     margin-top: 70px;

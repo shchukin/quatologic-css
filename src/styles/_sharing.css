@@ -11,15 +11,22 @@
     .sharing__body {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 513px 557px;
+        grid-template-columns: 570px 560px;
         align-items: center;
         justify-content: center;
-        gap: 54px;
+        gap: 10px;
     }
-        .sharing__illustration {
-            vertical-align: top;
-        }
+        .sharing__preview {
 
+        }
+            .sharing__illustration {
+                vertical-align: top;
+                margin-left: -18px;
+            }
+
+        .sharing__description {
+
+        }
 
 @media (max-width: 599px) {
 

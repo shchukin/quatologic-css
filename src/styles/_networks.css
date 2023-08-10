@@ -1,0 +1,135 @@
+.networks {
+
+}
+    .networks__body {
+        padding-bottom: 78px;
+    }
+        .networks__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .networks__description {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+        }
+
+        .networks__content {
+            margin-top: 58px;
+            display: flex;
+            align-items: stretch;
+            gap: 20px;
+        }
+            .networks__section {
+                padding: 24px 32px;
+                flex-grow: 1;
+                flex-basis: 0;
+                border-radius: 18px;
+                background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.71) 100%);
+                box-shadow: 0 12px 24px rgba(20, 20, 43, 0.04),
+                            0 -2px 4px rgba(20, 20, 43, 0.02),
+                            0 22px 24px rgba(74, 58, 255, 0.03);
+            }
+                .networks__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: var(--evolventa);
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+
+                .networks__features {
+                    margin-top: 16px;
+                    margin-bottom: 0;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+    .networks__stage {
+
+    }
+        .networks__preview {
+
+        }
+            .networks__illustration {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+            }
+
+
+
+@media (max-width: 599px) {
+
+    .networks {
+
+    }
+        .networks__body {
+            /*padding-bottom: 78px;*/
+        }
+            .networks__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*text-align: center;*/
+            }
+
+            .networks__description {
+                margin-top: 14px;
+                /*text-align: center;*/
+            }
+
+            .networks__content {
+                margin-top: 22px;
+                display: block;
+                /*align-items: stretch;*/
+                /*gap: 20px;*/
+            }
+                .networks__section {
+                    margin-top: 24px;
+                    /*padding: 24px 32px;*/
+                    /*flex-grow: 1;*/
+                    /*flex-basis: 0;*/
+                    /*border-radius: 18px;*/
+                    /*background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.71) 100%);*/
+                    /*box-shadow: 0 12px 24px rgba(20, 20, 43, 0.04),*/
+                    /*            0 -2px 4px rgba(20, 20, 43, 0.02),*/
+                    /*            0 22px 24px rgba(74, 58, 255, 0.03);*/
+                }
+
+                .networks__section:first-child {
+                    margin-top: 0;
+                }
+                    .networks__sub-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-family: var(--evolventa);*/
+                        /*font-weight: bold;*/
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
+
+                    .networks__features {
+                        /*margin-top: 16px;*/
+                        /*margin-bottom: 0;*/
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+        .networks__stage {
+
+        }
+            .networks__preview {
+                margin-left: calc(-1 * var(--container-padding));
+                margin-right: calc(-1 * var(--container-padding));
+            }
+                .networks__illustration {
+                    /*width: 100%;*/
+                    /*height: auto;*/
+                    /*vertical-align: top;*/
+                }
+}
