@@ -63,3 +63,7 @@
     opacity: 0;
 }
 
+
+button.mfp-close:focus {
+    outline: 2px auto black;
+}
