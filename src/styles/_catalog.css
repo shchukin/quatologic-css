@@ -1,7 +1,7 @@
 .catalog {
-    padding-top: 118px;
-    padding-bottom: 141px;
-    background-color: #0A80BD;
+    padding-top: 109px;
+    padding-bottom: 161px;
+    background-color: var(--accent);
     color: #FFFFFF;
 }
 
@@ -10,7 +10,7 @@
    but for now let's just change few backgrounds on macOS
  */
 .macos .catalog {
-    background-color: #0C8AC5;
+    /*background-color: #038FED;*/
 }
 
     .catalog__wrap {
@@ -23,14 +23,15 @@
         }
 
         .catalog__body {
-            margin-top: 30px;
+            margin-top: 48px;
             display: grid;
-            grid-template-columns: 555px 466px;
-            gap: 66px;
+            grid-template-columns: 555px 530px;
+            gap: 81px;
             align-items: center;
         }
             .catalog__illustration {
                 vertical-align: top;
+                margin-right: -26px;
             }
 
             .catalog__description {
@@ -43,8 +44,8 @@
 @media (max-width: 599px) {
 
     .catalog {
-        padding-top: 67px;
-        padding-bottom: 67px;
+        padding-top: 72px;
+        padding-bottom: 107px;
         /*color: #FFFFFF;*/
     }
         .catalog__wrap {
@@ -57,7 +58,7 @@
             }
 
             .catalog__body {
-                margin-top: 42px;
+                margin-top: 67px;
                 display: block;
                 /*grid-template-columns: 555px 466px;*/
                 /*gap: 66px;*/
@@ -65,12 +66,14 @@
             }
                 .catalog__illustration {
                     /*vertical-align: top;*/
-                    max-width: 100%;
+                    width: calc(100% + 2 * var(--container-padding));
                     height: auto;
+                    margin-left: calc(-1 * var(--container-padding));
+                    margin-right: calc(-1 * var(--container-padding));
                 }
 
                 .catalog__description {
-                    margin-top: 41px;
+                    margin-top: 70px;
                     /*order: -1;*/
                     /*font-weight: 500;*/
                 }
