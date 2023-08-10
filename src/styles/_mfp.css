@@ -64,6 +64,6 @@
 }
 
 
-button.mfp-close:focus {
+button.mfp-close:focus-visible {
     outline: 2px auto black;
 }
