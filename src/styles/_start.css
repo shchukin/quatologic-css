@@ -1,7 +1,7 @@
 .start {
     padding-top: 192px;
     padding-bottom: 100px;
-    background-image: url("../vectors/start.svg");
+    background-image: url("../vectors/start-background.svg.svg");
     background-size: 1889px 577px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -62,10 +62,10 @@
         overflow: hidden;
         /*padding-top: 192px;*/
         /*padding-bottom: 100px;*/
-        /*background-image: url("../vectors/start.svg");*/
-        /*background-size: 1889px 577px;*/
+        background-image: url("../vectors/start-background-smartphone.svg");
+        background-size: 780px 657px;
         /*background-repeat: no-repeat;*/
-        /*background-position: center center;*/
+        background-position: -410px -40px;
     }
         .start__wrap {
             /*position: relative;*/
@@ -74,7 +74,7 @@
                 display: block;
                 /*align-items: flex-start;*/
                 /*gap: 250px;*/
-                padding-right: 68px;
+                padding-right: 98px;
             }
                 .start__section {
                     margin-top: 23px;
