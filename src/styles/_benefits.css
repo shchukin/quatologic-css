@@ -113,12 +113,9 @@
     .benefits__item--for-distributor-manufacturer {
 
     }
-
-        /*@media (min-width: 1400px) {*/
-            .benefits__item--for-distributor-manufacturer .benefits__screenshot {
-                margin-right: -44px;
-            }
-        /*}*/
+        .benefits__item--for-distributor-manufacturer .benefits__screenshot {
+            margin-left: -19px;
+        }
 
     .benefits__item--for-dealer-and-seller {
 
