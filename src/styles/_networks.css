@@ -29,7 +29,7 @@
                 flex-grow: 1;
                 flex-basis: 0;
                 border-radius: 18px;
-                background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.71) 100%);
+                background: linear-gradient(rgba(255, 255, 255, 0.71), #FFFFFF);
                 box-shadow: 0 12px 24px rgba(20, 20, 43, 0.04),
                             0 -2px 4px rgba(20, 20, 43, 0.02),
                             0 22px 24px rgba(74, 58, 255, 0.03);
