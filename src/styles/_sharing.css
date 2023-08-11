@@ -51,6 +51,7 @@
             .sharing__illustration {
                 max-width: 100%;
                 height: auto;
+                margin-left: 0;
             }
 
         .sharing__description {
