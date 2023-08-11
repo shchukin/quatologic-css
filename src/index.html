@@ -291,7 +291,16 @@
                         Start Now
                     </a>
                 </div>
-                <img class="start__rocket" src="content/start.png" width="192" height="324" alt="">
+                <picture>
+                    <source srcset="content/start@2x.avif 2x, content/start.avif" type="image/avif">
+                    <img class="start__rocket"
+                         srcset="content/start@2x.png 2x"
+                         src="content/start.png"
+                         width="192"
+                         height="324"
+                         alt=""
+                    >
+                </picture>
             </div>
         </div>
         <section class="sharing container">
