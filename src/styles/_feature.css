@@ -45,38 +45,71 @@
     }
 
 
-.feature--pointed {
+.feature--guy {
 
 }
-    .feature--pointed::after {
+    .feature--guy::after {
         content: "";
         position: absolute;
         z-index: 10;
-        left: 100%;
-        margin-left: -7px;
-        top: 24px;
-        width: 109px;
-        height: 106px;
-        background-image: url("../images/feature-pointer-desktop.png");
+        left: 87px;
+        top: 32px;
+        width: 99px;
+        height: 107px;
+        background-image: url("../images/feature-guy.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
     }
 
     @media (min-resolution: 2dppx) {
-        .feature--pointed::after {
-            background-image: url("../images/feature-pointer-desktop@2x.png");
+        .feature--guy::after {
+            background-image: url("../images/feature-guy@2x.png");
         }
     }
 
-    .feature--pointed::after {
-        background-image: image-set(
-            url("../images/feature-pointer-desktop@2x.avif") type("image/avif") 2x,
-            url("../images/feature-pointer-desktop.avif") type("image/avif") 1x,
-            url("../images/feature-pointer-desktop@2x.webp") type("image/webp") 2x,
-            url("../images/feature-pointer-desktop.webp") type("image/webp") 1x
-        );
+    /*.feature--guy::after {*/
+    /*    background-image: image-set(*/
+    /*        url("../images/feature-pointer-desktop@2x.avif") type("image/avif") 2x,*/
+    /*        url("../images/feature-pointer-desktop.avif") type("image/avif") 1x,*/
+    /*        url("../images/feature-pointer-desktop@2x.webp") type("image/webp") 2x,*/
+    /*        url("../images/feature-pointer-desktop.webp") type("image/webp") 1x*/
+    /*    );*/
+    /*}*/
+
+
+.feature--girl {
+
+}
+    .feature--girl::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        left: 100%;
+        margin-left: -17px;
+        top: 5px;
+        width: 110px;
+        height: 82px;
+        background-image: url("../images/feature-girl.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
+
+    @media (min-resolution: 2dppx) {
+        .feature--girl::after {
+            background-image: url("../images/feature-girl@2x.png");
+        }
+    }
+
+    /*.feature--guy::after {*/
+    /*    background-image: image-set(*/
+    /*        url("../images/feature-pointer-desktop@2x.avif") type("image/avif") 2x,*/
+    /*        url("../images/feature-pointer-desktop.avif") type("image/avif") 1x,*/
+    /*        url("../images/feature-pointer-desktop@2x.webp") type("image/webp") 2x,*/
+    /*        url("../images/feature-pointer-desktop.webp") type("image/webp") 1x*/
+    /*    );*/
+    /*}*/
 
 
 @media (max-width: 599px) {
@@ -100,40 +133,25 @@
             width: 22px;
             height: 22px;
             margin-left: 8px;
+            margin-top: 2px;
         }
 
-
-    .feature--pointed {
+    .feature--guy {
 
     }
-        .feature--pointed::after {
-            /*content: "";*/
-            /*position: absolute;*/
-            /*z-index: 10;*/
-            /*left: 100%;*/
-            margin-left: 5px;
-            top: auto;
-            bottom: -3px;
-            width: 105px;
-            height: 92px;
-            background-image: url("../images/feature-pointer-smartphone.png");
-            /*background-size: contain;*/
-            /*background-repeat: no-repeat;*/
-            /*background-position: center center;*/
+        .feature--guy::after {
+            left: -38px;
+            top: 46px;
+            width: 74px;
+            height: 80px;
         }
 
-        @media (min-resolution: 2dppx) {
-            .feature--pointed::after {
-                background-image: url("../images/feature-pointer-smartphone@2x.png");
-            }
-        }
+    .feature--girl {
 
-        .feature--pointed::after {
-            background-image: image-set(
-                url("../images/feature-pointer-smartphone@2x.avif") type("image/avif") 2x,
-                url("../images/feature-pointer-smartphone.avif") type("image/avif") 1x,
-                url("../images/feature-pointer-smartphone@2x.webp") type("image/webp") 2x,
-                url("../images/feature-pointer-smartphone.webp") type("image/webp") 1x
-            );
+    }
+        .feature--girl::after {
+            width: 80px;
+            height: 60px;
+            margin-left: -11px;
         }
 }
