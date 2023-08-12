@@ -1,5 +1,31 @@
 .hero {
+    min-height: 1800px; /* could be 1448px same as background height, but since it can be stretched in 1920px we need more spacing at the bottom */
+    background-image: url("../images/hero-desktop-summary.jpg");
+    background-size: 1864px 1448px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 
+@media (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/hero-desktop-summary@2x.jpg");
+    }
+}
+
+/*.hero {*/
+/*    background-image: image-set(*/
+/*        url("../images/hero-desktop-summary@2x.avif") type("image/avif") 2x,*/
+/*        url("../images/hero-desktop-summary.avif") type("image/avif") 1x,*/
+/*        url("../images/hero-desktop-summary@2x.webp") type("image/webp") 2x,*/
+/*        url("../images/hero-desktop-summary.webp") type("image/webp") 1x*/
+/*    );*/
+/*}*/
+
+/* картинка у нас маx 1864px по ширине */
+@media (min-width: 1864px) {
+    .hero {
+        background-size: 100% auto;
+    }
 }
     .hero__head {
         padding-top: 100px;
@@ -9,7 +35,7 @@
         background-repeat: no-repeat;
         background-position: center top;
     }
-        .hero__head-wrap {
+        .hero__wrap {
 
         }
             .hero__pre-heading {
@@ -43,55 +69,49 @@
             }
 
 
-    .hero__summary {
-        min-height: 1341px;
-        padding-top: 768px;
-        padding-bottom: 123px;
-        background-image: url("../images/hero-desktop-summary.jpg");
-        background-size: 1864px 1341px;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
-
-    @media (min-resolution: 2dppx) {
-        .hero__summary {
-            background-image: url("../images/hero-desktop-summary@2x.jpg");
-        }
-    }
-
-    .hero__summary {
-        background-image: image-set(
-            url("../images/hero-desktop-summary@2x.avif") type("image/avif") 2x,
-            url("../images/hero-desktop-summary.avif") type("image/avif") 1x,
-            url("../images/hero-desktop-summary@2x.webp") type("image/webp") 2x,
-            url("../images/hero-desktop-summary.webp") type("image/webp") 1x
-        );
-    }
-
-    /* картинка у нас маx 1864px */
-    @media (min-width: 1864px) {
-        .hero__summary {
-            background-size: 100% auto;
-        }
-    }
-
 
 
 @media (max-width: 599px) {
 
     .hero {
+        min-height: 366px;
+        padding-top: 220px;
+        padding-bottom: 81px;
+        background-image: url("../images/hero-smartphone-summary.jpg");
+        background-size: 586px 366px;
         overflow: hidden; /* to cut button shadow inside */
+    }
+
+    @media (min-resolution: 2dppx) {
+        .hero {
+            background-image: url("../images/hero-smartphone-summary@2x.jpg");
+        }
+    }
+
+
+    /*.hero {*/
+    /*    background-image: image-set(*/
+    /*            url("../images/hero-smartphone-summary@2x.avif") type("image/avif") 2x,*/
+    /*            url("../images/hero-smartphone-summary.avif") type("image/avif") 1x,*/
+    /*            url("../images/hero-smartphone-summary@2x.webp") type("image/webp") 2x,*/
+    /*            url("../images/hero-smartphone-summary.webp") type("image/webp") 1x*/
+    /*    );*/
+    /*}*/
+
+
+    /* картинка у нас маx 586px */
+    @media (min-width: 586px) {
+        .hero {
+            background-size: 100% auto;
+        }
     }
         .hero__head {
             min-height: 220px; /* фон */
             padding-top: 30px;
-            /*text-align: center;*/
             background-image: url("../vectors/hero-smartphone-head.svg");
             background-size: 618px 220px;
-            /*background-repeat: no-repeat;*/
-            /*background-position: center top;*/
         }
-            .hero__head-wrap {
+            .hero__wrap {
 
             }
                 .hero__pre-heading {
@@ -136,38 +156,6 @@
                     .hero__submit .button {
                         width: 100%;
                     }
-
-        .hero__summary {
-            min-height: 366px;
-            padding-top: 220px;
-            padding-bottom: 81px;
-            background-image: url("../images/hero-smartphone-summary.jpg");
-            background-size: 586px 366px;
-        }
-
-        @media (min-resolution: 2dppx) {
-            .hero__summary {
-                background-image: url("../images/hero-smartphone-summary@2x.jpg");
-            }
-        }
-
-
-        .hero__summary {
-            background-image: image-set(
-                url("../images/hero-smartphone-summary@2x.avif") type("image/avif") 2x,
-                url("../images/hero-smartphone-summary.avif") type("image/avif") 1x,
-                url("../images/hero-smartphone-summary@2x.webp") type("image/webp") 2x,
-                url("../images/hero-smartphone-summary.webp") type("image/webp") 1x
-            );
-        }
-
-
-        /* картинка у нас маx 586px */
-        @media (min-width: 586px) {
-            .hero__summary {
-                background-size: 100% auto;
-            }
-        }
 
 }
 
