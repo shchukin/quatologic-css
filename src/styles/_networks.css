@@ -1,5 +1,5 @@
 .networks {
-
+    padding-top: 56px;
 }
     .networks__body {
         padding-bottom: 78px;
@@ -67,7 +67,7 @@
 @media (max-width: 599px) {
 
     .networks {
-
+        padding-top: 50px;
     }
         .networks__body {
             /*padding-bottom: 78px;*/
