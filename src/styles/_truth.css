@@ -1,5 +1,6 @@
 .truth {
-    margin-top: -868px;
+    position: relative;
+    padding-top: 410px;
     padding-bottom: 52px;
 }
     .truth__heading {
@@ -50,7 +51,7 @@
 @media (max-width: 599px) {
 
     .truth {
-        margin-top: 0;
+        padding-top: 192px;
         padding-bottom: 63px;
         overflow: hidden; /* обрезаем картинку */
     }
