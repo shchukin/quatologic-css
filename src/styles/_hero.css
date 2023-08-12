@@ -1,7 +1,7 @@
 .hero {
     min-height: 1800px; /* could be 1448px same as background height, but since it can be stretched in 1920px we need more spacing at the bottom */
     background-image: url("../images/hero-desktop-summary.jpg");
-    background-size: 1864px 1448px;
+    background-size: 1864px 1321px;
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -76,7 +76,7 @@
     .hero {
         min-height: 500px;
         background-image: url("../images/hero-smartphone-summary.jpg");
-        background-size: 586px 366px;
+        background-size: 586px 387px;
         overflow: hidden; /* to cut button shadow inside */
     }
 
