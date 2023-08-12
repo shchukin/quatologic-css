@@ -74,9 +74,7 @@
 @media (max-width: 599px) {
 
     .hero {
-        min-height: 366px;
-        padding-top: 220px;
-        padding-bottom: 81px;
+        min-height: 500px;
         background-image: url("../images/hero-smartphone-summary.jpg");
         background-size: 586px 366px;
         overflow: hidden; /* to cut button shadow inside */
