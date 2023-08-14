@@ -1,11 +1,11 @@
 .about {
-    padding-top: 102px;
+    padding-top: 142px;
+    padding-bottom: 142px;
     min-height: 1343px;
     background-image: url("../vectors/about-desktop.svg");
     background-size: 1198px 1373px;
     background-repeat: no-repeat;
     background-position: calc(50% + 763px) top;
-    margin-bottom: -42px;
 }
     .about__wrap {
         display: flex;
@@ -57,6 +57,7 @@
 
     .about {
         margin-top: -50px;
+        padding-top: 155px;
         padding-bottom: 177px;
         min-height: 1128px;
         background-image: url("../vectors/about-smartphone.svg");

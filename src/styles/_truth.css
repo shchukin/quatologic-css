@@ -83,6 +83,7 @@
             }
 
         .truth__preview {
+            margin-top: 18px;
             margin-left: calc(-1 * var(--container-padding));
             margin-right: calc(-1 * var(--container-padding));
             padding-left: 5px;

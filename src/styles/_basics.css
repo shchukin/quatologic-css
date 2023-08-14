@@ -20,7 +20,7 @@
     }
 
     .basics__lists {
-        margin-top: 46px;
+        margin-top: 37px;
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(5, 1fr);
@@ -177,7 +177,7 @@
         }
 
         .basics__lists {
-            margin-top: 23px;
+            margin-top: 43px;
             display: block;
             /*gap: 20px;*/
             /*grid-template-columns: repeat(5, 1fr);*/
@@ -294,7 +294,7 @@
             /*max-width: var(--max-text-width);*/
             /*font-weight: 500;*/
             font-size: 16px;
-            line-height: 23px;
+            line-height: 27px;
         }
 }
 

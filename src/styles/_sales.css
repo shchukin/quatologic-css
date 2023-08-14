@@ -1,5 +1,5 @@
 .sales {
-    padding-top: 112px;
+    padding-top: 175px;
     padding-bottom: 184px;
     background-image: url("../vectors/sales-background-desktop.svg");
     background-size: 1998px 786px;
@@ -89,7 +89,7 @@
 @media (max-width: 599px) {
 
     .sales {
-        padding-top: 72px;
+        padding-top: 112px;
         padding-bottom: 133px;
         background-image: url("../vectors/sales-background-smartphone.svg");
         background-size: 730px 537px;

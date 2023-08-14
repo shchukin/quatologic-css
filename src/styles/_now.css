@@ -1,6 +1,6 @@
 .now {
-    padding-top: 101px;
-    padding-bottom: 155px;
+    padding-top: 185px;
+    padding-bottom: 222px;
     background-image: url("../vectors/selling-background-desktop.svg");
     background-size: 1998px 786px;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 @media (max-width: 599px) {
 
     .now {
-        padding-top: 40px;
+        padding-top: 80px;
         padding-bottom: 140px;
         background-image: url("../vectors/selling-background-smartphone.svg");
         background-size: 730px 537px;

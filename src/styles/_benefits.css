@@ -1,6 +1,6 @@
 .benefits {
-    padding-top: 166px;
-    padding-bottom: 140px;
+    padding-top: 174px;
+    padding-bottom: 97px;
 }
     .benefits__navigation {
         display: flex;
@@ -78,8 +78,8 @@
                 align-items: center;
                 justify-content: space-between;
                 gap: 50px;
-                padding-top: 77px;
-                padding-bottom: 72px;
+                padding-top: 101px;
+                padding-bottom: 102px;
                 padding-left: 66px;
                 overflow: hidden;
             }
@@ -180,7 +180,7 @@
 
 
         .benefits__body {
-            margin-top: 17px;
+            margin-top: 31px;
         }
             .benefits__item {
                 /*display: none;*/

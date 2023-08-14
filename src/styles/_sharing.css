@@ -1,5 +1,5 @@
 .sharing {
-    padding-top: 77px;
+    padding-top: 37px;
     padding-bottom: 163px;
 }
     .sharing__heading {
@@ -9,7 +9,7 @@
     }
 
     .sharing__body {
-        margin-top: 32px;
+        margin-top: 12px;
         display: grid;
         grid-template-columns: 570px 560px;
         align-items: center;
@@ -32,7 +32,7 @@
 
     .sharing {
         padding-top: 65px;
-        padding-bottom: 130px;
+        padding-bottom: 98px;
     }
         .sharing__heading {
             /*margin-top: 0;*/

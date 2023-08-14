@@ -1,6 +1,6 @@
 .catalog {
     padding-top: 109px;
-    padding-bottom: 161px;
+    padding-bottom: 154px;
     background-color: var(--accent);
     color: #FFFFFF;
 }
@@ -22,7 +22,7 @@
         }
 
         .catalog__body {
-            margin-top: 48px;
+            margin-top: 57px;
             display: grid;
             grid-template-columns: 555px 504px;
             gap: 81px;
