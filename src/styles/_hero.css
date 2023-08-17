@@ -91,8 +91,8 @@
 
     }
         .hero::before {
-            top: 403px;
-            height: 420px; /* could be 387px same as background height, but since it can be stretched in 600px we need more spacing at the bottom */
+            top: 373px;
+            height: 480px; /* could be 387px same as background height, but since it can be stretched in 600px we need more spacing at the bottom */
             background-image: url("../images/hero-smartphone-summary.jpg");
             background-size: 586px 387px;
         }
