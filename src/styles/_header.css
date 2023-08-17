@@ -70,7 +70,7 @@
         }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 749px) {
     .header__contacts-handler::first-letter {
         text-transform: uppercase;
     }

@@ -26,6 +26,7 @@
                 font-weight: bold;
                 font-size: 30px;
                 line-height: 44px;
+                color: #000000;
                 cursor: pointer;
                 white-space: nowrap;
                 transition: background-color var(--transition-hover), color var(--transition-hover);
@@ -126,7 +127,7 @@
 
 
 
-@media (max-width: 599px) {
+@media (max-width: 749px) {
 
     .benefits {
         padding-top: 94px;

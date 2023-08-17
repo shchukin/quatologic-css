@@ -27,7 +27,7 @@
     transform: translateY(1px);
 }
 
-@media (max-width: 599px) {
+@media (max-width: 749px) {
     .button {
         padding-top: 15px;
         padding-bottom: 15px;

@@ -24,7 +24,7 @@
 
 
 
-@media (max-width: 599px) {
+@media (max-width: 749px) {
 
     .list {
         /*padding-left: 0;*/
@@ -76,7 +76,7 @@
         }
 
 
-@media (max-width: 599px) {
+@media (max-width: 749px) {
 
     .list--simpler {
 
