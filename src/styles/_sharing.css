@@ -14,14 +14,14 @@
         grid-template-columns: 570px 560px;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
     }
         .sharing__preview {
 
         }
             .sharing__illustration {
                 vertical-align: top;
-                margin-left: -18px;
+                margin-left: -38px;
             }
 
         .sharing__description {
