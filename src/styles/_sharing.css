@@ -22,11 +22,53 @@
             .sharing__illustration {
                 vertical-align: top;
                 margin-left: -38px;
+                width: calc(100% + 38px);
+                height: auto;
             }
 
         .sharing__description {
 
         }
+
+
+
+@media ( 1100px <= width < 1500px ) {
+
+    .sharing {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+        .sharing__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .sharing__body {
+            margin-top: 4px;
+            /*display: grid;*/
+            grid-template-columns: 456px 454px;
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            gap: 50px;
+        }
+            .sharing__preview {
+
+            }
+                .sharing__illustration {
+                    /*vertical-align: top;*/
+                    margin-left: 0;
+                    width: 100%;
+                }
+
+            .sharing__description {
+
+            }
+}
+
+
+
+
 
 @media (max-width: 749px) {
 
