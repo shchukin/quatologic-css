@@ -76,21 +76,18 @@
         }
 
 
-@media (max-width: 749px) {
+
+@media ( 1100px <= width < 1500px ),
+       (max-width: 749px) {
 
     .list--simpler {
 
     }
         .list--simpler .list__item {
-            /*margin-top: 0;*/
             padding-left: 25px;
         }
             .list--simpler .list__item::before {
                 top: 11px;
                 left: 10px;
-                /*width: 2px;*/
-                /*height: 2px;*/
-                /*background-color: currentColor;*/
             }
 }
-
