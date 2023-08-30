@@ -3,8 +3,17 @@ html {
     overflow-y: scroll;
 }
 
+@media ( 1100px <= width < 1500px ) {
+
+    html {
+        min-width: 0;
+    }
+
+}
+
 @media (max-width: 749px) {
     html {
         min-width: 320px;
     }
 }
+

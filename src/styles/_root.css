@@ -18,6 +18,16 @@
 /* stylelint-enable declaration-colon-space-after */
 
 
+@media ( 1100px <= width < 1500px ) {
+    :root {
+        --container-padding: 30px;
+        --base-font-size: 16px;
+        --base-line-height: 23px;
+        --small-font-size: 14px;
+        --small-line-height: 18px;
+    }
+}
+
 @media (max-width: 749px) {
     :root {
         --container-padding: 30px;

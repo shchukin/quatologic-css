@@ -5,6 +5,14 @@
     line-height: 76px;
 }
 
+@media ( 1100px <= width < 1500px ) {
+    .title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+
 @media (max-width: 749px) {
     .title {
         font-size: 32px;
