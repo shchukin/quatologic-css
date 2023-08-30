@@ -11,10 +11,10 @@
     .sharing__body {
         margin-top: 12px;
         display: grid;
-        grid-template-columns: 570px 560px;
+        grid-template-columns: 550px 560px;
         align-items: center;
         justify-content: center;
-        gap: 30px;
+        gap: 50px;
     }
         .sharing__preview {
 
@@ -79,8 +79,7 @@
             display: block;
         }
             .sharing__illustration {
-                max-width: 100%;
-                height: auto;
+                width: 100%;
                 margin-left: 0;
             }
 
