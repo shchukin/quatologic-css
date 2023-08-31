@@ -83,6 +83,80 @@
             }
 
 
+@media ( 1100px <= width < 1500px ) {
+
+
+    .hero {
+        /*position: relative;*/
+    }
+        .hero::before {
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    left: 0;*/
+            top: -135px;
+        /*    right: 0;*/
+        /*    display: block;*/
+        /*    height: 1500px; !* could be 1321px same as background height, but since it can be stretched in 1920px we need more spacing at the bottom *!*/
+        /*    background-image: url("../images/hero-desktop-summary.jpg");*/
+            background-size: 1640px 1083px;
+        /*    background-repeat: no-repeat;*/
+        /*    background-position: center center;*/
+        }
+
+        /*@media (min-resolution: 2dppx) {*/
+        /*    .hero::before {*/
+        /*        background-image: url("../images/hero-desktop-summary@2x.jpg");*/
+        /*    }*/
+        /*}*/
+
+        /*.hero::before {*/
+        /*    background-image: image-set(*/
+        /*        url("../images/hero-desktop-summary@2x.avif") type("image/avif") 2x,*/
+        /*        url("../images/hero-desktop-summary.avif") type("image/avif") 1x,*/
+        /*        url("../images/hero-desktop-summary@2x.webp") type("image/webp") 2x,*/
+        /*        url("../images/hero-desktop-summary.webp") type("image/webp") 1x*/
+        /*    );*/
+        /*}*/
+
+        .hero__head {
+            padding-top: 66px;
+            padding-bottom: 66px;
+            background-image: url("../vectors/hero-desktop-head.svg");
+            background-size: 1440px 270px;
+        }
+            .hero__wrap {
+
+            }
+                .hero__pre-heading {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+
+                .hero__heading {
+                    margin-top: 13px;
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--evolventa);*/
+                    /*font-weight: bold;*/
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+
+                .hero__description {
+                    max-width: 680px;
+                    /*margin-top: 11px;*/
+                    /*margin-left: auto;*/
+                    /*margin-right: auto;*/
+                    /*font-weight: 500;*/
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                .hero__submit {
+                    margin-top: 44px;
+                }
+}
+
+
 
 
 @media (max-width: 749px) {

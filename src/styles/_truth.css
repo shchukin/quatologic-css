@@ -50,14 +50,11 @@
 @media ( 1100px <= width < 1500px ) {
 
     .truth {
-        /*position: relative;*/
-        padding-top: 300px;
+        padding-top: 247px;
         padding-bottom: 0;
     }
         .truth__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*text-align: center;*/
+
         }
 
         .truth__heading.title,
@@ -68,31 +65,21 @@
         .truth__description {
             margin-top: 7px;
             max-width: 590px;
-            /*margin-left: auto;*/
-            /*margin-right: auto;*/
-            /*font-weight: 500;*/
             font-size: var(--base-font-size);
             line-height: var(--base-line-height);
-            /*text-align: center;*/
         }
 
         .truth__content {
             margin-top: 32px;
         }
             .truth__list {
-                /*display: flex;*/
-                /*align-items: flex-start;*/
-                /*justify-content: center;*/
-                /*flex-wrap: wrap;*/
                 gap: 8px;
             }
 
         .truth__preview {
             margin-top: 32px;
-            /*text-align: center;*/
         }
             .truth__illustration {
-                /*vertical-align: top;*/
                 width: 420px;
                 height: auto;
             }
@@ -103,7 +90,7 @@
 @media (max-width: 749px) {
 
     .truth {
-        padding-top: 192px;
+        padding-top: 138px;
         padding-bottom: 63px;
         overflow: hidden; /* обрезаем картинку */
     }
