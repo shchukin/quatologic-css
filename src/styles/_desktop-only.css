@@ -2,6 +2,14 @@
 
 }
 
+@media ( 1100px <= width < 1500px ) {
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+
 @media (max-width: 749px) {
 
     .desktop-only {

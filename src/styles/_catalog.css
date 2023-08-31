@@ -100,6 +100,7 @@
                 }
                     .catalog__illustration {
                         margin: 0;
+                        width: 100%;
                     }
 
                 .catalog__description {

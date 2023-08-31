@@ -28,6 +28,16 @@
     transform: translateY(1px);
 }
 
+
+@media ( 1100px <= width < 1500px ) {
+    .button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
 @media (max-width: 749px) {
     .button {
         padding-top: 15px;

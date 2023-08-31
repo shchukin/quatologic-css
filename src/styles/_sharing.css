@@ -35,7 +35,7 @@
 @media ( 1100px <= width < 1500px ) {
 
     .sharing {
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 60px;
     }
         .sharing__heading {
