@@ -9,7 +9,7 @@
         text-align: center;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 1500px), ( 750px <= width < 1100px ) {
         .truth__heading.title,
         .truth__heading .title {
             line-height: 53px;
@@ -45,6 +45,58 @@
         .truth__illustration {
             vertical-align: top;
         }
+
+
+@media ( 1100px <= width < 1500px ) {
+
+    .truth {
+        /*position: relative;*/
+        padding-top: 300px;
+        padding-bottom: 0;
+    }
+        .truth__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .truth__heading.title,
+        .truth__heading .title {
+            line-height: 40px;
+        }
+
+        .truth__description {
+            margin-top: 7px;
+            max-width: 590px;
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*font-weight: 500;*/
+            font-size: var(--base-font-size);
+            line-height: var(--base-line-height);
+            /*text-align: center;*/
+        }
+
+        .truth__content {
+            margin-top: 32px;
+        }
+            .truth__list {
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                /*justify-content: center;*/
+                /*flex-wrap: wrap;*/
+                gap: 8px;
+            }
+
+        .truth__preview {
+            margin-top: 32px;
+            /*text-align: center;*/
+        }
+            .truth__illustration {
+                /*vertical-align: top;*/
+                width: 420px;
+                height: auto;
+            }
+}
 
 
 

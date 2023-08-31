@@ -112,6 +112,106 @@
     /*}*/
 
 
+
+@media ( 1100px <= width < 1500px ) {
+
+    .feature {
+        /*position: relative;*/
+        /*display: inline-flex;*/
+        /*vertical-align: top;*/
+        /*border: 1px solid currentColor;*/
+        /*border-radius: 22px;*/
+        padding: 3px 23px;
+        /*font-family: var(--evolventa);*/
+        /*font-weight: bold;*/
+        font-size: 16px;
+        line-height: 28px;
+        /*color: var(--accent);*/
+        /*white-space: nowrap;*/
+    }
+        .feature__tag {
+            /*margin-left: 8px;*/
+            /*display: inline-block;*/
+            /*vertical-align: top;*/
+            /*padding: 4px 12px 3px;*/
+            /*background-color: var(--accent);*/
+            /*border-radius: 15px;*/
+            /*font-family: var(--evolventa);*/
+            /*font-weight: bold;*/
+            font-size: 14px;
+            line-height: 22px;
+            /*color: #FFFFFF;*/
+            /*white-space: nowrap;*/
+        }
+
+        .feature__tag:last-child {
+            margin-right: -20px;
+        }
+
+        .feature__sparkles {
+            /*width: 26px;*/
+            /*height: 26px;*/
+            /*margin-left: 12px;*/
+            /*text-indent: 200%;*/
+            /*white-space: nowrap;*/
+            /*overflow: hidden;*/
+            /*background-image: url("../images/feature-sparkles.svg");*/
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+
+
+    .feature--guy {
+
+    }
+        .feature--guy::after {
+            /*content: "";*/
+            /*position: absolute;*/
+            /*z-index: 10;*/
+            /*left: 87px;*/
+            top: 28px;
+            width: 74px;
+            height: 80px;
+            /*background-image: url("../images/feature-guy.png");*/
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+
+        @media (min-resolution: 2dppx) {
+            .feature--guy::after {
+                /*background-image: url("../images/feature-guy@2x.png");*/
+            }
+        }
+
+
+    .feature--girl {
+
+    }
+        .feature--girl::after {
+            /*content: "";*/
+            /*position: absolute;*/
+            /*z-index: 10;*/
+            /*left: 100%;*/
+            /*margin-left: -17px;*/
+            /*top: 5px;*/
+            width: 80px;
+            height: 60px;
+            /*background-image: url("../images/feature-girl.png");*/
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+
+        @media (min-resolution: 2dppx) {
+            .feature--girl::after {
+                /*background-image: url("../images/feature-girl@2x.png");*/
+            }
+        }
+}
+
+
 @media (max-width: 749px) {
 
     .feature {
