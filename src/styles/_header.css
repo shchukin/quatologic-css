@@ -15,7 +15,6 @@
            position: static;
        }
     }
-
         .header__wrap {
             display: flex;
             align-items: flex-start;
@@ -53,6 +52,48 @@
                 .header__book-string {
 
                 }
+
+
+@media ( 1100px <= width < 1500px ) {
+
+    .header {
+        height: 48px;
+    }
+        .header__fixed-bar {
+
+        }
+            .header__wrap {
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+                .header__emblem {
+
+                }
+
+                .header__nav {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+                    .header__link {
+                        padding-top: 9px;
+                        padding-bottom: 9px;
+                        border-radius: 7px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    .header__link:hover {
+
+                    }
+
+                .header__contacts-handler {
+
+                }
+                    .header__book-string {
+
+                    }
+}
+
 
 
 @media (max-width: 1023px) {

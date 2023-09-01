@@ -17,3 +17,11 @@
 .logo--inverted {
     background-image: url("../images/logo-inverted.svg");
 }
+
+
+@media ( 1100px <= width < 1500px ) {
+
+    .logo {
+        width: 146px;
+    }
+}
