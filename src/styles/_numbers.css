@@ -91,6 +91,102 @@
                 }
 
 
+@media ( 1100px <= width < 1500px ) {
+
+    .numbers {
+        /*padding-top: 59px;*/
+        padding-bottom: 8px;
+    }
+        .numbers__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .numbers__summary {
+            margin-top: 32px;
+            /*display: grid;*/
+            /*grid-template-columns: repeat(3, 1fr);*/
+            /*gap: 20px;*/
+        }
+            .numbers__tile {
+                padding: 27px 30px 31px;
+                /*background-color: #F5F9FE;*/
+                /*border-radius: 20px;*/
+            }
+
+            @media (min-width: 1300px) {
+                /*.numbers__tile {*/
+                /*    padding-left: 58px;*/
+                /*    padding-right: 58px;*/
+                /*}*/
+            }
+                .numbers__stat {
+                    /*display: block;*/
+                    /*min-height: 96px;*/
+                    /*font-family: var(--evolventa);*/
+                    /*font-weight: bold;*/
+                    font-size: 32px;
+                    line-height: 43px;
+                    /*letter-spacing: -1px;*/
+                    /*text-align: center;*/
+                }
+
+                .numbers__description {
+                    margin-top: 2px;
+                    /*text-align: center;*/
+                }
+
+        .numbers__data {
+
+        }
+            .numbers__sub-heading {
+                margin-top: 54px;
+                /*margin-bottom: 0;*/
+            }
+
+            .numbers__list {
+                margin-top: 30px;
+                /*display: grid;*/
+                /*grid-template-columns: repeat(3, 1fr);*/
+                gap: 34px 20px;
+            }
+                .numbers__item {
+
+                }
+                    .numbers__value {
+                        /*display: flex;*/
+                        /*align-items: flex-end;*/
+                        /*gap: 16px;*/
+                        /*margin-bottom: 16px;*/
+                    }
+                        .numbers__percent {
+                            /*font-family: var(--evolventa);*/
+                            /*font-weight: bold;*/
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+
+                        .numbers__unit {
+                            padding-bottom: 5px;
+                            font-size: 16px;
+                            line-height: 17px;
+                        }
+
+                    .numbers__progress {
+                        /*height: 24px;*/
+                        /*border-radius: 12px;*/
+                    }
+
+                    .numbers__progress--alternate {
+                        /*background-color: var(--alternative);*/
+                    }
+
+                    .numbers__progress--accent {
+                        /*background-color: var(--accent);*/
+                    }
+}
+
+
 
 @media (max-width: 749px) {
 
