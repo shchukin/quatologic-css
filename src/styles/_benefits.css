@@ -126,6 +126,98 @@
         }
 
 
+@media ( 1100px <= width < 1500px ) {
+
+    .benefits {
+        padding-top: 78px;
+        padding-bottom: 50px;
+    }
+        .benefits__navigation {
+
+        }
+            .benefits__heading {
+                margin-top: 4px;
+            }
+
+            .benefits__tabs {
+
+            }
+                .benefits__tag {
+                    padding: 6px 32px;
+                    font-size: 24px;
+                    line-height: 44px;
+                }
+
+                .benefits__tag:hover {
+
+                }
+
+                .benefits__tag:active {
+
+                }
+
+                .benefits__tag--current,
+                .benefits__tag--current:hover {
+
+                }
+
+
+        .benefits__body {
+            margin-top: 14px;
+        }
+            .benefits__item {
+
+            }
+
+            .benefits__item--current {
+
+            }
+                .benefits__screen {
+                    min-height: 500px;
+                    justify-content: flex-start;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    padding-left: 46px;
+                }
+
+                .benefits__screen--accent {
+
+                }
+
+                .benefits__screen--alternate {
+
+                }
+                    .benefits__summary {
+                        /*font-weight: 500;*/
+                    }
+                        .benefits__features {
+
+                        }
+
+        .benefits__item--for-distributor-manufacturer {
+
+        }
+            .benefits__item--for-distributor-manufacturer picture {
+                margin-left: auto;
+                margin-right: auto;
+            }
+                .benefits__item--for-distributor-manufacturer .benefits__screenshot {
+                    margin-left: 0;
+                    width: 475px;
+                    height: auto;
+                }
+
+        .benefits__item--for-dealer-and-seller {
+
+        }
+            .benefits__item--for-dealer-and-seller .benefits__screenshot {
+                flex-grow: 1;
+                max-width: 100%;
+                height: auto;
+            }
+}
+
+
 
 @media (max-width: 749px) {
 
@@ -135,35 +227,20 @@
     }
         .benefits__navigation {
             display: block;
-            /*align-items: flex-start;*/
-            /*gap: 24px;*/
         }
             .benefits__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
+
             }
 
             .benefits__tabs {
                 display: block;
                 margin-top: 10px;
-                /*align-items: flex-start;*/
-                /*gap: 24px;*/
             }
                 .benefits__tag {
                     margin-top: 12px;
-                    /*border: none;*/
                     padding: 12px 24px;
-                    /*background-color: #E7E7E7;*/
-                    /*border-radius: 38px;*/
-                    /*font-family: var(--font-headings);*/
-                    /*font-weight: bold;*/
                     font-size: 20px;
                     line-height: 28px;
-                    /*cursor: pointer;*/
-                    /*white-space: nowrap;*/
-                    /*transition: background-color var(--transition-hover),*/
-                    /*            color var(--transition-hover);*/
-                    /*user-select: none;*/
                 }
 
                 @media (max-width: 374px) {
@@ -184,47 +261,34 @@
             margin-top: 31px;
         }
             .benefits__item {
-                /*display: none;*/
+
             }
 
             @keyframes benefits {
-                /*from { opacity: 0; }*/
-                /*to { opacity: 1; }*/
+
             }
 
             .benefits__item--current {
-                /*display: block;*/
-                /*animation: benefits 0.3s ease;*/
+
             }
                 .benefits__screen {
-                    /*border-radius: 20px;*/
                     display: block;
-                    /*align-items: center;*/
-                    /*gap: 50px;*/
-                    /*padding-top: 77px;*/
-                    /*padding-bottom: 72px;*/
                     padding: 32px 24px 0;
-                    /*overflow: hidden;*/
                 }
 
                 .benefits__screen--accent {
-                    /*color: #FFFFFF;*/
+
                 }
 
                 .benefits__screen--alternate {
                     background-image: url("../vectors/benefits-background-alternate-smartphone.svg");
                     background-size: 600px 1200px;
-                    /*background-repeat: no-repeat;*/
-                    /*background-position: center top;*/
                 }
                     .benefits__summary {
                         width: auto;
-                        /*flex-shrink: 0;*/
-                        /*font-weight: 500;*/
                     }
                         .benefits__features {
-                            /*margin-top: 0;*/
-                            /*margin-bottom: 0;*/
+
                         }
                             .benefits__features .list__item {
                                 padding-left: 0;

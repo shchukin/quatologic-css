@@ -4,7 +4,6 @@
     background-color: var(--accent);
     color: #FFFFFF;
     text-align: center;
-    overflow: hidden; /* Обрезаем скриншоты */
 }
     .cta__wrap {
 
@@ -13,11 +12,9 @@
             margin-top: 0;
             margin-bottom: 0;
             text-align: center;
+            font-size: 48px;
+            line-height: 64px;
         }
-            .cta__heading.title,
-            .cta__heading .title {
-                line-height: 64px;
-            }
 
         .cta__submit {
             margin-top: 50px;
@@ -29,14 +26,14 @@
         }
 
 
-@media (max-width: 749px) {
+@media ( 1100px <= width < 1500px ) {
 
     .cta {
-        padding-top: 89px;
-        padding-bottom: 60px;
+        padding-top: 46px;
+        padding-bottom: 40px;
+        /*background-color: var(--accent);*/
         /*color: #FFFFFF;*/
         /*text-align: center;*/
-        /*overflow: hidden; !* Обрезаем скриншоты *!*/
     }
         .cta__wrap {
 
@@ -46,8 +43,40 @@
                 /*margin-bottom: 0;*/
                 /*text-align: center;*/
             }
-                .cta__heading.title,
-                .cta__heading .title {
+                .cta__heading {
+                    font-size: 40px;
+                    line-height: 53px;
+                }
+
+            .cta__submit {
+                margin-top: 35px;
+            }
+
+            .cta__note {
+                margin-top: 3px;
+                /*font-weight: 500;*/
+            }
+}
+
+
+@media (max-width: 749px) {
+
+    .cta {
+        padding-top: 89px;
+        padding-bottom: 60px;
+        /*color: #FFFFFF;*/
+        /*text-align: center;*/
+    }
+        .cta__wrap {
+
+        }
+            .cta__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*text-align: center;*/
+            }
+                .cta__heading {
+                    font-size: 32px;
                     line-height: 43px;
                 }
 
