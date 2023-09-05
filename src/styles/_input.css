@@ -42,3 +42,52 @@
         min-height: 52px; /* one row */
         resize: vertical;
     }
+
+
+@media ( 1100px <= width < 1500px ) {
+
+    .input {
+
+    }
+        .input__widget {
+            width: 100%;
+            height: 52px;
+            vertical-align: top;
+            padding: 14px 24px;
+            background-color: #FFFFFF;
+            border: none;
+            outline: none;
+            background-clip: padding-box; /* reset iOS default shadow */
+            border-radius: 15px; /* reset iOS default border-radius */
+            font-family: inherit;
+            letter-spacing: inherit;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        .input__widget:focus {
+            box-shadow: 0 0 0 3px var(--accent);
+        }
+
+        .input__widget:disabled {
+            opacity: 0.5;
+        }
+
+        /* stylelint-disable block-opening-brace-space-before */
+        .input__widget::-webkit-input-placeholder { font-style: normal; color: #999999; }
+        .input__widget::-moz-placeholder          { font-style: normal; color: #999999; opacity: 1; }
+        .input__widget:-ms-input-placeholder      { font-style: normal; color: #999999; }
+        /* stylelint-enable */
+
+
+    .input--area {
+
+    }
+        .input--area .input__widget {
+            vertical-align: top;
+            height: auto; /* user rows="" attribute */
+            min-height: 52px; /* one row */
+            resize: vertical;
+        }
+}
