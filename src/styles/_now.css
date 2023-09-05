@@ -31,6 +31,43 @@
         }
 
 
+@media ( 1100px <= width < 1500px ) {
+
+
+    .now {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /*background-image: url("../vectors/selling-background-desktop.svg");*/
+        /*background-size: 1998px 786px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center bottom -456px;*/
+        /*text-align: center;*/
+        /*overflow: hidden; !* cut shadow *!*/
+    }
+        .now__wrap {
+
+        }
+            .now__heading {
+                /*margin: 0 auto;*/
+                /*font-family: var(--evolventa);*/
+                /*font-weight: bold;*/
+                font-size: 40px;
+                line-height: 53px;
+            }
+
+            .now__action {
+                /*margin-top: 32px;*/
+            }
+
+            .now__note {
+                /*margin-top: 6px;*/
+                /*font-weight: 500;*/
+                font-size: 16px;
+                line-height: 24px;
+            }
+}
+
+
 
 @media (max-width: 749px) {
 

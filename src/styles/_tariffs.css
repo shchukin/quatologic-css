@@ -109,7 +109,7 @@
 
     .tariffs {
         margin-top: -200px; /* перекрываем min-height с тенью у секции about */
-        padding-bottom: 0;
+        padding-bottom: 40px;
     }
         .tariffs__table {
 
