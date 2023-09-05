@@ -100,13 +100,13 @@
 
 @media ( 1100px <= width < 1500px ) {
 
-
     .footer {
         /*background-color: var(--accent);*/
         /*color: #FFFFFF;*/
     }
-        .footer__wrap {
-
+        .footer__wrap.container,
+        .footer__wrap .container {
+            max-width: 1300px;
         }
             .footer__primary {
                 /*display: flex;*/
