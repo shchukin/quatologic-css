@@ -18,7 +18,7 @@
 /* stylelint-enable declaration-colon-space-after */
 
 
-@media ( 1100px <= width < 1500px ) {
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
     :root {
         --container-padding: 30px;
         --base-font-size: 16px;

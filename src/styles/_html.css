@@ -4,7 +4,6 @@ html {
 }
 
 @media ( 1100px <= width < 1500px ) {
-
     html {
         min-width: 0;
     }

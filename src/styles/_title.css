@@ -5,7 +5,7 @@
     line-height: 76px;
 }
 
-@media ( 1100px <= width < 1500px ) {
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
     .title {
         font-size: 36px;
         line-height: 48px;

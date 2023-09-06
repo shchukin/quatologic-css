@@ -98,7 +98,7 @@
             }
 
 
-@media ( 1100px <= width < 1500px ) {
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
 
     .footer {
         /*background-color: var(--accent);*/

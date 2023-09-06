@@ -26,7 +26,7 @@
         }
 
 
-@media ( 1100px <= width < 1500px ) {
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
 
     .cta {
         padding-top: 46px;

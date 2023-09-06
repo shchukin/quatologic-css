@@ -52,7 +52,7 @@
     }
 
 
-@media ( 1100px <= width < 1500px ) {
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
 
     .plan {
         padding-bottom: 5px;
