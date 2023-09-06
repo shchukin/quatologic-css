@@ -6,7 +6,7 @@
     border-right: var(--container-padding) solid transparent;
 }
 
-@media ( 1100px <= width < 1500px ) {
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
 
     .container {
         width: calc(960px + 2 * var(--container-padding));
