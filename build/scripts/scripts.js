@@ -9,7 +9,7 @@
         $('html').addClass('macos');
     }
 
-    if (navigator.platform.toUpperCase().indexOf('iPad') >= 0 || navigator.platform.toUpperCase().indexOf('iPhone') >= 0 || navigator.platform.toUpperCase().indexOf('iPod') >= 0) {
+    if (navigator.platform.indexOf('iPad') >= 0 || navigator.platform.toUpperCase().indexOf('iPhone') >= 0 || navigator.platform.toUpperCase().indexOf('iPod') >= 0) {
         $('html').addClass('ios');
     }
 
