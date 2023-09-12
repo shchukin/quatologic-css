@@ -1,12 +1,16 @@
 (function($) {
 
-    /* Detect macOS */
-    // For some reason macOS changes colors on video files, so they don't match with background
+    /* Detect macOS & iOS */
+    // For some reason macOS and iOS changes colors on video files, so they don't match with background
     // We should ideally fix video files: https://stackoverflow.com/questions/63686800/color-variations-in-video-html5
     // but for now let's just change few backgrounds on macOS
 
     if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
         $('html').addClass('macos');
+    }
+
+    if (navigator.platform.toUpperCase().indexOf('iPad') >= 0 || navigator.platform.toUpperCase().indexOf('iPhone') >= 0 || navigator.platform.toUpperCase().indexOf('iPod') >= 0) {
+        $('html').addClass('ios');
     }
 
 
@@ -23,6 +27,7 @@
     });
 
 
+
     /* Anchors */
 
     // Calculate header height. If it's fixed, our anchors distance should be 80px less (header height)
@@ -36,7 +41,7 @@
     $(document).ready(initAnchorsOffest);
     $(window).on('resize', initAnchorsOffest);
 
-    // set offest
+    // set offset
 
     const anchorsOffset = 40;
 
@@ -45,6 +50,7 @@
         $('html, body').animate({ scrollTop: $( $(this).attr('href') ).offset().top - anchorsOffset - headerHeight}, 800);
         return true;
     });
+
 
 
     /* Scroll animations */

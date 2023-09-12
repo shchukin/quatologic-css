@@ -12,6 +12,10 @@
 .macos .catalog {
     background-color: #038FED;
 }
+
+.ios .catalog {
+    background-color: red;
+}
     .catalog__wrap {
 
     }
