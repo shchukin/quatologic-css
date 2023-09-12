@@ -74,6 +74,10 @@
             background-color: #BDC6F3;
         }
 
+        .iOS .basics__tile--omnichanelling {
+            background-color: #B5BEF0;
+        }
+
         .basics__tile--user-data {
             grid-column: 1 / 3;
             grid-row: 5 / 6;
