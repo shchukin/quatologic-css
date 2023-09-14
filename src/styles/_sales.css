@@ -18,6 +18,19 @@
         text-align: center;
     }
 
+    .sales__video {
+        margin-top: 28px;
+        aspect-ratio: 16 / 9;
+        vertical-align: top;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+        .sales__iframe {
+            margin: -1px;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+        }
+
     .sales__body {
         margin-top: 51px;
         display: flex;
