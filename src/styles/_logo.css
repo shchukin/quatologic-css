@@ -5,7 +5,7 @@
     height: 42px;
     margin-top: 0;
     margin-bottom: 0;
-    background-image: url("../images/logo.svg");
+    background-image: url("../images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -14,8 +14,23 @@
     overflow: hidden;
 }
 
+@media (min-resolution: 2dppx) {
+    .logo {
+        background-image: url("../images/logo@2x.png");
+    }
+}
+
+
+
 .logo--inverted {
-    background-image: url("../images/logo-inverted.svg");
+    background-image: url("../images/logo-inverted.png");
+}
+
+@media (min-resolution: 2dppx) {
+
+    .logo--inverted {
+        background-image: url("../images/logo-inverted@2x.png");
+    }
 }
 
 
