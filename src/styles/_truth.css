@@ -6,6 +6,12 @@
     .truth__wrap {
 
     }
+
+    .truth__wrap.container,
+    .truth__wrap .container {
+        border-left: none;
+        border-right: none;
+    }
         .truth__heading {
             margin-top: 0;
             margin-bottom: 0;
@@ -59,13 +65,6 @@
         .truth__wrap {
 
         }
-
-        .truth__wrap.container,
-        .truth__wrap .container {
-            border-left: none;
-            border-right: none;
-        }
-
             .truth__heading {
 
             }
