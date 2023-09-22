@@ -65,6 +65,11 @@
         .truth__wrap {
 
         }
+
+        .truth__wrap.container,
+        .truth__wrap .container {
+            width: 1060px;
+        }
             .truth__heading {
 
             }
