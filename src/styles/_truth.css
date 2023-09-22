@@ -3,48 +3,51 @@
     padding-top: 410px;
     padding-bottom: 52px;
 }
-    .truth__heading {
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: center;
-    }
+    .truth__wrap {
 
-    @media (min-width: 1500px), ( 750px <= width < 1100px ) {
-        .truth__heading.title,
-        .truth__heading .title {
-            line-height: 53px;
-        }
     }
-
-    .truth__description {
-        margin-top: 13px;
-        max-width: 740px;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 34px;
-        text-align: center;
-    }
-
-    .truth__content {
-        margin-top: 45px;
-    }
-        .truth__list {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
+        .truth__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
         }
 
-    .truth__preview {
-        margin-top: 50px;
-        text-align: center;
-    }
-        .truth__illustration {
-            vertical-align: top;
+        @media (min-width: 1500px), ( 750px <= width < 1100px ) {
+            .truth__heading.title,
+            .truth__heading .title {
+                line-height: 53px;
+            }
         }
+
+        .truth__description {
+            margin-top: 13px;
+            max-width: 740px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .truth__content {
+            margin-top: 45px;
+        }
+            .truth__list {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+        .truth__preview {
+            margin-top: 50px;
+            text-align: center;
+        }
+            .truth__illustration {
+                vertical-align: top;
+            }
 
 
 @media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
@@ -53,36 +56,46 @@
         padding-top: 247px;
         padding-bottom: 0;
     }
-        .truth__heading {
+        .truth__wrap {
 
         }
 
-        .truth__heading.title,
-        .truth__heading .title {
-            line-height: 40px;
+        .truth__wrap.container,
+        .truth__wrap .container {
+            border-left: none;
+            border-right: none;
         }
 
-        .truth__description {
-            margin-top: 7px;
-            max-width: 590px;
-            font-size: var(--base-font-size);
-            line-height: var(--base-line-height);
-        }
+            .truth__heading {
 
-        .truth__content {
-            margin-top: 32px;
-        }
-            .truth__list {
-                gap: 8px;
             }
 
-        .truth__preview {
-            margin-top: 32px;
-        }
-            .truth__illustration {
-                width: 420px;
-                height: auto;
+            .truth__heading.title,
+            .truth__heading .title {
+                line-height: 40px;
             }
+
+            .truth__description {
+                margin-top: 7px;
+                max-width: 590px;
+                font-size: var(--base-font-size);
+                line-height: var(--base-line-height);
+            }
+
+            .truth__content {
+                margin-top: 32px;
+            }
+                .truth__list {
+                    gap: 8px;
+                }
+
+            .truth__preview {
+                margin-top: 32px;
+            }
+                .truth__illustration {
+                    width: 420px;
+                    height: auto;
+                }
 }
 
 
@@ -94,42 +107,45 @@
         padding-bottom: 63px;
         overflow: hidden; /* обрезаем картинку */
     }
-        .truth__heading {
+        .truth__wrap {
 
         }
+            .truth__heading {
 
-        .truth__description {
-            margin-top: 14px;
-            font-weight: inherit;
-            font-size: 16px;
-            line-height: 23px;
-        }
+            }
 
-        .truth__content {
-            margin-top: 20px;
-            max-width: 360px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-            .truth__list {
+            .truth__description {
+                margin-top: 14px;
+                font-weight: inherit;
+                font-size: 16px;
+                line-height: 23px;
+            }
+
+            .truth__content {
+                margin-top: 20px;
+                max-width: 360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+                .truth__list {
+                    margin-left: calc(-1 * var(--container-padding));
+                    margin-right: calc(-1 * var(--container-padding));
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                    padding-bottom: 40px;
+                    overflow-x: auto;
+                    gap: 8px;
+                }
+
+            .truth__preview {
+                margin-top: 18px;
                 margin-left: calc(-1 * var(--container-padding));
                 margin-right: calc(-1 * var(--container-padding));
-                padding-left: var(--container-padding);
-                padding-right: var(--container-padding);
-                padding-bottom: 40px;
-                overflow-x: auto;
-                gap: 8px;
+                padding-left: 5px;
+                padding-right: 5px;
             }
-
-        .truth__preview {
-            margin-top: 18px;
-            margin-left: calc(-1 * var(--container-padding));
-            margin-right: calc(-1 * var(--container-padding));
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-            .truth__illustration {
-                width: 100%;
-                height: auto;
-            }
+                .truth__illustration {
+                    width: 100%;
+                    height: auto;
+                }
 }
