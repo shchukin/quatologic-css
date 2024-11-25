@@ -7,20 +7,3 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
-/*.check::after {*/
-/*    content: "";*/
-/*    display: inline-block;*/
-/*    vertical-align: top;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    background-image: url("../vectors/check.svg");*/
-/*    background-size: 20px 20px;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center center;*/
-/*}*/
-
-
-/*.check::after {*/
-    /*filter: drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.20));*/
-/*}*/

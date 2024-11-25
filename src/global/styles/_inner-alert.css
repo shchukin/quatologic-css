@@ -50,7 +50,7 @@
     background-image: url("../vectors/inner-alert-check.svg");
 }
 
-/* Моге бы быть второй вариант: */
+/* Мог бы быть второй вариант: */
 /*.inner-alert--in-modal.inner-alert--danger {*/
 /*    background-image: url("../vectors/inner-alert-stop.svg");*/
 /*}*/
@@ -71,19 +71,15 @@
         }
 
         .inner-alert__description {
-            /*margin-top: 4px;*/
-            /*font-size: 16px;*/
-            /*line-height: 22px;*/
-            /*text-align: center;*/
+
         }
 
         .inner-alert__action {
-            /*margin-top: auto;*/
-            /*align-self: center;*/
+
         }
             .inner-alert__action.button,
             .inner-alert__action .button {
-                /*min-width: 210px;*/
+
             }
 
 
