@@ -50,7 +50,7 @@ gulp.task('clean', function() {
 
 // Manifest: copy
 
-gulp.task('manifest', function () {
+gulp.task('quotalogic.io_manifest', function () {
     return gulp.src([
         'src/global/browserconfig.xml',
         'src/global/site.webmanifest',
@@ -64,7 +64,7 @@ gulp.task('manifest', function () {
 
 // Favicon: copy
 
-gulp.task('favicon', function () {
+gulp.task('quotalogic.io_favicon', function () {
     return gulp.src('src/global/favicon/**/*')
         .pipe(plumber())
         .pipe(gulp.dest('build/global/public_html/favicon/'))
@@ -73,7 +73,7 @@ gulp.task('favicon', function () {
 
 // Temp: copy
 
-gulp.task('temp', function() {
+gulp.task('quotalogic.io_temp', function() {
   return gulp.src('src/global/temp/**/*')
       .pipe(plumber())
       .pipe(gulp.dest('build/global/public_html/temp/'))
@@ -83,7 +83,7 @@ gulp.task('temp', function() {
 
 // Content: copy
 
-gulp.task('content', function() {
+gulp.task('quotalogic.io_content', function() {
   return gulp.src('src/global/content/**/*')
       .pipe(plumber())
       .pipe(gulp.dest('build/global/public_html/content/'))
@@ -93,7 +93,7 @@ gulp.task('content', function() {
 
 // Images: copy
 
-gulp.task('images', function() {
+gulp.task('quotalogic.io_images', function() {
   return gulp.src('src/global/images/**/*')
       .pipe(plumber())
       .pipe(gulp.dest('build/global/public_html/images/'))
@@ -103,7 +103,7 @@ gulp.task('images', function() {
 
 // Fonts: copy
 
-gulp.task('fonts', function() {
+gulp.task('quotalogic.io_fonts', function() {
   return gulp.src('src/global/fonts/**/*')
       .pipe(plumber())
       .pipe(gulp.dest('build/global/public_html/fonts/'))
@@ -113,7 +113,7 @@ gulp.task('fonts', function() {
 
 // Layouts: copy
 
-gulp.task('layouts', function() {
+gulp.task('quotalogic.io_layouts', function() {
   return gulp.src('src/global/*.html')
       .pipe(plumber())
       .pipe(change(addSourcesTimestamp))
@@ -124,7 +124,7 @@ gulp.task('layouts', function() {
 
 // Vendors: copy but exclude normalize
 
-gulp.task('vendors', function() {
+gulp.task('quotalogic.io_vendors', function() {
   return gulp.src([
       'src/global/vendors/**/*',
       '!src/global/vendors/normalize',
@@ -138,7 +138,7 @@ gulp.task('vendors', function() {
 
 // Scripts: copy
 
-gulp.task('scripts', function() {
+gulp.task('quotalogic.io_scripts', function() {
   return gulp.src('src/global/scripts/**/*')
       .pipe(plumber())
       .pipe(gulp.dest('build/global/public_html/scripts/'))
@@ -148,7 +148,7 @@ gulp.task('scripts', function() {
 
 // Styles: concat, add prefixes, compress, copy
 
-gulp.task('styles', function() {
+gulp.task('quotalogic.io_styles', function() {
 
   var processors = [
     postcssPresetEnv()
@@ -175,7 +175,7 @@ gulp.task('styles', function() {
 
 // lint
 
-gulp.task('lint', function() {
+gulp.task('quotalogic.io_lint', function() {
 
   return gulp.src([
     '!src/global/styles/style.css',
@@ -192,7 +192,20 @@ gulp.task('lint', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'fonts', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
+    run('clean',
+        'quotalogic.io_manifest',
+        'quotalogic.io_favicon',
+        'quotalogic.io_temp',
+        'quotalogic.io_content',
+        'quotalogic.io_images',
+        'quotalogic.io_fonts',
+        'quotalogic.io_layouts',
+        'quotalogic.io_vendors',
+        'quotalogic.io_scripts',
+        'quotalogic.io_styles',
+        'quotalogic.io_lint',
+        fn
+    );
 });
 
 
