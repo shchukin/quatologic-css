@@ -113,8 +113,7 @@ gulp.task('quotalogic.io_layouts', function () {
     return gulp.src([
         'src/quotalogic.io/*.html',
         'src/quotalogic.io/*.shtml',
-        'src/quotalogic.io/*.php',
-        'src/quotalogic.io/error_log'
+        'src/quotalogic.io/*.php'
     ])
         .pipe(plumber())
         .pipe(change(changeGlobalPath))
