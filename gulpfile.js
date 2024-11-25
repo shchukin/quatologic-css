@@ -44,6 +44,22 @@ gulp.task('clean', function() {
 });
 
 
+// Layouts: copy
+
+gulp.task('quotalogic.io_layouts', function () {
+    return gulp.src([
+        'src/quotalogic.io/*.html',
+        'src/quotalogic.io/*.shtml',
+        'src/quotalogic.io/*.php'
+    ])
+        .pipe(plumber())
+        .pipe(change(changeGlobalPath))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('build/quotalogic.io/public_html/'))
+        ;
+});
+
+
 // Manifest: copy
 
 gulp.task('quotalogic.io_manifest', function () {
@@ -51,10 +67,11 @@ gulp.task('quotalogic.io_manifest', function () {
         'src/global/browserconfig.xml',
         'src/global/site.webmanifest',
         'src/global/humans.txt',
-        'src/global/favicon.ico'])
-    .pipe(plumber())
-    .pipe(gulp.dest('build/quotalogic.io/public_html/'))
-    ;
+        'src/global/favicon.ico'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/'))
+        ;
 });
 
 
@@ -73,7 +90,10 @@ gulp.task('quotalogic.io_favicon', function () {
 // Temp: copy
 
 gulp.task('quotalogic.io_temp', function() {
-  return gulp.src('src/global/temp/**/*')
+  return gulp.src([
+      'src/global/temp/**/*',
+      'src/quotalogic.io/temp/**/*'
+  ])
       .pipe(plumber())
       .pipe(gulp.dest('build/quotalogic.io/public_html/temp/'))
   ;
@@ -83,7 +103,10 @@ gulp.task('quotalogic.io_temp', function() {
 // Content: copy
 
 gulp.task('quotalogic.io_content', function() {
-  return gulp.src('src/global/content/**/*')
+  return gulp.src([
+      'src/global/content/**/*',
+      'src/quotalogic.io/content/**/*'
+  ])
       .pipe(plumber())
       .pipe(gulp.dest('build/quotalogic.io/public_html/content/'))
   ;
@@ -93,7 +116,10 @@ gulp.task('quotalogic.io_content', function() {
 // Images: copy
 
 gulp.task('quotalogic.io_images', function() {
-  return gulp.src('src/global/images/**/*')
+  return gulp.src([
+      'src/global/images/**/*',
+      'src/quotalogic.io/images/**/*'
+  ])
       .pipe(plumber())
       .pipe(gulp.dest('build/quotalogic.io/public_html/images/'))
   ;
@@ -103,47 +129,37 @@ gulp.task('quotalogic.io_images', function() {
 // Fonts: copy
 
 gulp.task('quotalogic.io_fonts', function() {
-  return gulp.src('src/global/fonts/**/*')
+  return gulp.src([
+      'src/global/fonts/**/*',
+      'src/quotalogic.io/fonts/**/*'
+  ])
       .pipe(plumber())
       .pipe(gulp.dest('build/quotalogic.io/public_html/fonts/'))
   ;
 });
 
 
-// Layouts: copy
-
-gulp.task('quotalogic.io_layouts', function () {
-    return gulp.src([
-        'src/quotalogic.io/*.html',
-        'src/quotalogic.io/*.shtml',
-        'src/quotalogic.io/*.php'
-    ])
-        .pipe(plumber())
-        .pipe(change(changeGlobalPath))
-        .pipe(change(addSourcesTimestamp))
-        .pipe(gulp.dest('build/quotalogic.io/public_html/'))
-        ;
-});
-
-
 // Vendors: copy but exclude normalize (it will be injected into CSS file)
 
 gulp.task('quotalogic.io_vendors', function() {
-  return gulp.src([
-      'src/global/vendors/**/*',
-      '!src/global/vendors/normalize',
-      '!src/global/vendors/normalize/**/*',
-  ])
-      .pipe(plumber())
-      .pipe(gulp.dest('build/quotalogic.io/public_html/vendors/'))
-  ;
+    return gulp.src([
+        'src/global/vendors/**/*',
+        'src/quotalogic.io/vendors/**/*',
+        '!src/global/vendors/normalize'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/vendors/'))
+        ;
 });
 
 
 // Scripts: copy
 
 gulp.task('quotalogic.io_scripts', function() {
-  return gulp.src('src/global/scripts/**/*')
+  return gulp.src([
+      'src/global/scripts/**/*',
+      'src/quotalogic.io/scripts/**/*'
+  ])
       .pipe(plumber())
       .pipe(gulp.dest('build/quotalogic.io/public_html/scripts/'))
   ;
@@ -197,13 +213,13 @@ gulp.task('quotalogic.io_lint', function() {
 
 gulp.task('default', function (fn) {
     run('clean',
+        'quotalogic.io_layouts',
         'quotalogic.io_manifest',
+        'quotalogic.io_fonts',
         'quotalogic.io_favicon',
         'quotalogic.io_temp',
         'quotalogic.io_content',
         'quotalogic.io_images',
-        'quotalogic.io_fonts',
-        'quotalogic.io_layouts',
         'quotalogic.io_vendors',
         'quotalogic.io_scripts',
         'quotalogic.io_styles',
