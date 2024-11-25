@@ -22,7 +22,7 @@
         font-family: var(--evolventa);
         font-weight: bold;
         font-size: 16px;
-        line-height: 23px;
+        line-height: 23px; /* В совокупности с вертикальными паддингами получаем 30px, как line-height у родителя */
         color: #FFFFFF;
         white-space: nowrap;
     }
@@ -144,7 +144,7 @@
             /*font-family: var(--evolventa);*/
             /*font-weight: bold;*/
             font-size: 14px;
-            line-height: 20px;
+            line-height: 21px; /* В совокупности с вертикальными паддингами получаем 28px, как line-height у родителя */
             /*color: #FFFFFF;*/
             /*white-space: nowrap;*/
         }
@@ -226,7 +226,7 @@
     }
         .feature__tag {
             font-size: 12px;
-            line-height: 19px;
+            line-height: 19px; /* В совокупности с вертикальными паддингами получаем 30px, как line-height у родителя */
             padding: 4px 10px 3px;
         }
 
