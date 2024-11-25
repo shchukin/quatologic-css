@@ -13,6 +13,15 @@ var svgmin       = require('gulp-svgmin');
 var change       = require('gulp-change');
 
 
+
+
+/* Удаляем все '../global/' из html-кода, каждый проект после сборки будет включать в себя всё нужное локально из своей папки: */
+function changeGlobalPath(content) {
+    return content.split('\n').map(line =>
+        line.includes('../global/') ? line.replaceAll('../global/', '') : line
+    ).join('\n');
+}
+
 function addSourcesTimestamp(content) {
     var source = content.split('\n');
     var outputLine = '';
@@ -113,12 +122,13 @@ gulp.task('quotalogic.io_fonts', function() {
 
 // Layouts: copy
 
-gulp.task('quotalogic.io_layouts', function() {
-  return gulp.src('src/global/*.html')
-      .pipe(plumber())
-      .pipe(change(addSourcesTimestamp))
-      .pipe(gulp.dest('build/global/public_html/'))
-  ;
+gulp.task('quotalogic.io_layouts', function () {
+    return gulp.src('src/quotalogic.io/*.html')
+        .pipe(plumber())
+        .pipe(change(changeGlobalPath))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('build/quotalogic.io/public_html/'))
+        ;
 });
 
 
