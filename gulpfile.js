@@ -63,81 +63,6 @@ function uncommentGoogleFonts(content) {
 }
 
 
-function symbolsImgToSpriteSvg(content) {
-
-    var source = content.split('\n');
-    var outputLine = [];
-    var result = '';
-
-    var i;
-    var indentString;
-    var classString;
-    var idString;
-    var widthString;
-    var heightString;
-    var titleString;
-    var srcString;
-    var pathString;
-    var nameString;
-    var timestamp = Math.round(new Date().getTime() / 1000);
-
-    source.forEach(function (line) {
-
-        if( line.indexOf('symbols/') !== -1 ) {
-
-            /* get indent */
-
-            for (indentString = '', i = 0; i < line.indexOf('<img'); i++ ) {
-                indentString += ' ';
-            }
-
-
-            /* get attributes */
-
-            classString  = line.match( 'class[ \t]*=[ \t]*"[^"]+"');
-            idString     = line.match(    'id[ \t]*=[ \t]*"[^"]+"');
-            widthString  = line.match( 'width[ \t]*=[ \t]*"[^"]+"');
-            heightString = line.match('height[ \t]*=[ \t]*"[^"]+"');
-            titleString  = line.match( 'title[ \t]*=[ \t]*"[^"]+"');
-
-            classString  = classString  ? classString[0]  : null;
-            idString     = idString     ? idString[0]     : null;
-            widthString  = widthString  ? widthString[0]  : null;
-            heightString = heightString ? heightString[0] : null;
-            titleString  = titleString  ? titleString[0]  : null;
-
-
-            /* get path and name */
-
-            srcString = line.match('src[ \t]*=[ \t]*"[^"]+"');
-            srcString = srcString[0];
-            srcString = srcString.replace('src="', '');
-            srcString = srcString.replace('"', '');
-
-            nameString = srcString.replace(/^.*[\\\/]/, '');
-            nameString = nameString.replace('.svg', '');
-
-            pathString = srcString.replace(nameString + '.svg', '');
-
-
-            /* write down results */
-
-            outputLine[0] = indentString + '<svg' + ( classString ? ' ' + classString : '') + ( idString ? ' ' + idString : '') + ( widthString ? ' ' + widthString : '') + ( heightString ? ' ' + heightString : '') + '>';
-            outputLine[1] = indentString + '    ' +  '<use xlink:href="' + pathString + 'symbols.svg?' + timestamp + '#' + nameString + '"></use>';
-            outputLine[2] = indentString + '</svg>';
-
-            result += outputLine[0] + '\n' + outputLine[1] + '\n' + outputLine[2] + '\n';
-        }
-        else {
-            result += line + '\n';
-        }
-
-    });
-
-    return result;
-}
-
-
 // Clean up build folder
 
 gulp.task('clean', function() {
@@ -149,12 +74,12 @@ gulp.task('clean', function() {
 
 gulp.task('manifest', function () {
     return gulp.src([
-        'src/browserconfig.xml',
-        'src/site.webmanifest',
-        'src/humans.txt',
-        'src/favicon.ico'])
+        'src/global/browserconfig.xml',
+        'src/global/site.webmanifest',
+        'src/global/humans.txt',
+        'src/global/favicon.ico'])
     .pipe(plumber())
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('build/global/public_html/'))
     ;
 });
 
@@ -162,18 +87,18 @@ gulp.task('manifest', function () {
 // Favicon: copy
 
 gulp.task('favicon', function () {
-    return gulp.src('src/favicon/**/*')
+    return gulp.src('src/global/favicon/**/*')
         .pipe(plumber())
-        .pipe(gulp.dest('build/favicon/'))
+        .pipe(gulp.dest('build/global/public_html/favicon/'))
         ;
 });
 
 // Temp: copy
 
 gulp.task('temp', function() {
-  return gulp.src('src/temp/**/*')
+  return gulp.src('src/global/temp/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/temp/'))
+      .pipe(gulp.dest('build/global/public_html/temp/'))
   ;
 });
 
@@ -181,9 +106,9 @@ gulp.task('temp', function() {
 // Content: copy
 
 gulp.task('content', function() {
-  return gulp.src('src/content/**/*')
+  return gulp.src('src/global/content/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/content/'))
+      .pipe(gulp.dest('build/global/public_html/content/'))
   ;
 });
 
@@ -191,9 +116,9 @@ gulp.task('content', function() {
 // Images: copy
 
 gulp.task('images', function() {
-  return gulp.src('src/images/**/*')
+  return gulp.src('src/global/images/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/images/'))
+      .pipe(gulp.dest('build/global/public_html/images/'))
   ;
 });
 
@@ -201,22 +126,21 @@ gulp.task('images', function() {
 // Fonts: copy
 
 gulp.task('fonts', function() {
-  return gulp.src('src/fonts/**/*')
+  return gulp.src('src/global/fonts/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/fonts/'))
+      .pipe(gulp.dest('build/global/public_html/fonts/'))
   ;
 });
 
 
-// Layouts: copy and change symbols <img> to sprite <svg>
+// Layouts: copy
 
 gulp.task('layouts', function() {
-  return gulp.src('src/*.html')
+  return gulp.src('src/global/*.html')
       .pipe(plumber())
-      .pipe(change(symbolsImgToSpriteSvg))
       .pipe(change(uncommentGoogleFonts))
       .pipe(change(addSourcesTimestamp))
-      .pipe(gulp.dest('build/'))
+      .pipe(gulp.dest('build/global/public_html/'))
   ;
 });
 
@@ -225,12 +149,12 @@ gulp.task('layouts', function() {
 
 gulp.task('vendors', function() {
   return gulp.src([
-      'src/vendors/**/*',
-      '!src/vendors/normalize',
-      '!src/vendors/normalize/**/*',
+      'src/global/vendors/**/*',
+      '!src/global/vendors/normalize',
+      '!src/global/vendors/normalize/**/*',
   ])
       .pipe(plumber())
-      .pipe(gulp.dest('build/vendors/'))
+      .pipe(gulp.dest('build/global/public_html/vendors/'))
   ;
 });
 
@@ -238,21 +162,10 @@ gulp.task('vendors', function() {
 // Scripts: copy
 
 gulp.task('scripts', function() {
-  return gulp.src('src/scripts/**/*')
+  return gulp.src('src/global/scripts/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/scripts/'))
+      .pipe(gulp.dest('build/global/public_html/scripts/'))
   ;
-});
-
-
-// Symbols
-
-gulp.task('symbols', function() {
-    return gulp.src('src/symbols/*.svg')
-        .pipe(plumber())
-        .pipe(svgmin())
-        .pipe(svgstore())
-        .pipe(gulp.dest('build/symbols/'));
 });
 
 
@@ -265,7 +178,7 @@ gulp.task('styles', function() {
   ];
 
   return gulp.src([
-    'src/styles/style.css'
+    'src/global/styles/style.css'
   ])
       .pipe(plumber())
       .pipe(cleanCSS({
@@ -275,9 +188,9 @@ gulp.task('styles', function() {
       .pipe(postcss(processors))
       .pipe(base64({
         // Allow files from /vectors/ only
-        exclude: ['/sprite/', '/images/', '/symbols/']
+        exclude: ['/sprite/', '/images/']
       }))
-      .pipe(gulp.dest('build/styles/'))
+      .pipe(gulp.dest('build/global/public_html/styles/'))
       .pipe(size())
   ;
 });
@@ -288,8 +201,8 @@ gulp.task('styles', function() {
 gulp.task('lint', function() {
 
   return gulp.src([
-    '!src/styles/style.css',
-    'src/styles/**/*.css'
+    '!src/global/styles/style.css',
+    'src/global/styles/**/*.css'
   ])
       .pipe(plumber())
       .pipe(stylelint({
@@ -302,7 +215,7 @@ gulp.task('lint', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'fonts', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'fonts', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
 });
 
 
