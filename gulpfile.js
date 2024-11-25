@@ -124,7 +124,7 @@ gulp.task('quotalogic.io_layouts', function () {
 });
 
 
-// Vendors: copy but exclude normalize
+// Vendors: copy but exclude normalize (it will be injected into CSS file)
 
 gulp.task('quotalogic.io_vendors', function() {
   return gulp.src([
