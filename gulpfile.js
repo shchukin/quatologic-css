@@ -1,18 +1,16 @@
-var del          = require('del');
-var run          = require('gulp4-run-sequence');
-var gulp         = require('gulp');
-var plumber      = require('gulp-plumber');
-var stylelint    = require('gulp-stylelint');
-var cleanCSS     = require('gulp-clean-css');
-var size         = require('gulp-size');
-var postcss      = require('gulp-postcss');
+var del = require('del');
+var run = require('gulp4-run-sequence');
+var gulp = require('gulp');
+var plumber = require('gulp-plumber');
+var stylelint = require('gulp-stylelint');
+var cleanCSS = require('gulp-clean-css');
+var size = require('gulp-size');
+var postcss = require('gulp-postcss');
 var postcssPresetEnv = require('postcss-preset-env');
-var base64       = require('gulp-base64');
-var svgstore     = require('gulp-svgstore');
-var svgmin       = require('gulp-svgmin');
-var change       = require('gulp-change');
-
-
+var base64 = require('gulp-base64');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var change = require('gulp-change');
 
 
 /* Удаляем все '../global/' из html-кода, каждый проект после сборки будет включать в себя всё нужное локально из своей папки: */
@@ -39,8 +37,8 @@ function addSourcesTimestamp(content) {
 
 // Clean up build folder
 
-gulp.task('clean', function() {
-  return del('build/*');
+gulp.task('clean', function () {
+    return del('build/*');
 });
 
 
@@ -89,59 +87,59 @@ gulp.task('quotalogic.io_favicon', function () {
 
 // Temp: copy
 
-gulp.task('quotalogic.io_temp', function() {
-  return gulp.src([
-      'src/global/temp/**/*',
-      'src/quotalogic.io/temp/**/*'
-  ])
-      .pipe(plumber())
-      .pipe(gulp.dest('build/quotalogic.io/public_html/temp/'))
-  ;
+gulp.task('quotalogic.io_temp', function () {
+    return gulp.src([
+        'src/global/temp/**/*',
+        'src/quotalogic.io/temp/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/temp/'))
+        ;
 });
 
 
 // Content: copy
 
-gulp.task('quotalogic.io_content', function() {
-  return gulp.src([
-      'src/global/content/**/*',
-      'src/quotalogic.io/content/**/*'
-  ])
-      .pipe(plumber())
-      .pipe(gulp.dest('build/quotalogic.io/public_html/content/'))
-  ;
+gulp.task('quotalogic.io_content', function () {
+    return gulp.src([
+        'src/global/content/**/*',
+        'src/quotalogic.io/content/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/content/'))
+        ;
 });
 
 
 // Images: copy
 
-gulp.task('quotalogic.io_images', function() {
-  return gulp.src([
-      'src/global/images/**/*',
-      'src/quotalogic.io/images/**/*'
-  ])
-      .pipe(plumber())
-      .pipe(gulp.dest('build/quotalogic.io/public_html/images/'))
-  ;
+gulp.task('quotalogic.io_images', function () {
+    return gulp.src([
+        'src/global/images/**/*',
+        'src/quotalogic.io/images/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/images/'))
+        ;
 });
 
 
 // Fonts: copy
 
-gulp.task('quotalogic.io_fonts', function() {
-  return gulp.src([
-      'src/global/fonts/**/*',
-      'src/quotalogic.io/fonts/**/*'
-  ])
-      .pipe(plumber())
-      .pipe(gulp.dest('build/quotalogic.io/public_html/fonts/'))
-  ;
+gulp.task('quotalogic.io_fonts', function () {
+    return gulp.src([
+        'src/global/fonts/**/*',
+        'src/quotalogic.io/fonts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/fonts/'))
+        ;
 });
 
 
 // Vendors: copy but exclude normalize (it will be injected into CSS file)
 
-gulp.task('quotalogic.io_vendors', function() {
+gulp.task('quotalogic.io_vendors', function () {
     return gulp.src([
         'src/global/vendors/**/*',
         'src/quotalogic.io/vendors/**/*',
@@ -155,59 +153,59 @@ gulp.task('quotalogic.io_vendors', function() {
 
 // Scripts: copy
 
-gulp.task('quotalogic.io_scripts', function() {
-  return gulp.src([
-      'src/global/scripts/**/*',
-      'src/quotalogic.io/scripts/**/*'
-  ])
-      .pipe(plumber())
-      .pipe(gulp.dest('build/quotalogic.io/public_html/scripts/'))
-  ;
+gulp.task('quotalogic.io_scripts', function () {
+    return gulp.src([
+        'src/global/scripts/**/*',
+        'src/quotalogic.io/scripts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotalogic.io/public_html/scripts/'))
+        ;
 });
 
 
 // Styles: concat, add prefixes, compress, copy
 
-gulp.task('quotalogic.io_styles', function() {
+gulp.task('quotalogic.io_styles', function () {
 
-  var processors = [
-    postcssPresetEnv()
-  ];
+    var processors = [
+        postcssPresetEnv()
+    ];
 
-  return gulp.src([
-    'src/global/styles/style.css'
-  ])
-      .pipe(plumber())
-      .pipe(cleanCSS({
-        advanced: false,
-        keepSpecialComments: 0
-      }))
-      .pipe(postcss(processors))
-      .pipe(base64({
-        // Allow files from /vectors/ only
-        exclude: ['/sprite/', '/images/']
-      }))
-      .pipe(gulp.dest('build/quotalogic.io/public_html/styles/'))
-      .pipe(size())
-  ;
+    return gulp.src([
+        'src/global/styles/style.css'
+    ])
+        .pipe(plumber())
+        .pipe(cleanCSS({
+            advanced: false,
+            keepSpecialComments: 0
+        }))
+        .pipe(postcss(processors))
+        .pipe(base64({
+            // Allow files from /vectors/ only
+            exclude: ['/sprite/', '/images/']
+        }))
+        .pipe(gulp.dest('build/quotalogic.io/public_html/styles/'))
+        .pipe(size())
+        ;
 });
 
 
 // lint
 
-gulp.task('quotalogic.io_lint', function() {
+gulp.task('quotalogic.io_lint', function () {
 
-  return gulp.src([
-    '!src/global/styles/style.css',
-    'src/global/styles/**/*.css'
-  ])
-      .pipe(plumber())
-      .pipe(stylelint({
-          reporters: [
-              {formatter: 'string', console: true}
-          ]
-      }))
-  ;
+    return gulp.src([
+        '!src/global/styles/style.css',
+        'src/global/styles/**/*.css'
+    ])
+        .pipe(plumber())
+        .pipe(stylelint({
+            reporters: [
+                {formatter: 'string', console: true}
+            ]
+        }))
+        ;
 });
 
 
