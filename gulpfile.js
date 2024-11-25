@@ -208,19 +208,6 @@ gulp.task('fonts', function() {
 });
 
 
-// Markups: copy and change symbols <img> to sprite <svg>
-
-gulp.task('markups', function() {
-  return gulp.src('src/markups/**/*')
-      .pipe(plumber())
-      .pipe(change(symbolsImgToSpriteSvg))
-      .pipe(change(uncommentGoogleFonts))
-      .pipe(change(addSourcesTimestamp))
-      .pipe(gulp.dest('build/markups/'))
-  ;
-});
-
-
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function() {
@@ -315,7 +302,7 @@ gulp.task('lint', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'fonts', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'fonts', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
