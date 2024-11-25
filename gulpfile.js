@@ -53,7 +53,7 @@ gulp.task('quotalogic.io_manifest', function () {
         'src/global/humans.txt',
         'src/global/favicon.ico'])
     .pipe(plumber())
-    .pipe(gulp.dest('build/global/public_html/'))
+    .pipe(gulp.dest('build/quotalogic.io/public_html/'))
     ;
 });
 
@@ -63,7 +63,7 @@ gulp.task('quotalogic.io_manifest', function () {
 gulp.task('quotalogic.io_favicon', function () {
     return gulp.src('src/global/favicon/**/*')
         .pipe(plumber())
-        .pipe(gulp.dest('build/global/public_html/favicon/'))
+        .pipe(gulp.dest('build/quotalogic.io/public_html/favicon/'))
         ;
 });
 
@@ -72,7 +72,7 @@ gulp.task('quotalogic.io_favicon', function () {
 gulp.task('quotalogic.io_temp', function() {
   return gulp.src('src/global/temp/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/global/public_html/temp/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/temp/'))
   ;
 });
 
@@ -82,7 +82,7 @@ gulp.task('quotalogic.io_temp', function() {
 gulp.task('quotalogic.io_content', function() {
   return gulp.src('src/global/content/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/global/public_html/content/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/content/'))
   ;
 });
 
@@ -92,7 +92,7 @@ gulp.task('quotalogic.io_content', function() {
 gulp.task('quotalogic.io_images', function() {
   return gulp.src('src/global/images/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/global/public_html/images/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/images/'))
   ;
 });
 
@@ -102,7 +102,7 @@ gulp.task('quotalogic.io_images', function() {
 gulp.task('quotalogic.io_fonts', function() {
   return gulp.src('src/global/fonts/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/global/public_html/fonts/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/fonts/'))
   ;
 });
 
@@ -133,7 +133,7 @@ gulp.task('quotalogic.io_vendors', function() {
       '!src/global/vendors/normalize/**/*',
   ])
       .pipe(plumber())
-      .pipe(gulp.dest('build/global/public_html/vendors/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/vendors/'))
   ;
 });
 
@@ -143,7 +143,7 @@ gulp.task('quotalogic.io_vendors', function() {
 gulp.task('quotalogic.io_scripts', function() {
   return gulp.src('src/global/scripts/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('build/global/public_html/scripts/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/scripts/'))
   ;
 });
 
@@ -169,7 +169,7 @@ gulp.task('quotalogic.io_styles', function() {
         // Allow files from /vectors/ only
         exclude: ['/sprite/', '/images/']
       }))
-      .pipe(gulp.dest('build/global/public_html/styles/'))
+      .pipe(gulp.dest('build/quotalogic.io/public_html/styles/'))
       .pipe(size())
   ;
 });
