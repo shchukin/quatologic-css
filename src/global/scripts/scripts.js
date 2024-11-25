@@ -55,7 +55,7 @@
 
     /* Scroll animations */
 
-    //init и re-init
+    //init & re-init
     var animations = [];
     var startOffset = 250;
 
@@ -73,7 +73,7 @@
     $(window).on('resize', initAnimationsGeometry);
 
     //run
-    $('.animation').addClass('animation--ready'); /* Запускаем это всё только есть JS отработал */
+    $('.animation').addClass('animation--ready'); /* Запускаем это всё только если JS отработал */
 
     var scrolled = 0;
 
