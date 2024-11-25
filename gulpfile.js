@@ -61,7 +61,10 @@ gulp.task('quotalogic.io_manifest', function () {
 // Favicon: copy
 
 gulp.task('quotalogic.io_favicon', function () {
-    return gulp.src('src/global/favicon/**/*')
+    return gulp.src([
+        'src/global/favicon/**/*',
+        'src/quotalogic.io/favicon/**/*'
+    ])
         .pipe(plumber())
         .pipe(gulp.dest('build/quotalogic.io/public_html/favicon/'))
         ;
