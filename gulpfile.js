@@ -40,28 +40,6 @@ function addSourcesTimestamp(content) {
     return result;
 }
 
-function uncommentGoogleFonts(content) {
-    var source = content.split('\n');
-    var outputLine = '';
-    var result = '';
-
-    source.forEach(function (line) {
-
-        if( line.indexOf('google') !== -1 && line.indexOf('fonts') !== -1 ) {
-            outputLine = line;
-            outputLine = outputLine.replace('<!--', '');
-            outputLine = outputLine.replace('-->', '');
-            result += outputLine + '\n';
-        }
-        else {
-            result += line + '\n';
-        }
-
-    });
-
-    return result;
-}
-
 
 // Clean up build folder
 
@@ -138,7 +116,6 @@ gulp.task('fonts', function() {
 gulp.task('layouts', function() {
   return gulp.src('src/global/*.html')
       .pipe(plumber())
-      .pipe(change(uncommentGoogleFonts))
       .pipe(change(addSourcesTimestamp))
       .pipe(gulp.dest('build/global/public_html/'))
   ;
