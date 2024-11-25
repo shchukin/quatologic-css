@@ -173,13 +173,14 @@ gulp.task('quotalogic.io_styles', function () {
     ];
 
     return gulp.src([
-        'src/global/styles/style.css'
+        'src/quotalogic.io/styles/styles.css'
     ])
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
             keepSpecialComments: 0
         }))
+        .pipe(change(changeGlobalPath))
         .pipe(postcss(processors))
         .pipe(base64({
             // Allow files from /vectors/ only
