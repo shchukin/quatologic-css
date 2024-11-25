@@ -110,7 +110,12 @@ gulp.task('quotalogic.io_fonts', function() {
 // Layouts: copy
 
 gulp.task('quotalogic.io_layouts', function () {
-    return gulp.src('src/quotalogic.io/*.html')
+    return gulp.src([
+        'src/quotalogic.io/*.html',
+        'src/quotalogic.io/*.shtml',
+        'src/quotalogic.io/*.php',
+        'src/quotalogic.io/error_log'
+    ])
         .pipe(plumber())
         .pipe(change(changeGlobalPath))
         .pipe(change(addSourcesTimestamp))
