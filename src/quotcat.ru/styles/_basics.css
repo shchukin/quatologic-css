@@ -1,0 +1,11 @@
+.basics__description {
+    max-width: 911px;
+}
+
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .basics__description {
+        max-width: 730px;
+    }
+}
