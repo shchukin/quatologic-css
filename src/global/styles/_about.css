@@ -27,7 +27,6 @@
         .about__body {
             width: 67.6471%;
             padding-top: 60px;
-            max-width: 555px;
             padding-left: 20px;
         }
             .about__section {
@@ -49,6 +48,7 @@
 
                 .about__description {
                     margin-top: 4px;
+                    max-width: 555px;
                 }
 
 
@@ -88,7 +88,7 @@
                     }
 
                     .about__description {
-
+                        max-width: 460px;
                     }
 }
 
@@ -122,7 +122,6 @@
                 width: auto;
                 margin-top: 11px;
                 padding-top: 0;
-                max-width: none;
                 padding-left: 0;
             }
                 .about__section {
@@ -140,5 +139,6 @@
 
                     .about__description {
                         margin-top: 0;
+                        max-width: none;
                     }
 }
