@@ -1,0 +1,35 @@
+.sharing__heading {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .sharing__heading {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 749px) {
+
+    .sharing__heading {
+        max-width: 800px;
+    }
+}
+
+
+@media (min-width: 750px) {
+
+    .sharing__heading.title {
+        line-height: 64px;
+    }
+}
+
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .sharing__heading.title {
+        line-height: 44px;
+    }
+}
