@@ -1,0 +1,24 @@
+.hero__heading {
+    padding-bottom: 9px;
+    font-size: 48px;
+    line-height: 53px;
+}
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .hero__heading {
+        padding-bottom: 3px;
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+
+@media (max-width: 749px) {
+
+    .hero__heading {
+        padding-bottom: 4px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+}

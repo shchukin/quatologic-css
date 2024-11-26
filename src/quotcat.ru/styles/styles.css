@@ -1,0 +1,6 @@
+@import url("../../global/styles/styles.css");
+
+/* overrides */
+@import url("_logo.css");
+@import url("_hero.css");
+@import url("_truth.css");
