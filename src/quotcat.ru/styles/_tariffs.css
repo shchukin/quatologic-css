@@ -1,0 +1,5 @@
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+    .tariffs {
+        margin-top: -60px;
+    }
+}

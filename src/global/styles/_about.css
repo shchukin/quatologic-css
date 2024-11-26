@@ -51,6 +51,10 @@
                     max-width: 555px;
                 }
 
+                .about__description--wide {
+                    max-width: none;
+                }
+
 
 @media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
 
@@ -89,6 +93,10 @@
 
                     .about__description {
                         max-width: 460px;
+                    }
+
+                    .about__description--wide {
+                        max-width: none;
                     }
 }
 
