@@ -57,6 +57,19 @@ gulp.task('quotalogic.io_layouts', function () {
         ;
 });
 
+gulp.task('quotcat.ru_layouts', function () {
+    return gulp.src([
+        'src/quotcat.ru/*.html',
+        'src/quotcat.ru/*.shtml',
+        'src/quotcat.ru/*.php'
+    ])
+        .pipe(plumber())
+        .pipe(change(changeGlobalPath))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('build/quotcat.ru/public_html/'))
+        ;
+});
+
 
 // Manifest: copy
 
@@ -69,6 +82,18 @@ gulp.task('quotalogic.io_manifest', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('build/quotalogic.io/public_html/'))
+        ;
+});
+
+gulp.task('quotcat.ru_manifest', function () {
+    return gulp.src([
+        'src/global/browserconfig.xml',
+        'src/global/site.webmanifest',
+        'src/global/humans.txt',
+        'src/global/favicon.ico'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/'))
         ;
 });
 
@@ -85,6 +110,16 @@ gulp.task('quotalogic.io_favicon', function () {
         ;
 });
 
+gulp.task('quotcat.ru_favicon', function () {
+    return gulp.src([
+        'src/global/favicon/**/*',
+        'src/quotcat.ru/favicon/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/favicon/'))
+        ;
+});
+
 // Temp: copy
 
 gulp.task('quotalogic.io_temp', function () {
@@ -94,6 +129,16 @@ gulp.task('quotalogic.io_temp', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('build/quotalogic.io/public_html/temp/'))
+        ;
+});
+
+gulp.task('quotcat.ru_temp', function () {
+    return gulp.src([
+        'src/global/temp/**/*',
+        'src/quotcat.ru/temp/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/temp/'))
         ;
 });
 
@@ -110,6 +155,16 @@ gulp.task('quotalogic.io_content', function () {
         ;
 });
 
+gulp.task('quotcat.ru_content', function () {
+    return gulp.src([
+        'src/global/content/**/*',
+        'src/quotcat.ru/content/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/content/'))
+        ;
+});
+
 
 // Images: copy
 
@@ -123,6 +178,16 @@ gulp.task('quotalogic.io_images', function () {
         ;
 });
 
+gulp.task('quotcat.ru_images', function () {
+    return gulp.src([
+        'src/global/images/**/*',
+        'src/quotcat.ru/images/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/images/'))
+        ;
+});
+
 
 // Fonts: copy
 
@@ -133,6 +198,16 @@ gulp.task('quotalogic.io_fonts', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('build/quotalogic.io/public_html/fonts/'))
+        ;
+});
+
+gulp.task('quotcat.ru_fonts', function () {
+    return gulp.src([
+        'src/global/fonts/**/*',
+        'src/quotcat.ru/fonts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/fonts/'))
         ;
 });
 
@@ -150,6 +225,17 @@ gulp.task('quotalogic.io_vendors', function () {
         ;
 });
 
+gulp.task('quotcat.ru_vendors', function () {
+    return gulp.src([
+        'src/global/vendors/**/*',
+        'src/quotcat.ru/vendors/**/*',
+        '!src/global/vendors/normalize'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/vendors/'))
+        ;
+});
+
 
 // Scripts: copy
 
@@ -160,6 +246,16 @@ gulp.task('quotalogic.io_scripts', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('build/quotalogic.io/public_html/scripts/'))
+        ;
+});
+
+gulp.task('quotcat.ru_scripts', function () {
+    return gulp.src([
+        'src/global/scripts/**/*',
+        'src/quotcat.ru/scripts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/quotcat.ru/public_html/scripts/'))
         ;
 });
 
@@ -191,6 +287,31 @@ gulp.task('quotalogic.io_styles', function () {
         ;
 });
 
+gulp.task('quotcat.ru_styles', function () {
+
+    var processors = [
+        postcssPresetEnv()
+    ];
+
+    return gulp.src([
+        'src/quotcat.ru/styles/styles.css'
+    ])
+        .pipe(plumber())
+        .pipe(cleanCSS({
+            advanced: false,
+            keepSpecialComments: 0
+        }))
+        .pipe(change(changeGlobalPath))
+        .pipe(postcss(processors))
+        .pipe(base64({
+            // Allow files from /vectors/ only
+            exclude: ['/sprite/', '/images/']
+        }))
+        .pipe(gulp.dest('build/quotcat.ru/public_html/styles/'))
+        .pipe(size())
+        ;
+});
+
 
 // lint
 
@@ -209,20 +330,35 @@ gulp.task('quotalogic.io_lint', function () {
         ;
 });
 
+gulp.task('quotcat.ru_lint', function () {
+
+    return gulp.src([
+        '!src/global/styles/style.css',
+        'src/global/styles/**/*.css'
+    ])
+        .pipe(plumber())
+        .pipe(stylelint({
+            reporters: [
+                {formatter: 'string', console: true}
+            ]
+        }))
+        ;
+});
+
 
 gulp.task('default', function (fn) {
     run('clean',
-        'quotalogic.io_layouts',
-        'quotalogic.io_manifest',
-        'quotalogic.io_fonts',
-        'quotalogic.io_favicon',
-        'quotalogic.io_temp',
-        'quotalogic.io_content',
-        'quotalogic.io_images',
-        'quotalogic.io_vendors',
-        'quotalogic.io_scripts',
-        'quotalogic.io_styles',
-        'quotalogic.io_lint',
+        'quotalogic.io_layouts',  'quotcat.ru_layouts',
+        'quotalogic.io_manifest', 'quotcat.ru_manifest',
+        'quotalogic.io_fonts',    'quotcat.ru_fonts',
+        'quotalogic.io_favicon',  'quotcat.ru_favicon',
+        'quotalogic.io_temp',     'quotcat.ru_temp',
+        'quotalogic.io_content',  'quotcat.ru_content',
+        'quotalogic.io_images',   'quotcat.ru_images',
+        'quotalogic.io_vendors',  'quotcat.ru_vendors',
+        'quotalogic.io_scripts',  'quotcat.ru_scripts',
+        'quotalogic.io_styles',   'quotcat.ru_styles',
+        'quotalogic.io_lint',     'quotcat.ru_lint',
         fn
     );
 });
