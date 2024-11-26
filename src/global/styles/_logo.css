@@ -1,42 +1,13 @@
 .logo {
     display: inline-block;
     vertical-align: top;
-    width: 178px;
-    height: 42px;
     margin-top: 0;
     margin-bottom: 0;
-    background-image: url("../images/logo.png");
+    height: 48px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
-}
-
-@media (min-resolution: 2dppx) {
-    .logo {
-        background-image: url("../images/logo@2x.png");
-    }
-}
-
-
-
-.logo--inverted {
-    background-image: url("../images/logo-inverted.png");
-}
-
-@media (min-resolution: 2dppx) {
-
-    .logo--inverted {
-        background-image: url("../images/logo-inverted@2x.png");
-    }
-}
-
-
-@media ( 1100px <= width < 1500px ) {
-
-    .logo {
-        width: 146px;
-    }
 }
