@@ -156,7 +156,6 @@
                     padding-left: var(--container-padding);
                     padding-right: var(--container-padding);
                     padding-bottom: 40px;
-                    overflow-x: auto;
                     gap: 8px;
                 }
 

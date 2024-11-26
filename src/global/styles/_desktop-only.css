@@ -6,6 +6,6 @@
 @media (max-width: 749px) {
 
     .desktop-only {
-        display: none;
+        display: none !important;
     }
 }
