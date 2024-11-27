@@ -276,12 +276,12 @@ gulp.task('quotalogic.io_styles', function () {
             advanced: false,
             keepSpecialComments: 0
         }))
-        .pipe(change(changeGlobalPath))
-        .pipe(postcss(processors))
         .pipe(base64({
             // Allow files from /vectors/ only
             exclude: ['/sprite/', '/images/']
         }))
+        .pipe(change(changeGlobalPath))
+        .pipe(postcss(processors))
         .pipe(gulp.dest('build/quotalogic.io/public_html/styles/'))
         .pipe(size())
         ;
@@ -301,12 +301,12 @@ gulp.task('quotcat.ru_styles', function () {
             advanced: false,
             keepSpecialComments: 0
         }))
-        .pipe(change(changeGlobalPath))
-        .pipe(postcss(processors))
         .pipe(base64({
             // Allow files from /vectors/ only
             exclude: ['/sprite/', '/images/']
         }))
+        .pipe(change(changeGlobalPath))
+        .pipe(postcss(processors))
         .pipe(gulp.dest('build/quotcat.ru/public_html/styles/'))
         .pipe(size())
         ;
