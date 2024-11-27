@@ -21,7 +21,7 @@ function changeGlobalPath(content) {
 }
 
 function addSourcesTimestamp(content) {
-    const timestamp = Math.round(Date.now() / 1000);
+    const timestamp = Math.round(Date.now());
 
     return content.split('\n').map(line => {
         if (line.includes('rel="stylesheet"')) {
