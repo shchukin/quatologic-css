@@ -11,19 +11,20 @@
 
         .partners__list {
             margin-top: 68px;
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 58px 30px;
         }
             .partners__item {
-                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
             }
                 .partners__image {
                     vertical-align: top;
-                    width: auto;
-                    height: 100px;
+                    width: 240px;
+                    height: auto;
                 }
 
 
@@ -47,8 +48,7 @@
 
                 }
                     .partners__image {
-                        width: auto;
-                        height: 88px;
+                        width: 220px;
                     }
 }
 
@@ -70,32 +70,33 @@
 
             .partners__list {
                 margin-top: 50px;
-                display: flex;
-                flex-direction: column;
+                /*display: flex;*/
+                /*flex-direction: column;*/
                 /*align-items: center;*/
                 /*justify-content: space-between;*/
                 /*flex-wrap: wrap;*/
-                gap: 20px 30px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 20px;
             }
                 .partners__item {
                     /*flex-shrink: 0;*/
                 }
                     .partners__image {
                         /*vertical-align: top;*/
-                        /*width: auto;*/
-                        height: 66px;
+                        width: 100%;
+                        max-width: 160px;
                     }
 
-                    @media (max-width: 370px) {
-                        .partners__image {
-                            height: 60px;
-                        }
-                    }
+                    /*@media (max-width: 370px) {*/
+                    /*    .partners__image {*/
+                    /*        height: 60px;*/
+                    /*    }*/
+                    /*}*/
 
-                    @media (max-width: 350px) {
-                        .partners__image {
-                            height: 56px;
-                        }
-                    }
+                    /*@media (max-width: 350px) {*/
+                    /*    .partners__image {*/
+                    /*        height: 56px;*/
+                    /*    }*/
+                    /*}*/
 }
 
