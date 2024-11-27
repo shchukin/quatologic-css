@@ -22,3 +22,49 @@
         line-height: 38px;
     }
 }
+
+
+
+/* Картинка */
+
+.hero::before {
+    background-image: url("../images/hero-desktop-summary.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+    .hero::before {
+        background-image: url("../images/hero-desktop-summary@2x.jpg");
+    }
+}
+
+.hero::before {
+    background-image: image-set(
+            url("../images/hero-desktop-summary@2x.avif") type("image/avif") 2x,
+            url("../images/hero-desktop-summary.avif") type("image/avif") 1x,
+            url("../images/hero-desktop-summary@2x.webp") type("image/webp") 2x,
+            url("../images/hero-desktop-summary.webp") type("image/webp") 1x
+    );
+}
+
+
+@media (max-width: 749px) {
+
+    .hero::before {
+        background-image: url("../images/hero-smartphone-summary.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+        .hero::before {
+            background-image: url("../images/hero-smartphone-summary@2x.jpg");
+        }
+    }
+
+    .hero::before {
+        background-image: image-set(
+                url("../images/hero-smartphone-summary@2x.avif") type("image/avif") 2x,
+                url("../images/hero-smartphone-summary.avif") type("image/avif") 1x,
+                url("../images/hero-smartphone-summary@2x.webp") type("image/webp") 2x,
+                url("../images/hero-smartphone-summary.webp") type("image/webp") 1x
+        );
+    }
+}
