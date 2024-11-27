@@ -1,0 +1,115 @@
+.techs {
+    padding-top: 142px;
+}
+    .techs__wrap {
+        display: flex;
+        align-items: flex-start;
+    }
+        .techs__heading {
+            flex-shrink: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 32.3529%;
+        }
+            .techs__heading.title {
+                font-size: 46px;
+            }
+
+        .techs__body {
+            width: 67.6471%;
+            margin-top: 27px;
+        }
+            .techs__list {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+                .techs__item {
+                    margin-top: 8px;
+                    font-size: 22px;
+                    line-height: 34px;
+                    max-width: 720px;
+                }
+
+                .techs__item:first-child {
+                    margin-top: 0;
+                }
+                    .techs__label {
+                        font-weight: 500;
+                    }
+
+
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .techs {
+        padding-top: 120px;
+    }
+        .techs__wrap {
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+            .techs__heading {
+                /*flex-shrink: 0;*/
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*width: 32.3529%;*/
+            }
+                .techs__heading.title {
+                    font-size: 36px;
+                }
+
+            .techs__body {
+                /*width: 67.6471%;*/
+                margin-top: 16px;
+            }
+                .techs__list {
+
+                }
+                    .techs__item {
+                        font-size: 18px;
+                        line-height: 28px;
+                        max-width: 580px;
+                    }
+                        .techs__label {
+                            /*font-weight: 500;*/
+                        }
+}
+
+
+
+@media (max-width: 749px) {
+
+    .techs {
+        padding-top: 94px;
+    }
+        .techs__wrap {
+            display: block;
+            /*align-items: flex-start;*/
+        }
+            .techs__heading {
+                /*flex-shrink: 0;*/
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                width: auto;
+            }
+                .techs__heading.title {
+                    font-size: 32px;
+                }
+
+            .techs__body {
+                width: auto;
+                /*margin-top: 7px;*/
+            }
+                .techs__list {
+                    padding-left: 20px;
+                }
+                    .techs__item {
+                        font-size: 18px;
+                        line-height: 28px;
+                        /*max-width: 720px;*/
+                    }
+                        .techs__label {
+                            /*font-weight: 500;*/
+                        }
+}
+
