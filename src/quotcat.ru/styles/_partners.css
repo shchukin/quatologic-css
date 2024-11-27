@@ -1,0 +1,101 @@
+.partners {
+    padding-top: 80px;
+}
+    .partners__wrap {
+
+    }
+        .partners__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .partners__list {
+            margin-top: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 58px 30px;
+        }
+            .partners__item {
+                flex-shrink: 0;
+            }
+                .partners__image {
+                    vertical-align: top;
+                    width: auto;
+                    height: 100px;
+                }
+
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .partners {
+
+    }
+        .partners__wrap {
+
+        }
+            .partners__heading {
+
+            }
+
+            .partners__list {
+
+            }
+                .partners__item {
+
+
+                }
+                    .partners__image {
+                        width: auto;
+                        height: 88px;
+                    }
+}
+
+
+
+@media (max-width: 749px) {
+
+    .partners {
+        padding-top: 40px;
+    }
+        .partners__wrap {
+
+        }
+            .partners__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                text-align: center;
+            }
+
+            .partners__list {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                /*align-items: center;*/
+                /*justify-content: space-between;*/
+                /*flex-wrap: wrap;*/
+                gap: 20px 30px;
+            }
+                .partners__item {
+                    /*flex-shrink: 0;*/
+                }
+                    .partners__image {
+                        /*vertical-align: top;*/
+                        /*width: auto;*/
+                        height: 66px;
+                    }
+
+                    @media (max-width: 370px) {
+                        .partners__image {
+                            height: 60px;
+                        }
+                    }
+
+                    @media (max-width: 350px) {
+                        .partners__image {
+                            height: 56px;
+                        }
+                    }
+}
+
