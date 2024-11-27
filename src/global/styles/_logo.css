@@ -3,7 +3,9 @@
     vertical-align: top;
     margin-top: 0;
     margin-bottom: 0;
+    width: 225px;
     height: 48px;
+    background-image: url("../images/logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -11,3 +13,25 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+.logo--inverted {
+    background-image: url("../images/logo-inverted.svg");
+}
+
+
+
+@media ( 1100px <= width < 1500px ), ( 750px <= width < 900px ) {
+
+    .logo {
+        width: 160px;
+    }
+}
+
+
+@media (max-width: 749px) {
+
+    .logo {
+        width: 160px;
+    }
+}
+
