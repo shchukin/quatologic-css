@@ -1,6 +1,8 @@
+/* project fonts */
 @import url("_fonts.css");
 
+/* global code base */
 @import url("../../global/styles/styles.css");
 
-/* overrides */
+/* project specific overrides */
 @import url("_logo.css");
